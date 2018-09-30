@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("/fonts/segoeui.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("/fonts/segoeuib.ttf") format("opentype");
+    font-weight: 700; /* bold */
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("/fonts/segoeuil.ttf") format("opentype");
+    font-weight: 100; /* lighter */
+}
+
+/*
+Main colors:
+#d55555 --> Red
+#505050 --> Black/Dark Grey
+#e6e6e6 --> Light Grey
+#ffffff --> White
+ */
+
+body{
+    font-family: "Segoe UI", serif;
+    color: #505050;
+}
