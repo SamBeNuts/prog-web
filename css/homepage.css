@@ -166,9 +166,14 @@ header .text_bg span{
     margin: 0 5px;
     display: inline-block;
     cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 
-.page_count.active{
+.page_count.active, .page_count:hover{
     background-color: #fff;
 }
 
@@ -176,6 +181,7 @@ header .text_bg span{
     position: absolute;
     right: 10px;
     top: 10px;
+    cursor: pointer;
 }
 
 .see_more img{
@@ -246,4 +252,184 @@ header .text_bg span{
     line-height: 30px;
     font-weight: lighter;
     display: inline-block;
+    margin-left: 5px;
+}
+
+/*
+ * Procédure
+ */
+.procedure{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.road{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step{
+    width: 24%;
+    margin: 0 auto 20px auto;
+}
+
+.step div{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #e6e6e6;
+    border-radius: 100%;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.step div:hover{
+    background-color: #e6e6e6;
+}
+
+.step div img{
+    width: 80px;
+    top: 50%;
+    margin-top: -40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.step .num{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.step .content{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.road_arc, .road_line, .road_vide{
+    width: 7%;
+}
+
+.procedure_btn{
+    padding: 10px 20px;
+    border: 2px solid #d55555;
+    font-weight: lighter;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+/*
+ * Témoignages
+ */
+.temoignages{
+    text-align: center;
+    margin-top: -75px;
+}
+
+.temoignages .title{
+    color: #fff !important;
+    margin-bottom: 50px !important;
+}
+
+.temoignages .title:first-letter{
+    box-shadow: inset 0 -2px 0 #d55555 !important;
+    -webkit-box-shadow: inset 0 -2px 0 #d55555 !important;
+    -moz-box-shadow: inset 0 -2px 0 #d55555 !important;
+}
+
+.temoignages_bg{
+    position: relative;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+.temoignages_icon{
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.temoignages_content{
+    display: inline-block;
+    width: 50%;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.temoignages_content_txt{
+    display: none;
+}
+.temoignages_content_txt.active{
+    display: block;
+}
+
+.temoignages_profile{
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.temoignages_profile p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.temoignages_profile.active p{
+    opacity: 1;
+}
+
+.temoignages_profile .name{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.temoignages_profile .location{
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.temoignages_profile img{
+    width: 50px;
+    padding: 2px;
+    border: 2px solid #fff;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.temoignages_profile.active img{
+    border-radius: 100%;
+    border: 2px solid #d55555;
+}
+
+.temoignages_profile.active img, .temoignages_profile:hover img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }

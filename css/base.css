@@ -38,6 +38,14 @@ p{
     margin: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
+}
+
 .text_red{
     color: #d55555 !important;
 }
