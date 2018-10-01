@@ -35,13 +35,100 @@
         </ul>
     </nav>
 </header>
+<div class="content chiffres">
+    <div>
+        <img src="img/chiffres_1.png">
+        <p><span>300</span><br>étudiants/an</p>
+    </div>
+    <div>
+        <img src="img/chiffres_2.png">
+        <p><span>200+</span><br>écoles partenaires</p>
+    </div>
+    <div>
+        <img src="img/chiffres_3.png">
+        <p><span>40+</span><br>pays visités</p>
+    </div>
+</div>
+<div class="content avantages">
+    <div class="left">
+        <img src="img/avantages_1.png">
+        <p class="avantages_txt_num text_red">2</p>
+        <p class="avantages_txt_title">Gagner en autonomie et en capacité d'adaptation !</p>
+        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+        <img src="img/avantages_2.png">
+    </div>
+    <div class="right">
+        <p class="title">Pourquoi partir à l'étranger ?</p>
+        <p class="avantages_txt_num text_red">1</p>
+        <p class="avantages_txt_title"> Découvrir un nouveau pays, de nouvelles cultures, ...</p>
+        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+        <img src="img/avantages_3.png">
+        <p class="avantages_txt_num text_red">3</p>
+        <p class="avantages_txt_title">Se préparer à une carrière internationale</p>
+        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+    </div>
+</div>
+<div class="content partner_schools_title">
+    <p class="title">Nouvelles écoles partenaires</p>
+</div>
+<div class="slider">
+    <div class="slides"></div>
+    <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
+    <div class="pagination"></div>
+    <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
+    <div class="see_more">
+        <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
+    </div>
+</div>
 <script type="text/javascript">
     request.onload = function () {
         let data = request.response;
+        createSlides(data.slider.slides);
     };
 
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
+    }
+
+    let pagination = document.querySelector('.slider .pagination');
+    let slides = document.querySelector('.slider .slides');
+
+    function createSlides(x){
+        let page_count_1 = "<div class=\"page_count\" onclick=\"changeSlide(";
+        let page_count_2 = ")\"></div>";
+        let slide_1 = "<div class=\"slide\"><img src=\"";
+        let slide_2 = "\"><div class=\"slide_txt\"><p class=\"name text_shadow text_white\">";
+        let slide_3 = "</p><div class=\"line\"></div><p class=\"location text_shadow text_white\">";
+        let slide_4 = "<br>";
+        let slide_5 = "</p></div></div>";
+        x.forEach(function (el, i) {
+            pagination.innerHTML += page_count_1 + i + page_count_2;
+            slides.innerHTML += slide_1 + 'img/data/' + el[0].toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_2 + el[0] + slide_3 + el[1] + "," + slide_4 + el[2] + slide_5;
+        });
+        pagination.firstElementChild.classList.add("active");
+        slides.firstElementChild.classList.add("active");
+    }
+
+    function changeSlide(x){
+        let i = 0;
+        slides.childNodes.forEach(function(el, j){
+            if (el.classList.contains("active")) i = j;
+        });
+        if (i !== x){
+            document.querySelector('.slider .slides .active').classList.remove("active");
+            document.querySelector('.slider .pagination .active').classList.remove("active");
+            if (x >= 0){
+                slides.children[x].classList.add("active");
+                pagination.children[x].classList.add("active");
+            }else{
+                let y = i+x+2;
+                if (y >= slides.children.length) y = 0;
+                else if (y < 0) y = slides.children.length-1;
+                console.log(y);
+                slides.children[y].classList.add("active");
+                pagination.children[y].classList.add("active");
+            }
+        }
     }
 </script>
 </body>

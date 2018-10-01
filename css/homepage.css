@@ -1,6 +1,10 @@
 /*
  * Header
  */
+header{
+    height: 350px !important;
+}
+
 header .bg{
     position: absolute;
     left: 50%;
@@ -33,4 +37,213 @@ header .text_bg span{
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
+}
+
+/*
+ * Chiffres
+ */
+.chiffres{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chiffres div{
+    width: 33%;
+    font-size: 30px;
+}
+
+.chiffres div img{
+    font-weight: lighter;
+    width: 20%;
+}
+
+.chiffres p span{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/*
+ * Avantages
+ */
+.avantages{
+    display: flex;
+    margin-top: 50px;
+}
+
+.left{
+    width: 50%;
+    text-align: right;
+}
+
+.right{
+    width: 50%;
+    text-align: left;
+}
+
+.avantages p{
+    width: 70%;
+}
+
+.left p{
+    float: right;
+}
+
+.avantages_txt_num{
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.avantages_txt_title{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.avantages_txt_content{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.avantages img{
+    width: 60%;
+    margin: 0 40px;
+}
+
+/*
+ * Slider
+ */
+.partner_schools_title{
+    margin-left: -436px !important;
+    margin-top: 30px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+.navigation{
+    position: absolute;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.navigation.previous{
+    left: 10px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.navigation.next{
+    right: 10px;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.page_count{
+    width: 20px;
+    height: 20px;
+    border: #fff solid 2px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.page_count.active{
+    background-color: #fff;
+}
+
+.see_more{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.see_more img{
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.see_more p{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.slider .slides, .slider .slides .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .slides .slide{
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider .slides .slide.active{
+    opacity: 1;
+}
+
+.slider .slides .slide img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.slider .slides .slide .slide_txt{
+    position: absolute;
+    width: 872px;
+    left: 50%;
+    top: 50%;
+    margin-left: -436px;
+    margin-top: -30px;
+}
+
+.slider .slides .slide .name{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.slider .slides .slide .line{
+    width: 40px;
+    height: 3px;
+    background-color: #d55555;
+    display: inline-block;
+    vertical-align: top;
+    margin: 14px 0;
+}
+
+.slider .slides .slide .location{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: lighter;
+    display: inline-block;
 }

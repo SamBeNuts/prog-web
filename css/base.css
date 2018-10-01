@@ -39,20 +39,47 @@ p{
 }
 
 .text_red{
-    color: #d55555;
+    color: #d55555 !important;
 }
 
 .text_white{
-    color: #fff;
+    color: #fff !important;
 }
 
 .text_shadow{
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px black !important;
+}
+
+.title{
+    font-weight: lighter !important;
+    font-variant: small-caps !important;
+    font-size: 40px !important;
+    margin-bottom: 10px !important;
+}
+
+.title:first-letter{
+    color: #d55555 !important;
+    box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+    -webkit-box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+    -moz-box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+}
+
+.content{
+    position: relative;
+    width: 972px;
+    left: 50%;
+    margin-left: -486px;
 }
 
 /*
  * Header general
  */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
 
 header .logo_insa{
     position: absolute;
@@ -83,12 +110,19 @@ nav{
     height: 5px;
     background-color: #fff;
     margin: 5px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
 nav.active .line1 {
     -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+    -moz-transform: rotate(-45deg) translate(-7px, 7px);
     transform: rotate(-45deg) translate(-7px, 7px);
 }
 
@@ -96,6 +130,7 @@ nav.active .line2 {opacity: 0;}
 
 nav.active .line3 {
     -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    -moz-transform: rotate(45deg) translate(-7px, -7px);
     transform: rotate(45deg) translate(-7px, -7px);
 }
 
@@ -104,6 +139,10 @@ nav.active .line3 {
     list-style: none;
     text-align: right;
     margin: -5px 0 0 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
