@@ -1,0 +1,36 @@
+/*
+ * Header
+ */
+header .bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -1000px;
+    min-width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+header .student_bg{
+    position: absolute;
+    height: 350px;
+    top: 40px;
+    left: 20%;
+}
+
+header .text_bg{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    line-height: 45px;
+    top: 140px;
+    margin-top: -60px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+header .text_bg span{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}

@@ -11,14 +11,38 @@
     <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <script type="text/javascript" src="js/request_data.js"></script>
 </head>
 <body>
-
+<header>
+    <img src="img/header_bg_homepage.jpg" class="bg">
+    <img src="img/student_header_homepage.png" class="student_bg">
+    <p class="text_bg text_white text_shadow">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
+    <img src="img/logo_insa_w.png" class="logo_insa">
+    <nav role="navigation">
+        <div class="menuToggle" onclick="menuToggle(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="menuItems text_white">
+            <li><a href="#"></a>Écoles partenaires</li>
+            <li><a href="#"></a>Procédure</li>
+            <li><a href="#"></a>Simulation budget</li>
+            <li><a href="#"></a>FAQ</li>
+            <!--<li>FR/EN</li>-->
+        </ul>
+    </nav>
+</header>
 <script type="text/javascript">
     request.onload = function () {
         let data = request.response;
     };
+
+    function menuToggle(x){
+        x.parentElement.classList.toggle("active");
+    }
 </script>
 </body>
 </html>
