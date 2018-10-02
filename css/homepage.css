@@ -2,7 +2,7 @@
  * Header
  */
 header{
-    height: 350px !important;
+    height: 390px !important;
 }
 
 header .bg{
@@ -45,7 +45,7 @@ header .text_bg span{
 .chiffres{
     display: flex;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .chiffres div{
@@ -531,7 +531,7 @@ header .text_bg span{
 }
 
 .contact .coords{
-    padding: 15px 0 40px 0;
+    padding: 15px 0 70px 0;
 }
 
 .contact .coord{
