@@ -71,12 +71,12 @@ header .text_bg span{
     margin-top: 50px;
 }
 
-.left{
+.avantages .left{
     width: 50%;
     text-align: right;
 }
 
-.right{
+.avantages .right{
     width: 50%;
     text-align: left;
 }
@@ -85,7 +85,7 @@ header .text_bg span{
     width: 70%;
 }
 
-.left p{
+.avantages .left p{
     float: right;
 }
 
@@ -432,4 +432,158 @@ header .text_bg span{
 .temoignages_profile.active img, .temoignages_profile:hover img{
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+}
+
+/*
+ * Séparateur
+ */
+.separator{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.separator_line{
+    display: inline-block;
+    height: 10px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+
+.separator_point{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #e6e6e6;
+    margin: 0 10px;
+}
+
+/*
+ * Links
+ */
+.links{
+    text-align: center;
+    z-index: 1;
+}
+
+.links .square{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.links .square:first-child{
+    margin-right: 70px;
+}
+
+.links .square .square_bg{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.links .square div{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.links .square div p{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: right;
+    width: 200px;
+    vertical-align: super;
+}
+
+.links .square div img{
+    display: inline-block;
+    height: 30px;
+}
+
+/*
+ * Contact
+ */
+.contact{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #212121;
+    padding-top: 75px;
+    margin-top: -75px;
+}
+
+.contact .title{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.contact .title:first-letter{
+    box-shadow: inset 0 -5px 0 #212121, inset 0 -7px 0 #d55555 !important;
+    -webkit-box-shadow: inset 0 -5px 0 #212121, inset 0 -7px 0 #d55555 !important;
+    -moz-box-shadow: inset 0 -5px 0 #212121, inset 0 -7px 0 #d55555 !important;
+}
+
+.contact .coords{
+    padding: 15px 0 40px 0;
+}
+
+.contact .coord{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact .left{
+    text-align: right;
+}
+
+.contact .right{
+    text-align: left;
+}
+
+.contact .mail_icon{
+    width: 60px;
+    margin: -30px 10px 0 10px;
+    position: relative;
+    top: 57px;
+}
+
+.contact .name{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+
+.contact .name span{
+    font-weight: 500;
+}
+
+.contact .fonction{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: lighter;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.contact .line{
+    height: 2px;
+    width: 30px;
+    background-color: #d55555;
+    display: inline-block;
+}
+
+.contact .mail{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
 }

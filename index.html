@@ -15,162 +15,205 @@
     <script type="text/javascript" src="js/request_data.js"></script>
 </head>
 <body>
-<header>
-    <img src="img/header_bg_homepage.jpg" class="bg">
-    <img src="img/student_header_homepage.png" class="student_bg">
-    <p class="text_bg text_white text_shadow">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
-    <img src="img/logo_insa_w.png" class="logo_insa">
-    <nav role="navigation">
-        <div class="menuToggle" onclick="menuToggle(this)">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="menuItems text_white">
-            <li><a href="#"></a>Écoles partenaires</li>
-            <li><a href="#"></a>Procédure</li>
-            <li><a href="#"></a>Simulation budget</li>
-            <li><a href="#"></a>FAQ</li>
-            <!--<li>FR/EN</li>-->
-        </ul>
-    </nav>
-</header>
-<div class="content chiffres">
-    <div>
-        <img src="img/chiffres_1.png">
-        <p><span>300</span><br>étudiants/an</p>
-    </div>
-    <div>
-        <img src="img/chiffres_2.png">
-        <p><span>200+</span><br>écoles partenaires</p>
-    </div>
-    <div>
-        <img src="img/chiffres_3.png">
-        <p><span>40+</span><br>pays visités</p>
-    </div>
-</div>
-<div class="content avantages">
-    <div class="left">
-        <img src="img/avantages_1.png">
-        <p class="avantages_txt_num text_red">2</p>
-        <p class="avantages_txt_title">Gagner en autonomie et en capacité d'adaptation !</p>
-        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
-        <img src="img/avantages_2.png">
-    </div>
-    <div class="right">
-        <p class="title">Pourquoi partir à l'étranger ?</p>
-        <p class="avantages_txt_num text_red">1</p>
-        <p class="avantages_txt_title"> Découvrir un nouveau pays, de nouvelles cultures, ...</p>
-        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
-        <img src="img/avantages_3.png">
-        <p class="avantages_txt_num text_red">3</p>
-        <p class="avantages_txt_title">Se préparer à une carrière internationale</p>
-        <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
-    </div>
-</div>
-<div class="content partner_schools_title">
-    <p class="title">Nouvelles écoles partenaires</p>
-</div>
-<div class="slider">
-    <div class="slides"></div>
-    <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
-    <div class="pagination"></div>
-    <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
-    <div class="see_more">
-        <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
-    </div>
-</div>
-<div class="content procedure">
-    <p class="title">Procédure</p>
-    <div class="road">
-        <div class="road_arc"></div>
-        <div class="step">
-            <p class="num text_red">01.</p>
-            <div><img src="img/procedure_1.png"></div>
-            <p class="content">Définir<br>son projet</p>
-        </div>
-        <div class="road_line"></div>
-        <div class="step">
-            <p class="num text_red">02.</p>
-            <div><img src="img/procedure_2.png"></div>
-            <p class="content">S'inscrire<br>sur Moveonline</p>
-        </div>
-        <div class="road_line"></div>
-        <div class="step">
-            <p class="num text_red">03.</p>
-            <div><img src="img/procedure_3.png"></div>
-            <p class="content">Commission<br>d'affectations DRI</p>
-        </div>
-        <div class="road_arc"></div>
-        <div class="road_vide"></div>
-        <div class="step">
-            <p class="num text_red">06.</p>
-            <div><img src="img/procedure_6.png"></div>
-            <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
-        </div>
-        <div class="road_line"></div>
-        <div class="step">
-            <p class="num text_red">05.</p>
-            <div><img src="img/procedure_5.png"></div>
-            <p class="content">Réponse de<br>l'école d'accueil</p>
-        </div>
-        <div class="road_line"></div>
-        <div class="step">
-            <p class="num text_red">04.</p>
-            <div><img src="img/procedure_4.png"></div>
-            <p class="content">Préparation et<br>envoie des dossiers</p>
-        </div>
-        <div class="road_arc"></div>
-    </div>
-    <button class="procedure_btn" href="#">Voir la procédure détaillée</button>
-</div>
-<img src="img/homepage_temoignages_bg.jpg" class="temoignages_bg">
-<div class="content temoignages">
-    <p class="title">Témoignages d'étudiant</p>
-    <div>
-        <img src="img/temoignages_icon.png" class="temoignages_icon">
-        <div class="temoignages_content">
-            <div>
-                <p class="temoignages_content_txt active">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                <p class="temoignages_content_txt">2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                <p class="temoignages_content_txt">3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                <p class="temoignages_content_txt">4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                <p class="temoignages_content_txt">5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+<div id="wrapper">
+    <header>
+        <img src="img/header_bg_homepage.jpg" class="bg">
+        <img src="img/student_header_homepage.png" class="student_bg">
+        <p class="text_bg text_white text_shadow">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
+        <img src="img/logo_insa_w.png" class="logo_insa">
+        <nav role="navigation">
+            <div class="menuToggle" onclick="menuToggle(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div>
-                <div class="temoignages_profile active" onclick="changeTemoignages(0)">
-                    <img src="img/temoignages_user_1.png">
-                    <p class="name">User1</p>
-                    <p class="location">Location1</p>
+            <ul class="menuItems text_white">
+                <li><a href="#"></a>Écoles partenaires</li>
+                <li><a href="#"></a>Procédure</li>
+                <li><a href="#"></a>Simulation budget</li>
+                <li><a href="#"></a>FAQ</li>
+                <!--<li>FR/EN</li>-->
+            </ul>
+        </nav>
+    </header>
+    <div class="content chiffres">
+        <div>
+            <img src="img/chiffres_1.png">
+            <p><span>300</span><br>étudiants/an</p>
+        </div>
+        <div>
+            <img src="img/chiffres_2.png">
+            <p><span>200+</span><br>écoles partenaires</p>
+        </div>
+        <div>
+            <img src="img/chiffres_3.png">
+            <p><span>40+</span><br>pays visités</p>
+        </div>
+    </div>
+    <div class="content avantages">
+        <div class="left">
+            <img src="img/avantages_1.png">
+            <p class="avantages_txt_num text_red">2</p>
+            <p class="avantages_txt_title">Gagner en autonomie et en capacité d'adaptation !</p>
+            <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+            <img src="img/avantages_2.png">
+        </div>
+        <div class="right">
+            <p class="title">Pourquoi partir à l'étranger ?</p>
+            <p class="avantages_txt_num text_red">1</p>
+            <p class="avantages_txt_title"> Découvrir un nouveau pays, de nouvelles cultures, ...</p>
+            <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+            <img src="img/avantages_3.png">
+            <p class="avantages_txt_num text_red">3</p>
+            <p class="avantages_txt_title">Se préparer à une carrière internationale</p>
+            <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+        </div>
+    </div>
+    <div class="content partner_schools_title">
+        <p class="title">Nouvelles écoles partenaires</p>
+    </div>
+    <div class="slider">
+        <div class="slides"></div>
+        <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
+        <div class="pagination"></div>
+        <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
+        <div class="see_more">
+            <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
+        </div>
+    </div>
+    <div class="content procedure">
+        <p class="title">Procédure</p>
+        <div class="road">
+            <div class="road_arc"></div>
+            <div class="step">
+                <p class="num text_red">01.</p>
+                <div><img src="img/procedure_1.png"></div>
+                <p class="content">Définir<br>son projet</p>
+            </div>
+            <div class="road_line"></div>
+            <div class="step">
+                <p class="num text_red">02.</p>
+                <div><img src="img/procedure_2.png"></div>
+                <p class="content">S'inscrire<br>sur Moveonline</p>
+            </div>
+            <div class="road_line"></div>
+            <div class="step">
+                <p class="num text_red">03.</p>
+                <div><img src="img/procedure_3.png"></div>
+                <p class="content">Commission<br>d'affectations DRI</p>
+            </div>
+            <div class="road_arc"></div>
+            <div class="road_vide"></div>
+            <div class="step">
+                <p class="num text_red">06.</p>
+                <div><img src="img/procedure_6.png"></div>
+                <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
+            </div>
+            <div class="road_line"></div>
+            <div class="step">
+                <p class="num text_red">05.</p>
+                <div><img src="img/procedure_5.png"></div>
+                <p class="content">Réponse de<br>l'école d'accueil</p>
+            </div>
+            <div class="road_line"></div>
+            <div class="step">
+                <p class="num text_red">04.</p>
+                <div><img src="img/procedure_4.png"></div>
+                <p class="content">Préparation et<br>envoie des dossiers</p>
+            </div>
+            <div class="road_arc"></div>
+        </div>
+        <button class="procedure_btn" href="#">Voir la procédure détaillée</button>
+    </div>
+    <img src="img/homepage_temoignages_bg.jpg" class="temoignages_bg">
+    <div class="content temoignages">
+        <p class="title">Témoignages d'étudiant</p>
+        <div>
+            <img src="img/temoignages_icon.png" class="temoignages_icon">
+            <div class="temoignages_content">
+                <div>
+                    <p class="temoignages_content_txt active">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+                    <p class="temoignages_content_txt">2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+                    <p class="temoignages_content_txt">3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+                    <p class="temoignages_content_txt">4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+                    <p class="temoignages_content_txt">5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
                 </div>
-                <div class="temoignages_profile">
-                    <img src="img/temoignages_user_2.png" onclick="changeTemoignages(1)">
-                    <p class="name">User2</p>
-                    <p class="location">Location2</p>
-                </div>
-                <div class="temoignages_profile">
-                    <img src="img/temoignages_user_3.png" onclick="changeTemoignages(2)">
-                    <p class="name">User3</p>
-                    <p class="location">Location3</p>
-                </div>
-                <div class="temoignages_profile">
-                    <img src="img/temoignages_user_4.png" onclick="changeTemoignages(3)">
-                    <p class="name">User4</p>
-                    <p class="location">Location4</p>
-                </div>
-                <div class="temoignages_profile">
-                    <img src="img/temoignages_user_5.png" onclick="changeTemoignages(4)">
-                    <p class="name">User5</p>
-                    <p class="location">Location5</p>
+                <div>
+                    <div class="temoignages_profile active" onclick="changeTemoignages(0)">
+                        <img src="img/temoignages_user_1.png">
+                        <p class="name">User1</p>
+                        <p class="location">Location1</p>
+                    </div>
+                    <div class="temoignages_profile">
+                        <img src="img/temoignages_user_2.png" onclick="changeTemoignages(1)">
+                        <p class="name">User2</p>
+                        <p class="location">Location2</p>
+                    </div>
+                    <div class="temoignages_profile">
+                        <img src="img/temoignages_user_3.png" onclick="changeTemoignages(2)">
+                        <p class="name">User3</p>
+                        <p class="location">Location3</p>
+                    </div>
+                    <div class="temoignages_profile">
+                        <img src="img/temoignages_user_4.png" onclick="changeTemoignages(3)">
+                        <p class="name">User4</p>
+                        <p class="location">Location4</p>
+                    </div>
+                    <div class="temoignages_profile">
+                        <img src="img/temoignages_user_5.png" onclick="changeTemoignages(4)">
+                        <p class="name">User5</p>
+                        <p class="location">Location5</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="separator">
-    <div class="separator_line"></div>
-    <div class="separator_point"></div>
-    <div class="separator_line"></div>
+    <div class="separator">
+        <div class="separator_line"></div>
+        <div class="separator_point"></div>
+        <div class="separator_line"></div>
+    </div>
+    <div class="content links">
+        <div class="square">
+            <img src="img/homepage_simu_budget.jpg" class="square_bg">
+            <div>
+                <p class="text_white">Simuler votre budget</p>
+                <img src="img/next_btn.png">
+            </div>
+        </div>
+        <div class="square">
+            <img src="img/homepage_faq.jpg" class="square_bg">
+            <div>
+                <p class="text_white">Voir la FAQ</p>
+                <img src="img/next_btn.png">
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="title">Contact us</div>
+        <div class="coords">
+            <div class="coord left">
+                <p class="text_white name">Danièle <span>Fournier</span></p>
+                <div>
+                    <p class="text_white fonction">Directrice des RI</p>
+                    <div class="line"></div>
+                </div>
+                <p class="text_white mail">fournier@insa-toulouse.fr</p>
+            </div>
+            <img src="img/mail_icon.png" class="mail_icon">
+            <div class="coord right">
+                <p class="text_white name">Virginie <span>Gary</span></p>
+                <div>
+                    <div class="line"></div>
+                    <p class="text_white fonction">Etudiants sortants</p>
+                </div>
+                <p class="text_white mail">gary@insa-toulouse.fr</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
+    </footer>
 </div>
 <script type="text/javascript">
     request.onload = function () {
@@ -184,6 +227,10 @@
 
     let pagination = document.querySelector('.slider .pagination');
     let slides = document.querySelector('.slider .slides');
+    let pos_slide = 0;
+    let autoSlide = setInterval(function(){
+        changeSlide(-1);
+    }, 3000);
 
     function createSlides(x){
         let page_count_1 = "<div class=\"page_count\" onclick=\"changeSlide(";
@@ -202,24 +249,25 @@
     }
 
     function changeSlide(x){
-        let i = 0;
-        slides.childNodes.forEach(function(el, j){
-            if (el.classList.contains("active")) i = j;
-        });
-        if (i !== x){
-            document.querySelector('.slider .slides .active').classList.remove("active");
-            document.querySelector('.slider .pagination .active').classList.remove("active");
+        if (pos_slide !== x){
+            slides.children[pos_slide].classList.remove("active");
+            pagination.children[pos_slide].classList.remove("active");
             if (x >= 0){
                 slides.children[x].classList.add("active");
                 pagination.children[x].classList.add("active");
+                pos_slide = x;
             }else{
-                let y = i+x+2;
+                let y = pos_slide+x+2;
                 if (y >= slides.children.length) y = 0;
                 else if (y < 0) y = slides.children.length-1;
-                console.log(y);
                 slides.children[y].classList.add("active");
                 pagination.children[y].classList.add("active");
+                pos_slide = y;
             }
+            clearInterval(autoSlide);
+            autoSlide = setInterval(function(){
+                changeSlide(-1);
+            }, 3000);
         }
     }
 
