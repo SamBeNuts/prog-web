@@ -10,8 +10,8 @@ header .bg{
     left: 50%;
     margin-left: -1000px;
     min-width: 100%;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
 }
 header .text_bg{
     position: absolute;
@@ -29,8 +29,12 @@ header .text_bg{
 header .text_bg span{
     font-size: 60px;
     line-height: 60px;
-    font-weight: bold;`
+    font-weight: bold;
 }
+
+/*
+ * Content
+ */
 
 .div1 {
   margin-left: 200px;
@@ -130,4 +134,9 @@ header .text_bg span{
   font-size: 18px;
   font-style: italic;
 
+}
+
+.arrow {
+    height: 14px;
+    width : 14px;
 }
