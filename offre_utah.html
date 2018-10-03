@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emna">
+    <meta name="author" content="Ha">
+    <meta name="author" content="Jin Yu">
+    <meta name="author" content="Samuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Prog Web</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/offre_utah.css">
+    <script type="text/javascript" src="js/request_data.js"></script>
+</head>
+<body>
+<header>
+    <img src="img/data/university_of_utah_bg.jpg" class="bg" width="1280">
+    <p class="text_bg text_white text_shadow"><span class="text_bg_uni">University of Utah</span><br><span class="txt_bg_city">Salt Lake City,</span><br><span class="txt_bg_city">United States</span>
+        <button class="btn" href="#"><span>Visit website</span></button>
+    </p>
+    <a href="index.html">
+        <img src="img/logo_insa_w.png" class="logo_insa">
+    </a>
+
+    <nav role="navigation">
+        <div class="menuToggle" onclick="menuToggle(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="menuItems text_white">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Écoles partenaires</a></li>
+            <li><a href="procedure.html">Procédure</a></li>
+            <li><a href="#">Simulation budget</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <!--<li>FR/EN</li>-->
+        </ul>
+    </nav>
+</header>
+
+
+<script type="text/javascript">
+        function menuToggle(x){
+            x.parentElement.classList.toggle("active");
+        }
+</script>
+</body>
+</html>

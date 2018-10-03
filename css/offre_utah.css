@@ -1,0 +1,55 @@
+/*
+ * Header
+ */
+header{
+    height: 260px !important;
+}
+
+header .bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -640px;
+    min-width: 100%;
+    top: 50%;
+    margin-top: -545px;
+    /*filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);*/
+}
+header .text_bg{
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    /*font-size: 40px;
+    line-height: 40px;*/
+    top: 200px;
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+header .text_bg_uni {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+header .txt_bg_city {
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+header .btn{
+    padding: 1px 15px;
+    border: 1px solid #d55555;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background-color: transparent;
+    float: right;
+}
+ header .btn span{
+     color: #d55555;
+     font-size: 14px;
+     text-align: center;
+ }
