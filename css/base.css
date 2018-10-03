@@ -1,17 +1,17 @@
 @font-face {
     font-family: "Segoe UI";
-    src: url("/fonts/segoeui.ttf") format("opentype");
+    src: url("../fonts/segoeui.ttf") format("opentype");
 }
 
 @font-face {
     font-family: "Segoe UI";
-    src: url("/fonts/segoeuib.ttf") format("opentype");
+    src: url("../fonts/segoeuib.ttf") format("opentype");
     font-weight: 700; /* bold */
 }
 
 @font-face {
     font-family: "Segoe UI";
-    src: url("/fonts/segoeuil.ttf") format("opentype");
+    src: url("../fonts/segoeuil.ttf") format("opentype");
     font-weight: 100; /* lighter */
 }
 
