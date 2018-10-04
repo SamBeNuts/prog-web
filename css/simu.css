@@ -1,0 +1,222 @@
+/*
+ * Header
+ */
+
+header .bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -1000px;
+    min-width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+header .text_bg{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    top: 115px;
+    margin-top: -60px;
+    text-transform: uppercase;
+}
+
+header .text_bg span{
+    color: #d55555;
+}
+
+/*
+ * Progress
+ */
+.progress{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    left: 50%;
+    margin: 40px 0 70px -250px;
+}
+
+.progress svg{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.progress__value {
+    stroke-dasharray: 1539px;
+    stroke-dashoffset: 1539px;
+    animation: progress 5s infinite alternate;
+    stroke-linecap: round;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.progress.step_1 .progress__value{
+    stroke-dashoffset: 1319px;
+}
+
+.progress.step_2 .progress__value{
+    stroke-dashoffset: 1099px;
+}
+
+.progress.step_3 .progress__value{
+    stroke-dashoffset: 879px;
+}
+
+.progress.step_4 .progress__value{
+    stroke-dashoffset: 660px;
+}
+
+.progress.step_5 .progress__value{
+    stroke-dashoffset: 440px;
+}
+
+.progress.step_6 .progress__value{
+    stroke-dashoffset: 220px;
+}
+
+.progress.step_7 .progress__value{
+    stroke-dashoffset: 0;
+}
+
+.budget_icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.icon_step{
+    position: absolute;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.budget_icon .on, .budget_icon .in{
+    opacity: 0;
+}
+
+.budget_icon.active .in{
+    opacity: 1;
+}
+
+.budget_icon.done .on{
+    opacity: 1;
+}
+
+.budget_icon_1{
+    top: 0;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -20px;
+}
+
+.budget_icon_2{
+    top: 19%;
+    left: 88%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.budget_icon_3{
+    top: 60%;
+    left: 98%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.budget_icon_4{
+    top: 94%;
+    left: 72%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.budget_icon_5{
+    top: 94%;
+    left: 28%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.budget_icon_6{
+    top: 60%;
+    left: 2%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.budget_icon_7{
+    top: 19%;
+    left: 12%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.form .question{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.form .question p{
+    position: absolute;
+    bottom: 0;
+}
+
+.form .question p:first-letter{
+    color: #d55555;
+}
+
+.form .next{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form .next p{
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form .next p:first-letter{
+    color: #d55555;
+}
+
+.form .next_btn{
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}

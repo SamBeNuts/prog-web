@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emna">
+    <meta name="author" content="Ha">
+    <meta name="author" content="Jin Yu">
+    <meta name="author" content="Samuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Prog Web</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/simu.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img src="img/header_bg_simu.jpg" class="bg">
+        <p class="text_bg text_white text_shadow"><span>E</span>stimate<br><span>c</span>ost</p>
+        <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
+        <nav role="navigation">
+            <div class="menuToggle" onclick="menuToggle(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menuItems">
+                <li><a href="#" class="text_white">Écoles partenaires</a></li>
+                <li><a href="#" class="text_white">Procédure</a></li>
+                <li><a href="simu.html" class="text_white">Simulation budget</a></li>
+                <li><a href="#" class="text_white">FAQ</a></li>
+                <!--<li>FR/EN</li>-->
+            </ul>
+        </nav>
+    </header>
+    <div class="progress step_1">
+        <svg width="500" height="500">
+            <circle cx="250" cy="250" r="245" fill="none" stroke="#e6e6e6" stroke-width="10"></circle>
+            <circle class="progress__value" cx="250" cy="250" r="245" fill="none" stroke="#d55555" stroke-width="10"></circle>
+        </svg>
+        <div class="budget_icon budget_icon_2 active" onclick="changeStep(1)">
+            <img src="img/budget_step_2.png" class="icon_step">
+            <img src="img/budget_step_black_2.png" class="icon_step in">
+            <img src="img/budget_step_red_2.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_3" onclick="changeStep(2)">
+            <img src="img/budget_step_3.png" class="icon_step">
+            <img src="img/budget_step_black_3.png" class="icon_step in">
+            <img src="img/budget_step_red_3.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_4" onclick="changeStep(3)">
+            <img src="img/budget_step_4.png" class="icon_step">
+            <img src="img/budget_step_black_4.png" class="icon_step in">
+            <img src="img/budget_step_red_4.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_5" onclick="changeStep(4)">
+            <img src="img/budget_step_5.png" class="icon_step">
+            <img src="img/budget_step_black_5.png" class="icon_step in">
+            <img src="img/budget_step_red_5.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_6" onclick="changeStep(5)">
+            <img src="img/budget_step_6.png" class="icon_step">
+            <img src="img/budget_step_black_6.png" class="icon_step in">
+            <img src="img/budget_step_red_6.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_7" onclick="changeStep(6)">
+            <img src="img/budget_step_7.png" class="icon_step">
+            <img src="img/budget_step_black_7.png" class="icon_step in">
+            <img src="img/budget_step_red_7.png" class="icon_step on">
+        </div>
+        <div class="budget_icon budget_icon_1" onclick="changeStep(7)">
+            <img src="img/budget_step_1.png" class="icon_step">
+            <img src="img/budget_step_black_1.png" class="icon_step in">
+            <img src="img/budget_step_red_1.png" class="icon_step on">
+        </div>
+        <div class="form">
+            <div class="question">
+                <p>Combien de temps partez-vous ?</p>
+            </div>
+            <div class="next" onclick="changeStep(0)">
+                <p>NEXT</p>
+                <img src="img/visit_btn_dark.png" class="next_btn">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
+    </footer>
+</div>
+<script type="text/javascript">
+    function menuToggle(x){
+        x.parentElement.classList.toggle("active");
+    }
+
+    let pos_step = 1;
+
+    function changeStep(x){
+        if ((x === 0 && pos_step !== 7) || (x !== 0 && x < pos_step)){
+            document.querySelector('.progress').classList.remove('step_' + pos_step);
+            document.querySelector('.budget_icon.active').classList.remove('active');
+            if (x === 0){
+                pos_step++;
+                document.querySelectorAll('.budget_icon').item(pos_step-2).classList.add('done');
+                document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+            }
+            else{
+                for (let i = pos_step - 1; i >= x; i--){
+                    document.querySelectorAll('.budget_icon').item(i-1).classList.remove('done');
+                }
+                pos_step = x;
+            }
+            document.querySelector('.progress').classList.add('step_' + pos_step);
+            document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
