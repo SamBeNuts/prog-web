@@ -21,6 +21,40 @@
     ]
   },
   "schools":{
-
+    "University of Utah": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Toronto": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Brighton": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Seoul": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Paris": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Barcelona": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    },
+    "University of Seattle": {
+      "city" : "Salt Lake City",
+      "country" : "United States",
+      "price" : 450
+    }
   }
 }

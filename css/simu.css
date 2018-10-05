@@ -170,6 +170,21 @@ header .text_bg span{
     margin-left: -25px;
 }
 
+.form_step{
+    opacity: 0;
+    display: none;
+    -webkit-transition: visibility 0s, opacity 0.4s;
+    -moz-transition: visibility 0s, opacity 0.4s;
+    -ms-transition: visibility 0s, opacity 0.4s;
+    -o-transition: visibility 0s, opacity 0.4s;
+    transition: visibility 0s, opacity 0.4s;
+}
+
+.form_step.active{
+    opacity: 1;
+    display: block;
+}
+
 .form .question{
     position: absolute;
     top: 5%;
@@ -190,6 +205,53 @@ header .text_bg span{
 
 .form .question p:first-letter{
     color: #d55555;
+}
+
+.form .answer{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.answer .research{
+    position: relative;
+    width: 70%;
+    height: 20px;
+    border: 3px solid #505050;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #505050;
+    font-variant: small-caps;
+    background: url('../img/search_icon.png') transparent right center no-repeat;
+    background-size: 25px;
+    background-origin: content-box;
+}
+
+.answer .research_result{
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    background-color: #e6e6e6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer .research_result p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #505050;
+    padding: 10px;
+    border-bottom: 1px solid #505050;
+}
+
+.answer .research_result p:last-child{
+    border-bottom: none;
 }
 
 .form .next{

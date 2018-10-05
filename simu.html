@@ -26,10 +26,11 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
+                <li><a href="index.html" class="text_white">Accueil</a></li>
                 <li><a href="#" class="text_white">Écoles partenaires</a></li>
-                <li><a href="#" class="text_white">Procédure</a></li>
+                <li><a href="procedure.html" class="text_white">Procédure</a></li>
                 <li><a href="simu.html" class="text_white">Simulation budget</a></li>
-                <li><a href="#" class="text_white">FAQ</a></li>
+                <li><a href="FAQ.html" class="text_white">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
@@ -75,12 +76,75 @@
             <img src="img/budget_step_red_1.png" class="icon_step on">
         </div>
         <div class="form">
-            <div class="question">
-                <p>Combien de temps partez-vous ?</p>
+            <div class="form_step active">
+                <div class="question">
+                    <p>Quelle est votre école d'accueil ?</p>
+                </div>
+                <div class="answer">
+                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()">
+                    <div class="research_result"></div>
+                </div>
             </div>
-            <div class="next" onclick="changeStep(0)">
-                <p>NEXT</p>
-                <img src="img/visit_btn_dark.png" class="next_btn">
+            <div class="form_step">
+                <div class="question">
+                    <p>Quelle est votre mois de départ ?</p>
+                </div>
+                <div class="answer">
+
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Combien de temps partez-vous ?</p>
+                </div>
+                <div class="answer">
+
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Quelle sera votre type de logement ?</p>
+                </div>
+                <div class="answer">
+
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Montant de vos extras dépenses :</p>
+                </div>
+                <div class="answer">
+
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Montant de votre bourse d'étude :</p>
+                </div>
+                <div class="answer">
+
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="answer">
+
+                </div>
             </div>
         </div>
     </div>
@@ -88,7 +152,17 @@
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
     </footer>
 </div>
+<script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
+    let schools;
+    let price = 0;
+
+    request.onload = function () {
+        let data = request.response;
+        schools = data.schools;
+        console.log(schools);
+    };
+
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
     }
@@ -99,10 +173,12 @@
         if ((x === 0 && pos_step !== 7) || (x !== 0 && x < pos_step)){
             document.querySelector('.progress').classList.remove('step_' + pos_step);
             document.querySelector('.budget_icon.active').classList.remove('active');
+            document.querySelector('.form_step.active').classList.remove('active');
             if (x === 0){
                 pos_step++;
                 document.querySelectorAll('.budget_icon').item(pos_step-2).classList.add('done');
                 document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+                document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
             }
             else{
                 for (let i = pos_step - 1; i >= x; i--){
@@ -112,6 +188,29 @@
             }
             document.querySelector('.progress').classList.add('step_' + pos_step);
             document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+            document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
+        }
+    }
+
+    function addPrice(x) {
+        price += x;
+        console.log(price);
+        changeStep(0);
+    }
+
+    function search() {
+        let research = document.querySelector('.answer .research').value;
+        let research_result = document.querySelector('.answer .research_result');
+        research_result.innerHTML = "";
+        if (research != ""){
+            let nb_result = 0;
+            for (let school in schools){
+                if (school.toLowerCase().includes(research.toLowerCase())){
+                    research_result.innerHTML += "<p onclick='addPrice(" + schools[school].price + ")'>" + school + "</p>";
+                    nb_result++;
+                }
+                if (nb_result > 3) break;
+            }
         }
     }
 </script>
