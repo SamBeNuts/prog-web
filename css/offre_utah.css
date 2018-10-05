@@ -53,3 +53,61 @@ header .btn{
      font-size: 14px;
      text-align: center;
  }
+
+ /* Content */
+
+ .left {
+   width : 40%;
+   text-align: left;
+   float: left;
+   margin-top: 10px;
+   margin-left: 10%;
+ }
+
+ .right {
+   width : 50%;
+   float: right;
+ }
+
+ .right p{
+   text-align: left;
+ }
+
+.title_offre {
+  font-weight: 300;
+  font-variant: small-caps;
+  font-size: 30px;
+  margin-top: 10px;
+ }
+
+ .title_offre:first-letter{
+     color: #d55555 !important;
+     box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+     -webkit-box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+     -moz-box-shadow: inset 0 -5px 0 white, inset 0 -7px 0 #d55555 !important;
+ }
+.text_offre {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+ .small_title{
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 15px;
+   border-left: 2px solid lightgrey;
+   border-left-width: 2px;
+   border-spacing: 5px;
+   padding-left: 5px;
+ }
+
+ .small_txt{
+   font-size: 12px;
+   font-weight: lighter;
+   line-height: 20px;
+   border-left: 2px solid lightgrey;
+   border-left-width: 2px;
+   border-spacing: 5px;
+   padding-left: 5px;
+ }
