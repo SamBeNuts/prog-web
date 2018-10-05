@@ -54,3 +54,27 @@ header .bg_wall_FAQ{
     left:0px;
     z-index: 0;
 }
+
+.bar_de_recherche{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border: 2px white ;
+
+}
+
+.bar_de_recherche input{
+    background: transparent;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 80px;
+    border: 2px solid white;
+    color: white;
+}
+.btn_summit
+{
+    background: transparent;
+    border: none;
+}
