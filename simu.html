@@ -90,7 +90,20 @@
                     <p>Quelle est votre mois de départ ?</p>
                 </div>
                 <div class="answer">
-
+                    <select class="month">
+                        <option value="Janvier">Janvier</option>
+                        <option value="Février">Février</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Avril">Avril</option>
+                        <option value="Mai">Mai</option>
+                        <option value="Juin">Juin</option>
+                        <option value="Juillet">Juillet</option>
+                        <option value="Août">Août</option>
+                        <option value="Septembre">Septembre</option>
+                        <option value="Octobre">Octobre</option>
+                        <option value="Novembre">Novembre</option>
+                        <option value="Décembre">Décembre</option>
+                    </select>
                 </div>
                 <div class="next" onclick="changeStep(0)">
                     <p>NEXT</p>
@@ -102,9 +115,10 @@
                     <p>Combien de temps partez-vous ?</p>
                 </div>
                 <div class="answer">
-
+                    <input class="number_months" type="number" min="1" max="24" placeholder="0" onchange="checkNumberMonths()" onkeyup="checkNumberMonths()">
+                    <p class="number_months_label">mois</p>
                 </div>
-                <div class="next" onclick="changeStep(0)">
+                <div class="next next_number_months" onclick="changeStep(0)">
                     <p>NEXT</p>
                     <img src="img/visit_btn_dark.png" class="next_btn">
                 </div>
@@ -114,15 +128,33 @@
                     <p>Quelle sera votre type de logement ?</p>
                 </div>
                 <div class="answer">
-
+                    <div class="logement" onclick="checkLogement(1)">
+                        <img src="img/logement_1.png">
+                        <div>
+                            <p>Résidence universitaire</p>
+                        </div>
+                    </div>
+                    <div class="logement" onclick="checkLogement(2)">
+                        <img src="img/logement_2.png">
+                        <div>
+                            <p>Studio</p>
+                        </div>
+                    </div>
+                    <div class="logement" onclick="checkLogement(3)">
+                        <img src="img/logement_3.png">
+                        <div>
+                            <p>Colocation</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form_step">
                 <div class="question">
-                    <p>Montant de vos extras dépenses :</p>
+                    <p>Montant de vos dépenses courantes :</p>
                 </div>
                 <div class="answer">
-
+                    <input class="number_months number_euros" type="number" min="0" placeholder="0">
+                    <p class="number_months_label">€/mois</p>
                 </div>
                 <div class="next" onclick="changeStep(0)">
                     <p>NEXT</p>
@@ -134,7 +166,8 @@
                     <p>Montant de votre bourse d'étude :</p>
                 </div>
                 <div class="answer">
-
+                    <input class="number_months number_euros" type="number" min="0" placeholder="0">
+                    <p class="number_months_label">€/mois</p>
                 </div>
                 <div class="next" onclick="changeStep(0)">
                     <p>NEXT</p>
@@ -142,8 +175,8 @@
                 </div>
             </div>
             <div class="form_step">
-                <div class="answer">
-
+                <div class="result">
+                    <p>50 000€</p>
                 </div>
             </div>
         </div>
@@ -194,7 +227,6 @@
 
     function addPrice(x) {
         price += x;
-        console.log(price);
         changeStep(0);
     }
 
@@ -212,6 +244,20 @@
                 if (nb_result > 3) break;
             }
         }
+    }
+
+    function checkNumberMonths() {
+        let nb = document.querySelector('.answer .number_months').value;
+        let next_number_months = document.querySelector('.next.next_number_months');
+        if (nb > 0 && nb < 25){
+            next_number_months.style.display = 'block';
+        } else {
+            next_number_months.style.display = 'none';
+        }
+    }
+
+    function checkLogement() {
+        changeStep(0);
     }
 </script>
 </body>

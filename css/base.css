@@ -49,7 +49,7 @@ button{
     cursor: pointer;
 }
 
-button:focus, input:focus{
+button:focus, input:focus, select:focus{
     outline:0;
 }
 

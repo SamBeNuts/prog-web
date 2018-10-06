@@ -187,7 +187,7 @@ header .text_bg span{
 
 .form .question{
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 20%;
     width: 60%;
     height: 25%;
@@ -209,7 +209,7 @@ header .text_bg span{
 
 .form .answer{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 10%;
     width: 80%;
     height: 50%;
@@ -254,6 +254,92 @@ header .text_bg span{
     border-bottom: none;
 }
 
+.answer .month{
+    position: relative;
+    width: 70%;
+    border: 3px solid #505050;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #505050;
+    font-variant: small-caps;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../img/next_btn_black_90deg.png') transparent right center no-repeat;
+    background-size: 15px;
+    background-origin: content-box;
+}
+
+.answer .number_months{
+    position: relative;
+    width: 80px;
+    border: 0;
+    font-size: 50px;
+    line-height: 50px;
+    color: #505050;
+    border-bottom: 5px solid #d55555;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.answer .number_months_label{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.next.next_number_months{
+    display: none;
+}
+
+.answer .logement{
+    width: 100px;
+    height: 100px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.answer .logement img{
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.answer .logement div{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.answer .logement p{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #505050;
+    line-height: 15px;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.answer .number_euros{
+    width: 150px;
+}
+
 .form .next{
     position: absolute;
     bottom: 10%;
@@ -281,4 +367,26 @@ header .text_bg span{
     width: 25px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.form_step .result{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+.form_step .result p{
+    position: relative;
+    top: 50%;
+    margin-top: -30px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.form_step .result p:first-letter{
+    color: #d55555;
 }
