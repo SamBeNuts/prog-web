@@ -12,10 +12,12 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/FQA.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+
     <script type="text/javascript" src="js/request_data.js"></script>
 </head>
 <body>
-<header>
+<div id="wrapper">
+<header >
 
     <img src="img/header_bg_faq.png" class="bg_FAQ">
     <img src="img/header_wall_faq.png" class="bg_wall_FAQ">
@@ -29,33 +31,51 @@
         <button type="submit" class="btn_summit"> <img src="img/search_icon_white.png" height="30px"> </button>
     </form>
 
+    <nav role="navigation">
+        <div class="menuToggle" onclick="menuToggle(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="menuItems text_white">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Écoles partenaires</a></li>
+            <li><a href="procedure.html">Procédure</a></li>
+            <li><a href="#">Simulation budget</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <!--<li>FR/EN</li>-->
+        </ul>
+    </nav>
 
 </header>
-
-<div class="titreFAQ_1" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
-<div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
-eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
-scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
-
-<div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
-<div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+    <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+    <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
+        semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+        eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+        scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
+        volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+    <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+    <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
     ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
     semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
     eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
     scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
     volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
-
-<div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
-<div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-    ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-    semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
-    eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
-    scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-    volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
-
+    <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+    <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
+        semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+        eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+        scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
+        volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+    <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+    <div class="contentFAQ_last"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
+        semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+        eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+        scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
+        volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
 <footer>
     <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
 </footer>
@@ -65,5 +85,7 @@ volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egesta
         let data = request.response;
     };
 </script>
+</div>
+
 </body>
 </html>
