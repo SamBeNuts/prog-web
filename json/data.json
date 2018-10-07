@@ -24,37 +24,57 @@
     "University of Utah": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Toronto": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Brighton": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Seoul": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Paris": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Barcelona": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     },
     "University of Seattle": {
       "city" : "Salt Lake City",
       "country" : "United States",
-      "price" : 450
+      "tuiton_cost" : 200,
+      "campus_cost" : 450,
+      "accomodation_cost": 600
     }
+  },
+  "plane_cost": {
+    "United States": 750
+  },
+  "cost_of_living": {
+    "United States": 1.4
   }
 }
