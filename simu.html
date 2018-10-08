@@ -91,18 +91,18 @@
                 </div>
                 <div class="answer">
                     <select class="month">
-                        <option value="Janvier">Janvier</option>
-                        <option value="Février">Février</option>
-                        <option value="Mars">Mars</option>
-                        <option value="Avril">Avril</option>
-                        <option value="Mai">Mai</option>
-                        <option value="Juin">Juin</option>
-                        <option value="Juillet">Juillet</option>
-                        <option value="Août">Août</option>
-                        <option value="Septembre">Septembre</option>
-                        <option value="Octobre">Octobre</option>
-                        <option value="Novembre">Novembre</option>
-                        <option value="Décembre">Décembre</option>
+                        <option value="1">Janvier</option>
+                        <option value="2">Février</option>
+                        <option value="3">Mars</option>
+                        <option value="4">Avril</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juin</option>
+                        <option value="7">Juillet</option>
+                        <option value="8">Août</option>
+                        <option value="9">Septembre</option>
+                        <option value="10">Octobre</option>
+                        <option value="11">Novembre</option>
+                        <option value="12">Décembre</option>
                     </select>
                 </div>
                 <div class="next" onclick="changeStep(0)">
@@ -153,7 +153,7 @@
                     <p>Montant de vos dépenses courantes :</p>
                 </div>
                 <div class="answer">
-                    <input class="number_months number_euros" type="number" min="0" placeholder="0">
+                    <input class="number_months number_euros cost_of_life" type="number" min="0" step="100" placeholder="0">
                     <p class="number_months_label">€/mois</p>
                 </div>
                 <div class="next" onclick="changeStep(0)">
@@ -166,17 +166,17 @@
                     <p>Montant de votre bourse d'étude :</p>
                 </div>
                 <div class="answer">
-                    <input class="number_months number_euros" type="number" min="0" placeholder="0">
+                    <input class="number_months number_euros scholarship" type="number" min="0" step="100" placeholder="0">
                     <p class="number_months_label">€/mois</p>
                 </div>
-                <div class="next" onclick="changeStep(0)">
+                <div class="next" onclick="getPrice()">
                     <p>NEXT</p>
                     <img src="img/visit_btn_dark.png" class="next_btn">
                 </div>
             </div>
             <div class="form_step">
                 <div class="result">
-                    <p>50 000€</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -188,12 +188,18 @@
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
     let schools;
-    let price = 0;
+    let plane_cost;
+    let cost_of_living;
+    let tuiton_cost;
+    let campus_cost;
+    let accomodation_cost;
+    let type_accomodation;
 
     request.onload = function () {
         let data = request.response;
         schools = data.schools;
-        console.log(schools);
+        plane_cost = data.plane_cost;
+        cost_of_living = data.cost_of_living;
     };
 
     function menuToggle(x){
@@ -225,8 +231,12 @@
         }
     }
 
-    function addPrice(x) {
-        price += x;
+    function addPrices(d_country, d_tuiton_cost, d_campus_cost, d_accomodation_cost) {
+        plane_cost = plane_cost[d_country];
+        cost_of_living = cost_of_living[d_country];
+        tuiton_cost = d_tuiton_cost;
+        campus_cost = d_campus_cost;
+        accomodation_cost = d_accomodation_cost;
         changeStep(0);
     }
 
@@ -238,7 +248,7 @@
             let nb_result = 0;
             for (let school in schools){
                 if (school.toLowerCase().includes(research.toLowerCase())){
-                    research_result.innerHTML += "<p onclick='addPrice(" + schools[school].price + ")'>" + school + "</p>";
+                    research_result.innerHTML += "<p onclick='addPrices(\"" + schools[school].country + "\"," + schools[school].tuiton_cost + "," + schools[school].campus_cost + "," + schools[school].accomodation_cost + ")'>" + school + "</p>";
                     nb_result++;
                 }
                 if (nb_result > 3) break;
@@ -256,7 +266,41 @@
         }
     }
 
-    function checkLogement() {
+    function checkLogement(x) {
+        type_accomodation = x;
+        changeStep(0);
+    }
+
+    function getPrice() {
+        let price = 0;
+        let month = parseInt(document.querySelector('.answer .month').value);
+        let nb_months = parseInt(document.querySelector('.answer .number_months').value);
+        let cost_of_life = parseInt(document.querySelector('.answer .cost_of_life').value);
+        let scholarship = parseInt(document.querySelector('.answer .scholarship').value);
+        for (let i = month; i<month+nb_months-1; i++){
+            if (i%12 === 2 || i%12 === 9){
+                if (scholarship !==0) price += 600 + tuiton_cost;
+                else price += 200 + tuiton_cost;
+                console.log(price);
+            }
+        }
+        price += plane_cost*2;
+        console.log(price);
+        price += nb_months * (cost_of_life*cost_of_living - scholarship);
+        console.log(price);
+        switch (type_accomodation){
+            case 1:
+                price += nb_months * campus_cost;
+                break;
+            case 2:
+                price += nb_months * accomodation_cost;
+                break;
+            case 3:
+                price += nb_months * accomodation_cost * 2 / 3;
+                break;
+        }
+        console.log(price);
+        document.querySelector('.result p').innerHTML = Math.round(price) + "€";
         changeStep(0);
     }
 </script>
