@@ -281,10 +281,10 @@
         else nb_months = parseInt(nb_months);
         let cost_of_life = document.querySelector('.answer .cost_of_life').value;
         if (cost_of_life == "") cost_of_life=0;
-        else nb_months = parseInt(cost_of_life);
+        else cost_of_life = parseInt(cost_of_life);
         let scholarship = document.querySelector('.answer .scholarship').value;
         if (scholarship == "") scholarship=0;
-        else nb_months = parseInt(scholarship);
+        else scholarship = parseInt(scholarship);
         for (let i = month; i<month+nb_months-1; i++){
             if (i%12 === 2 || i%12 === 9){
                 if (scholarship !==0) price += 600 + tuiton_cost;
