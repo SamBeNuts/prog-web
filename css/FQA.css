@@ -1,30 +1,19 @@
-.titreFAQ_1{
-    margin-top: 90px;
-    margin-left: 300px;
-    margin-right: 300px;
-    text-align: left;
-}
-
 .titreFAQ{
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 20px 50px 5px 50px;
     text-align: left;
 }
 
 .titreFAQ::first-letter {
-    color: #DC143C;
+    color: #d55555;
 }
 
 .titreFAQ_1::first-letter {
-    color: #DC143C;
+    color: #d55555;
 }
 
 .contentFAQ{
-    margin-left: 302px;
+    margin: 0 50px 20px 51px;
     padding-left: 5px;
-    margin-right: 300px;
-    margin-bottom: 20px;
     text-align: justify;
     border-left: 2px solid lightgrey;
     border-spacing:5px;
@@ -32,6 +21,14 @@
 
 .paragraph_line{
     margin-left: 200px;
+}
+
+.content{
+    margin-bottom: 40px;
+}
+
+header{
+    height: 350px !important;
 }
 
 header .bg_FAQ{
@@ -50,7 +47,7 @@ header .man_bg{
 header .bg_wall_FAQ{
     position: absolute;
     height: 350px;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     z-index: 0;
 }
