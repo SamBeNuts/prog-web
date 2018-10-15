@@ -1,132 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Emna">
-  <meta name="author" content="Ha">
-  <meta name="author" content="Jin Yu">
-  <meta name="author" content="Samuel">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INSA - Prog Web</title>
-  <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/procedure.css">
-  <script type="text/javascript" src="js/request_data.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emna">
+    <meta name="author" content="Ha">
+    <meta name="author" content="Jin Yu">
+    <meta name="author" content="Samuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Prog Web</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/procedure.css">
+    <script type="text/javascript" src="js/request_data.js"></script>
 </head>
 <body>
-  <div id="wrapper">
+<div id="wrapper">
     <header>
-      <img src="img/header_bg_procedure.jpg" class="bg">
-      <p class="text_bg text_white text_shadow"><span class="text_red front">F</span><span>ull</span><br><span class="text_red front">P</span><span>rocedure</span></p>
-      <a href="index.html">
-        <img src="img/logo_insa_w.png" class="logo_insa">
-      </a>
-      <nav role="navigation">
-        <div class="menuToggle" onclick="menuToggle(this)">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="menuItems text_white">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="#">Écoles partenaires</a></li>
-          <li><a href="procedure.html">Procédure</a></li>
-          <li><a href="#">Simulation budget</a></li>
-          <li><a href="FAQ.html">FAQ</a></li>
-          <!--<li>FR/EN</li>-->
-        </ul>
-      </nav>
+        <img src="img/header_bg_procedure.jpg" class="bg">
+        <p class="text_bg text_white text_shadow"><span class="text_red front">F</span><span>ull</span><br><span
+                class="text_red front">P</span><span>rocedure</span></p>
+        <a href="index.html">
+            <img src="img/logo_insa_w.png" class="logo_insa">
+        </a>
+        <nav role="navigation">
+            <div class="menuToggle" onclick="menuToggle(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menuItems text_white">
+                <li><a href="index.html" class="text_white">Accueil</a></li>
+                <li><a href="#" class="text_white">Écoles partenaires</a></li>
+                <li><a href="procedure.html" class="text_white">Procédure</a></li>
+                <li><a href="simu.html" class="text_white">Simulation budget</a></li>
+                <li><a href="FAQ.html" class="text_white">FAQ</a></li>
+                <!--<li>FR/EN</li>-->
+            </ul>
+        </nav>
     </header>
     <div class="content">
-      <div id="Step1" class="row">
-        <div class="column_left1">
-          <div class="border_procedure_icon1">
-            <img src="img/procedure_1.png">
-          </div>
+        <div class="row">
+            <div class="column_left1">
+                <div class="border_procedure_icon1">
+                    <img src="img/procedure_1.png">
+                </div>
+            </div>
+            <div class="column_right1">
+                <div class="title_step1"><span style="color:#d55555">01.</span> Define your project</div>
+                <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem,
+                    vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec
+                    ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut
+                    volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.
+                </div>
+                <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+            </div>
         </div>
-        <div class="column_right1">
-          <div class="title_step1"><span style="color:#d55555">01.</span> Define your project</div>
-          <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</div>
-          <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
-        </div>
-      </div>
 
-      <div id="Step2" class="row">
-        <div class="column_left2">
-          <div class="title_step2"><span style="color:#d55555">02.</span> Register on Moveonline - November </div>
-          <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</div>
-          <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Link to Moveonline </span></a>
-        </div>
-        <div class="column_right2">
-          <div class="border_procedure_icon2">
-            <img src="img/procedure_2.png" >
-          </div>
-        </div>
-      </div>
+        <div class="row">
+            <div class="column_left2">
+                <div class="title_step2"><span style="color:#d55555">02.</span> Register on Moveonline - November</div>
+                <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem,
+                    vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec
+                    ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut
+                    volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.
+                </div>
+                <a href="#"><img class="arrow" src="img/arrow_red.png"><span
+                        class="txt_red_step"> Link to Moveonline </span></a>
+            </div>
+            <div class="column_right2">
+                <div class="border_procedure_icon2">
+                    <img src="img/procedure_2.png">
+                </div>
 
-      <div id="Step3" class="row">
-        <div class="column_left1">
-          <div class="border_procedure_icon1">
-            <img src="img/procedure_3.png">
-          </div>
+            </div>
         </div>
-        <div class="column_right1">
-          <div align="left">
-            <div class="title_step1"><span style="color:#d55555">03.</span> Assignment Committee DRI - December/January</div>
-            <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</div>
-            <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
-          </div>
+        <div class="row">
+            <div class="column_left1">
+                <div class="border_procedure_icon1">
+                    <img src="img/procedure_3.png">
+                </div>
+            </div>
+            <div class="column_right1">
+                <div align="left">
+                    <div class="title_step1"><span style="color:#d55555">03.</span> Assignment Committee DRI -
+                        December/January
+                    </div>
+                    <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem
+                        lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue
+                        metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula
+                        scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus
+                        condimentum a.
+                    </div>
+                    <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div id="Step4" class="row">
-        <div class="column_left2">
-          <div class="title_step2"><span style="color:#d55555">04.</span> Preparation and sending of files - January/May </div>
-          <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</div>
-          <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+        <div class="row">
+            <div class="column_left2">
+                <div class="title_step2"><span style="color:#d55555">04.</span> Preparation and sending of files -
+                    January/May
+                </div>
+                <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem,
+                    vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec
+                    ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut
+                    volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.
+                </div>
+                <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+            </div>
+            <div class="column_right2">
+                <div class="border_procedure_icon2">
+                    <img src="img/procedure_4.png">
+                </div>
+            </div>
         </div>
-        <div class="column_right2">
-          <div class="border_procedure_icon2">
-            <img src="img/procedure_4.png">
-          </div>
-        </div>
-      </div>
 
-      <div id="Step5" class="row">
-        <div class="column_left1">
-          <div class="border_procedure_icon1">
-            <img src="img/procedure_5.png">
-          </div>
+        <div class="row">
+            <div class="column_left1">
+                <div class="border_procedure_icon1">
+                    <img src="img/procedure_5.png">
+                </div>
+            </div>
+            <div class="column_right1">
+                <div class="title_step1"><span style="color:#d55555">05.</span> Response from the host institution -
+                    March/July
+                </div>
+                <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem,
+                    vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec
+                    ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut
+                    volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.
+                </div>
+                <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+            </div>
         </div>
-        <div class="column_right1">
-          <div class="title_step1"><span style="color:#d55555">05.</span> Response from the host institution - March/July</div>
-          <div align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</div>
-          <a href="#"><img class="arrow" src="img/arrow_red.png"><span class="txt_red_step"> Download the PDF instructions </span></a>
+        <div class="row">
+            <div class="column_left2">
+                <div class="title_step2"><span style="color:#d55555">06.</span> That's it, YOU GO !!!!</div>
+                <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem,
+                    vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec
+                    ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut
+                    volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.
+                </div>
+                <a href="#"><img class="arrow" src="img/arrow_red.png"> <span class="txt_red_step">  Download the PDF instructions </span></a>
+            </div>
+            <div class="column_right2">
+                <div class="border_procedure_icon2">
+                    <img src="img/procedure_6.png">
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div id="Step6" class="row">
-        <div class="column_left2">
-          <div class="title_step2"><span style="color:#d55555">06.</span> That's it, YOU GO !!!! </div>
-          <div align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a. </div>
-          <a href="#"><img class="arrow" src="img/arrow_red.png" > <span class="txt_red_step">  Download the PDF instructions </span></a>
-        </div>
-        <div class="column_right2">
-          <div class="border_procedure_icon2">
-            <img src="img/procedure_6.png">
-          </div>
-        </div>
-      </div>
     </div>
     <footer>
-      <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
     </footer>
-    <script type="text/javascript">
-    function menuToggle(x){
-      x.parentElement.classList.toggle("active");
-    }
-  </script>
 </div>
+
+<script type="text/javascript">
+    function menuToggle(x) {
+        x.parentElement.classList.toggle("active");
+    }
+</script>
 </body>
 </html>
