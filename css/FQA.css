@@ -1,21 +1,19 @@
 
 .titreFAQ{
-    margin-top: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 20px 50px 5px 50px;
     text-align: left;
 }
 
 .titreFAQ::first-letter {
-    color: #DC143C;
+    color: #d55555;
 }
 
 .titreFAQ_1::first-letter {
-    color: #DC143C;
+    color: #d55555;
 }
 
 .contentFAQ{
-    margin-left: 302px;
+    margin: 0 50px 20px 51px;
     padding-left: 5px;
     margin-right: 300px;
     margin-bottom: 35px;
@@ -36,6 +34,14 @@
 
 .paragraph_line{
     margin-left: 200px;
+}
+
+.content{
+    margin-bottom: 40px;
+}
+
+header{
+    height: 350px !important;
 }
 
 header .bg_FAQ{

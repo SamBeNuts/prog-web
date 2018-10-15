@@ -26,10 +26,11 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
+                <li><a href="index.html" class="text_white">Accueil</a></li>
                 <li><a href="#" class="text_white">Écoles partenaires</a></li>
-                <li><a href="#" class="text_white">Procédure</a></li>
+                <li><a href="procedure.html" class="text_white">Procédure</a></li>
                 <li><a href="simu.html" class="text_white">Simulation budget</a></li>
-                <li><a href="#" class="text_white">FAQ</a></li>
+                <li><a href="FAQ.html" class="text_white">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
@@ -75,12 +76,108 @@
             <img src="img/budget_step_red_1.png" class="icon_step on">
         </div>
         <div class="form">
-            <div class="question">
-                <p>Combien de temps partez-vous ?</p>
+            <div class="form_step active">
+                <div class="question">
+                    <p>Quelle est votre école d'accueil ?</p>
+                </div>
+                <div class="answer">
+                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()">
+                    <div class="research_result"></div>
+                </div>
             </div>
-            <div class="next" onclick="changeStep(0)">
-                <p>NEXT</p>
-                <img src="img/visit_btn_dark.png" class="next_btn">
+            <div class="form_step">
+                <div class="question">
+                    <p>Quelle est votre mois de départ ?</p>
+                </div>
+                <div class="answer">
+                    <select class="month">
+                        <option value="1">Janvier</option>
+                        <option value="2">Février</option>
+                        <option value="3">Mars</option>
+                        <option value="4">Avril</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juin</option>
+                        <option value="7">Juillet</option>
+                        <option value="8">Août</option>
+                        <option value="9">Septembre</option>
+                        <option value="10">Octobre</option>
+                        <option value="11">Novembre</option>
+                        <option value="12">Décembre</option>
+                    </select>
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Combien de temps partez-vous ?</p>
+                </div>
+                <div class="answer">
+                    <input class="number_months" type="number" min="1" max="24" placeholder="0" onchange="checkNumberMonths()" onkeyup="checkNumberMonths()">
+                    <p class="number_months_label">mois</p>
+                </div>
+                <div class="next next_number_months" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Quelle sera votre type de logement ?</p>
+                </div>
+                <div class="answer">
+                    <div class="logement" onclick="checkLogement(1)">
+                        <img src="img/logement_1.png">
+                        <div>
+                            <p>Résidence universitaire</p>
+                        </div>
+                    </div>
+                    <div class="logement" onclick="checkLogement(2)">
+                        <img src="img/logement_2.png">
+                        <div>
+                            <p>Studio</p>
+                        </div>
+                    </div>
+                    <div class="logement" onclick="checkLogement(3)">
+                        <img src="img/logement_3.png">
+                        <div>
+                            <p>Colocation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Montant de vos dépenses courantes :</p>
+                </div>
+                <div class="answer">
+                    <input class="number_months number_euros cost_of_life" type="number" min="0" step="100" placeholder="0">
+                    <p class="number_months_label">€/mois</p>
+                </div>
+                <div class="next" onclick="changeStep(0)">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="question">
+                    <p>Montant de votre bourse d'étude :</p>
+                </div>
+                <div class="answer">
+                    <input class="number_months number_euros scholarship" type="number" min="0" step="100" placeholder="0">
+                    <p class="number_months_label">€/mois</p>
+                </div>
+                <div class="next" onclick="getPrice()">
+                    <p>NEXT</p>
+                    <img src="img/visit_btn_dark.png" class="next_btn">
+                </div>
+            </div>
+            <div class="form_step">
+                <div class="result">
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
@@ -88,7 +185,25 @@
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="#" class="text_white">plan du site</a></p>
     </footer>
 </div>
+<script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
+    let schools;
+    let plane_cost_list;
+    let plane_cost;
+    let cost_of_living_list;
+    let cost_of_living;
+    let tuiton_cost;
+    let campus_cost;
+    let accomodation_cost;
+    let type_accomodation;
+
+    request.onload = function () {
+        let data = request.response;
+        schools = data.schools;
+        plane_cost_list = data.plane_cost;
+        cost_of_living_list = data.cost_of_living;
+    };
+
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
     }
@@ -99,10 +214,12 @@
         if ((x === 0 && pos_step !== 7) || (x !== 0 && x < pos_step)){
             document.querySelector('.progress').classList.remove('step_' + pos_step);
             document.querySelector('.budget_icon.active').classList.remove('active');
+            document.querySelector('.form_step.active').classList.remove('active');
             if (x === 0){
                 pos_step++;
                 document.querySelectorAll('.budget_icon').item(pos_step-2).classList.add('done');
                 document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+                document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
             }
             else{
                 for (let i = pos_step - 1; i >= x; i--){
@@ -112,7 +229,83 @@
             }
             document.querySelector('.progress').classList.add('step_' + pos_step);
             document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
+            document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
         }
+    }
+
+    function addPrices(d_country, d_tuiton_cost, d_campus_cost, d_accomodation_cost) {
+        plane_cost = plane_cost_list[d_country];
+        cost_of_living = cost_of_living_list[d_country];
+        tuiton_cost = d_tuiton_cost;
+        campus_cost = d_campus_cost;
+        accomodation_cost = d_accomodation_cost;
+        changeStep(0);
+    }
+
+    function search() {
+        let research = document.querySelector('.answer .research').value;
+        let research_result = document.querySelector('.answer .research_result');
+        research_result.innerHTML = "";
+        if (research != ""){
+            let nb_result = 0;
+            for (let school in schools){
+                if (school.toLowerCase().includes(research.toLowerCase())){
+                    research_result.innerHTML += "<p onclick='addPrices(\"" + schools[school].country + "\"," + schools[school].tuiton_cost + "," + schools[school].campus_cost + "," + schools[school].accomodation_cost + ")'>" + school + "</p>";
+                    nb_result++;
+                }
+                if (nb_result > 3) break;
+            }
+        }
+    }
+
+    function checkNumberMonths() {
+        let nb = document.querySelector('.answer .number_months').value;
+        let next_number_months = document.querySelector('.next.next_number_months');
+        if (nb > 0 && nb < 25){
+            next_number_months.style.display = 'block';
+        } else {
+            next_number_months.style.display = 'none';
+        }
+    }
+
+    function checkLogement(x) {
+        type_accomodation = x;
+        changeStep(0);
+    }
+
+    function getPrice() {
+        let price = 0;
+        let month = parseInt(document.querySelector('.answer .month').value);
+        let nb_months = document.querySelector('.answer .number_months').value;
+        if (nb_months == "") nb_months=0;
+        else nb_months = parseInt(nb_months);
+        let cost_of_life = document.querySelector('.answer .cost_of_life').value;
+        if (cost_of_life == "") cost_of_life=0;
+        else cost_of_life = parseInt(cost_of_life);
+        let scholarship = document.querySelector('.answer .scholarship').value;
+        if (scholarship == "") scholarship=0;
+        else scholarship = parseInt(scholarship);
+        for (let i = month; i<month+nb_months-1; i++){
+            if (i%12 === 2 || i%12 === 9){
+                if (scholarship !==0) price += 600 + tuiton_cost;
+                else price += 200 + tuiton_cost;
+            }
+        }
+        price += plane_cost*2;
+        price += nb_months * (cost_of_life*cost_of_living - scholarship);
+        switch (type_accomodation){
+            case 1:
+                price += nb_months * campus_cost;
+                break;
+            case 2:
+                price += nb_months * accomodation_cost;
+                break;
+            case 3:
+                price += nb_months * accomodation_cost * 2 / 3;
+                break;
+        }
+        document.querySelector('.result p').innerHTML = Math.round(price) + "€";
+        changeStep(0);
     }
 </script>
 </body>
