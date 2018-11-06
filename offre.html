@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emna">
+    <meta name="author" content="Ha">
+    <meta name="author" content="Jin Yu">
+    <meta name="author" content="Samuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Prog Web</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/simu.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img src="img/header_bg_procedure.jpg" class="bg">
+        <a href="index.html">
+            <img src="img/logo_insa_w.png" class="logo_insa">
+        </a>
+        <nav role="navigation">
+            <div class="menuToggle" onclick="menuToggle(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menuItems text_white">
+                <li><a href="index.html" class="text_white">Accueil</a></li>
+                <li><a href="offre.html" class="text_white">Écoles partenaires</a></li>
+                <li><a href="procedure.html" class="text_white">Procédure</a></li>
+                <li><a href="simu.html" class="text_white">Simulation budget</a></li>
+                <li><a href="FAQ.html" class="text_white">FAQ</a></li>
+                <!--<li>FR/EN</li>-->
+            </ul>
+        </nav>
+		<div class="answer">
+            <select class="Year">
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+            </select>
+			<select class="month">
+                <option value="1">Janvier</option>
+                <option value="2">Février</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value="5">Mai</option>
+                <option value="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Août</option>
+                <option value="9">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+            </select>
+        </div>
+    </header>
+<script type="text/javascript">
+    function menuToggle(x) {
+        x.parentElement.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
