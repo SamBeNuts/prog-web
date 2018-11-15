@@ -101,6 +101,7 @@ header .logo_insa{
     position: absolute;
     margin: 15px;
     width: 170px;
+    z-index: 1;
 }
 
 /*
@@ -178,18 +179,20 @@ nav.active .line3 {
 
 .menuItems{
     opacity: 0;
+    visibility: hidden;
     list-style: none;
     text-align: right;
     margin: -5px 0 0 0;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.4s opacity, 0s visibility;
+    -moz-transition: 0.4s opacity, 0s visibility;
+    -ms-transition: 0.4s opacity, 0s visibility;
+    -o-transition: 0.4s opacity, 0s visibility;
+    transition: 0.4s opacity, 0s visibility;
 }
 
 nav.active .menuItems{
     opacity: 1;
+    visibility: visible;
 }
 
 .menuItems li{
