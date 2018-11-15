@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/FQA.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <script type="text/javascript" src="js/request_data.js"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -21,11 +22,15 @@
         <img src="img/header_wall_faq.png" class="bg_wall_FAQ">
         <img src="img/student_header_faq.png" class="man_bg">
         <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
-        <form class="bar_de_recherche">
-            <input type="text" name="Search" placeholder="Search" >
 
-            <button type="submit" class="btn_summit"> <img src="img/search_icon_white.png" height="30px"> </button>
+        //barre de recherche
+        <form id="searchForm" class="bar_de_recherche" action="search();">
+            <input type="text" id="searchItem" name="Search" placeholder="Search" >
+            <button type="submit" class="btn_summit" onclick="document.getElementById('searchForm').submit(); return false;">
+                <img src="img/search_icon_white.png" height="30px">
+            </button>
         </form>
+
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
@@ -59,7 +64,7 @@
             scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
             volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
 
-        <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+        <div class="titreFAQ"  > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
         <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
             ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
             semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
@@ -76,6 +81,26 @@
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
     }
+
+    function search() {
+
+        var name = document.getElementById("searchForm").elements["searchItem"].value;
+        var pattern = name.toLowerCase();
+        var targetId = "";
+
+        var divs = document.getElementsByClassName("titreFAQ");
+        for (var i = 0; i < divs.length; i++) {
+            var para = divs[i].getElementsByTagName("div");
+            var index = para[0].innerText.toLowerCase().indexOf(pattern);
+            if (index != -1) {
+                targetId = divs[i].parentNode.id;
+                document.getElementById(targetId).scrollIntoView();
+                break;
+            }
+        }
+    }
 </script>
+
+
 </body>
 </html>
