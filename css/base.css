@@ -205,8 +205,27 @@ nav.active .menuItems{
 
 /* Phone */
 @media only screen and (max-width: 768px) {
+    body.active{
+        overflow: hidden;
+    }
+
     .content{
         width: 320px;
+        margin-left: -160px;
+    }
+
+    .title{
+        font-size: 30px !important;
+    }
+
+    .title:first-letter{
+        box-shadow: inset 0 -3px 0 white, inset 0 -5px 0 #d55555 !important;
+        -webkit-box-shadow: inset 0 -3px 0 white, inset 0 -5px 0 #d55555 !important;
+        -moz-box-shadow: inset 0 -3px 0 white, inset 0 -5px 0 #d55555 !important;
+    }
+
+    .not_phone{
+        display: none !important;
     }
 
     /*
@@ -236,6 +255,7 @@ nav.active .menuItems{
     }
 
     nav.active{
+        position: fixed;
         background-color: #505050;
         z-index: 1000;
         height: 100vh;
@@ -245,8 +265,12 @@ nav.active .menuItems{
     /*
      * Footer general
      */
+    footer{
+        border-top: 1px solid #d55555;
+    }
+
     footer p{
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
@@ -254,5 +278,17 @@ nav.active .menuItems{
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .content{
         width: 768px;
+        margin-left: -384px;
+    }
+
+    .not_tablet{
+        display: none !important;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 992px) {
+    .not_pc{
+        display: none !important;
     }
 }
