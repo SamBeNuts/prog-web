@@ -8,17 +8,7 @@
     }
   },
   "slider":{
-    "slides": [
-      [
-        "University of Utah","Salt Lake City","United States"
-      ],
-      [
-        "University of Utah","Salt Lake City2","United States"
-      ],
-      [
-        "University of Utah","Salt Lake City3","United States"
-      ]
-    ]
+    "slides": ["University of Utah","University of Toronto","University of Seoul"]
   },
   "schools":{
     "University of Utah": {

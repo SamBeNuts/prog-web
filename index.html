@@ -81,9 +81,11 @@
         <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
         <div class="pagination"></div>
         <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
-        <div class="see_more">
-            <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
-        </div>
+        <a href="offre.html">
+            <div class="see_more">
+                <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
+            </div>
+        </a>
     </div>
     <div class="content procedure">
         <p class="title">Procédure</p>
@@ -91,38 +93,50 @@
             <div class="road_arc"></div>
             <div class="step">
                 <p class="num text_red">01.</p>
-                <div><img src="img/procedure_1.png"></div>
+                <a href="procedure.html#01">
+                    <div><img src="img/procedure_1.png"></div>
+                </a>
                 <p class="content">Définir<br>son projet</p>
             </div>
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">02.</p>
-                <div><img src="img/procedure_2.png"></div>
+                <a href="procedure.html#02">
+                    <div><img src="img/procedure_2.png"></div>
+                </a>
                 <p class="content">S'inscrire<br>sur Moveonline</p>
             </div>
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">03.</p>
-                <div><img src="img/procedure_3.png"></div>
+                <a href="procedure.html#03">
+                    <div><img src="img/procedure_3.png"></div>
+                </a>
                 <p class="content">Commission<br>d'affectations DRI</p>
             </div>
             <div class="road_arc"></div>
             <div class="road_vide"></div>
             <div class="step">
                 <p class="num text_red">04.</p>
-                <div><img src="img/procedure_4.png"></div>
+                <a href="procedure.html#04">
+                    <div><img src="img/procedure_4.png"></div>
+                </a>
                 <p class="content">Préparation et<br>envoie des dossiers</p>
             </div>
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">05.</p>
-                <div><img src="img/procedure_5.png"></div>
+                <a href="procedure.html#05">
+                    <div><img src="img/procedure_5.png"></div>
+                </a>
                 <p class="content">Réponse de<br>l'école d'accueil</p>
             </div>
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">06.</p>
-                <div><img src="img/procedure_6.png"></div>
+                <a href="procedure.html#06">
+                    <div><img src="img/procedure_6.png"></div>
+                </a>
                 <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
             </div>
             <div class="road_arc"></div>
@@ -227,7 +241,7 @@
 <script type="text/javascript">
     request.onload = function () {
         let data = request.response;
-        createSlides(data.slider.slides);
+        createSlides(data.slider.slides, data.schools);
     };
 
     function menuToggle(x){
@@ -242,7 +256,7 @@
         changeSlide(-1);
     }, 3000);
 
-    function createSlides(x){
+    function createSlides(x , y){
         let page_count_1 = "<div class=\"page_count\" onclick=\"changeSlide(";
         let page_count_2 = ")\"></div>";
         let slide_1 = "<div class=\"slide\"><img src=\"";
@@ -251,8 +265,9 @@
         let slide_4 = "<br>";
         let slide_5 = "</p></div></div>";
         x.forEach(function (el, i) {
+            let school = y[el];
             pagination.innerHTML += page_count_1 + i + page_count_2;
-            slides.innerHTML += slide_1 + 'img/data/' + el[0].toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_2 + el[0] + slide_3 + el[1] + "," + slide_4 + el[2] + slide_5;
+            slides.innerHTML += slide_1 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_2 + el + slide_3 + school.city + "," + slide_4 + school.country + slide_5;
         });
         pagination.firstElementChild.classList.add("active");
         slides.firstElementChild.classList.add("active");
