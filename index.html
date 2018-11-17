@@ -17,7 +17,7 @@
 <div id="wrapper">
     <header>
         <img src="img/header_bg_homepage.jpg" class="bg">
-        <img src="img/student_header_homepage.png" class="student_bg">
+        <img src="img/student_header_homepage.png" class="student_bg not_phone">
         <p class="text_bg text_white text_shadow">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
         <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="content avantages">
-        <div class="left">
+        <div class="left not_phone">
             <img src="img/avantages_1.png">
             <p class="avantages_txt_num text_red">2</p>
             <p class="avantages_txt_title">Gagner en autonomie et en capacité d'adaptation !</p>
@@ -62,6 +62,11 @@
             <p class="avantages_txt_num text_red">1</p>
             <p class="avantages_txt_title"> Découvrir un nouveau pays, de nouvelles cultures, ...</p>
             <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+            <div class="not_pc">
+                <p class="avantages_txt_num text_red">2</p>
+                <p class="avantages_txt_title">Gagner en autonomie et en capacité d'adaptation !</p>
+                <p class="avantages_txt_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante eros, iaculis quis leo ut, mollis cursus nisi. Praesent quis semper massa.</p>
+            </div>
             <img src="img/avantages_3.png">
             <p class="avantages_txt_num text_red">3</p>
             <p class="avantages_txt_title">Se préparer à une carrière internationale</p>
@@ -104,9 +109,9 @@
             <div class="road_arc"></div>
             <div class="road_vide"></div>
             <div class="step">
-                <p class="num text_red">06.</p>
-                <div><img src="img/procedure_6.png"></div>
-                <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
+                <p class="num text_red">04.</p>
+                <div><img src="img/procedure_4.png"></div>
+                <p class="content">Préparation et<br>envoie des dossiers</p>
             </div>
             <div class="road_line"></div>
             <div class="step">
@@ -116,9 +121,9 @@
             </div>
             <div class="road_line"></div>
             <div class="step">
-                <p class="num text_red">04.</p>
-                <div><img src="img/procedure_4.png"></div>
-                <p class="content">Préparation et<br>envoie des dossiers</p>
+                <p class="num text_red">06.</p>
+                <div><img src="img/procedure_6.png"></div>
+                <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
             </div>
             <div class="road_arc"></div>
         </div>
@@ -153,12 +158,12 @@
                         <p class="name">User3</p>
                         <p class="location">Location3</p>
                     </div>
-                    <div class="temoignages_profile">
+                    <div class="temoignages_profile not_phone">
                         <img src="img/temoignages_user_4.png" onclick="changeTemoignages(3)">
                         <p class="name">User4</p>
                         <p class="location">Location4</p>
                     </div>
-                    <div class="temoignages_profile">
+                    <div class="temoignages_profile not_phone">
                         <img src="img/temoignages_user_5.png" onclick="changeTemoignages(4)">
                         <p class="name">User5</p>
                         <p class="location">Location5</p>
@@ -227,6 +232,7 @@
 
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
+        //document.querySelector('body').classList.toggle("active");
     }
 
     let pagination = document.querySelector('.slider .pagination');
