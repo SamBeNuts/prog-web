@@ -246,7 +246,6 @@
 
     function menuToggle(x){
         x.parentElement.classList.toggle("active");
-        //document.querySelector('body').classList.toggle("active");
     }
 
     let pagination = document.querySelector('.slider .pagination');
@@ -330,7 +329,7 @@
         let s = document.querySelectorAll('.temoignages_content_txt.active span');
         let effect = setInterval(function(){
             console.log(i);
-            s[i].style.color = 'black';
+            s[i].style.color = '#505050';
             s[i].innerHTML = str.substr(i,1);
             for (let j = i+1; j < l; j++){
                 s[j].style.color = colors[Math.floor(Math.random()*colorsLength)];
