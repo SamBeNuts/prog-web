@@ -150,15 +150,11 @@
             <img src="img/temoignages_icon.png" class="temoignages_icon">
             <div class="temoignages_content">
                 <div>
-                    <p class="temoignages_content_txt active">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                    <p class="temoignages_content_txt">2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                    <p class="temoignages_content_txt">3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                    <p class="temoignages_content_txt">4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
-                    <p class="temoignages_content_txt">5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.</p>
+                    <p class="temoignages_content_txt active"></p>
                 </div>
                 <div>
-                    <div class="temoignages_profile active" onclick="changeTemoignages(0)">
-                        <img src="img/temoignages_user_1.png">
+                    <div class="temoignages_profile active">
+                        <img src="img/temoignages_user_1.png" onclick="changeTemoignages(0)">
                         <p class="name">User1</p>
                         <p class="location">Location1</p>
                     </div>
@@ -239,8 +235,12 @@
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
+    let temoignages;
+
     request.onload = function () {
         let data = request.response;
+        temoignages = data.temoignages;
+        document.querySelector('.temoignages_content_txt.active').innerText = temoignages[0];
         createSlides(data.slider.slides, data.schools);
     };
 
@@ -298,13 +298,50 @@
 
     function changeTemoignages(x) {
         let i = 0;
-        document.querySelector('.temoignages_content').children[0].querySelectorAll('p').forEach(function(el, j){
+        document.querySelector('.temoignages_content').children[1].querySelectorAll('div').forEach(function(el, j){
             if (el.classList.contains("active")) i = j;
         });
-        document.querySelector('.temoignages_content').children[0].children[i].classList.remove("active");
         document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active");
-        document.querySelector('.temoignages_content').children[0].children[x].classList.add("active");
         document.querySelector('.temoignages_content').children[1].children[x].classList.add("active");
+        shuffleTextEffect(temoignages[x]);
+    }
+
+    let specialChars = [
+        '!','§','$','%','&','/','(',')','=','?','_','<','>','^','°','*','#','-',':',';','~'
+    ];
+
+    let colors = [
+        '#f44336','#e91e63','#9c27b0','#673ab7','#3f51b5','#2196f3','#03a9f4','#00bcd4','#009688',
+        '#4caf50','#8bc34a','#cddc39','#ffeb3b','#ffc107','#ff9800','#ff5722','#795548','#9e9e9e',
+        '#607d8b'
+    ];
+
+    function shuffleTextEffect(str){
+        let i = 0;
+        let p = document.querySelector('.temoignages_content_txt.active');
+        let l = str.length;
+        let colorsLength = colors.length;
+        let specialCharsLength = specialChars.length;
+        p.innerHTML = "";
+        for (let j = 0; j < l; j++){
+            let newSpan = document.createElement('span');
+            p.appendChild(newSpan);
+        }
+        let s = document.querySelectorAll('.temoignages_content_txt.active span');
+        let effect = setInterval(function(){
+            console.log(i);
+            s[i].style.color = 'black';
+            s[i].innerHTML = str.substr(i,1);
+            for (let j = i+1; j < l; j++){
+                s[j].style.color = colors[Math.floor(Math.random()*colorsLength)];
+                s[j].innerHTML = specialChars[Math.floor(Math.random()*specialCharsLength)];
+            }
+            ++i;
+            if(i === l){
+                p.innerHTML = str;
+                clearInterval(effect);
+            }
+        }, 5);
     }
 </script>
 </body>

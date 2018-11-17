@@ -66,5 +66,12 @@
   },
   "cost_of_living": {
     "United States": 1.4
-  }
+  },
+  "temoignages": [
+    "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.",
+    "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.",
+    "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.",
+    "4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a.",
+    "5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sem lorem, vel scelerisque enim eleifend a. Sed porta ornare augue eget sodales. Praesent congue metus nec ligula feugiat rutrum. Vivamus in aliquet libero. Duis fringilla erat eu ligula scelerisque, ut volutpat lectus convallis. Sed egestas lobortis velit, et semper metus condimentum a."
+  ]
 }
