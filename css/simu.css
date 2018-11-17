@@ -391,3 +391,185 @@ header .text_bg span{
 .form_step .result p:first-letter{
     color: #d55555;
 }
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    /*
+     * Header
+     */
+    header .bg{
+        height: 150px;
+        margin-left: -600px;
+    }
+
+    header .text_bg{
+        font-size: 35px;
+        line-height: 35px;
+        top: 75px;
+        margin-top: -17px;
+    }
+
+    /*
+     * Progress
+     */
+    .progress{
+        height: 250px;
+        width: 250px;
+        margin: 20px 0 35px -125px;
+    }
+
+    .progress__value {
+        stroke-dasharray: 767px;
+        stroke-dashoffset: 767px;
+    }
+
+    .progress.step_1 .progress__value{
+        stroke-dashoffset: 657px;
+    }
+
+    .progress.step_2 .progress__value{
+        stroke-dashoffset: 547px;
+    }
+
+    .progress.step_3 .progress__value{
+        stroke-dashoffset: 438px;
+    }
+
+    .progress.step_4 .progress__value{
+        stroke-dashoffset: 329px;
+    }
+
+    .progress.step_5 .progress__value{
+        stroke-dashoffset: 219px;
+    }
+
+    .progress.step_6 .progress__value{
+        stroke-dashoffset: 110px;
+    }
+
+    .progress.step_7 .progress__value{
+        stroke-dashoffset: 0;
+    }
+
+    .budget_icon{
+        height: 25px;
+        width: 25px;
+    }
+
+    .icon_step{
+        height: 15px;
+        margin-top: -7.5px;
+        margin-left: -7.5px;
+    }
+
+    .budget_icon_1{
+        margin-left: -12.5px;
+        margin-top: -10px;
+    }
+
+    .budget_icon_2{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .budget_icon_3{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .budget_icon_4{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .budget_icon_5{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .budget_icon_6{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .budget_icon_7{
+        margin-top: -12.5px;
+        margin-left: -12.5px;
+    }
+
+    .form .question{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .answer .research{
+        height: 10px;
+        border: 2px solid #505050;
+        border-radius: 30px;
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 10px;
+        background-size: 12.5px;
+    }
+
+    .answer .research_result p{
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .answer .month{
+        border: 2px solid #505050;
+        border-radius: 30px;
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 10px;
+        background-size: 7.5px;
+    }
+
+    .answer .number_months{
+        width: 40px;
+        font-size: 25px;
+        line-height: 25px;
+        border-bottom: 3px solid #d55555;
+    }
+
+    .answer .number_months_label{
+        font-size: 12.5px;
+        margin-bottom: 7.5px;
+    }
+
+    .answer .logement{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 2.5px;
+    }
+
+    .answer .logement p{
+        font-size: 7.5px;
+        line-height: 7.5px;
+    }
+
+    .answer .number_euros{
+        width: 75px;
+    }
+
+    .form .next{
+        height: 12.5px;
+    }
+
+    .form .next p{
+        font-size: 12.5px;
+        line-height: 12.5px;
+    }
+
+    .form .next_btn{
+        width: 12.5px;
+    }
+
+    .form_step .result p{
+        margin-top: -15px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}

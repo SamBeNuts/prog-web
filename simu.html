@@ -36,9 +36,13 @@
         </nav>
     </header>
     <div class="progress step_1">
-        <svg width="500" height="500">
+        <svg width="500" height="500" class="not_phone">
             <circle cx="250" cy="250" r="245" fill="none" stroke="#e6e6e6" stroke-width="10"></circle>
             <circle class="progress__value" cx="250" cy="250" r="245" fill="none" stroke="#d55555" stroke-width="10"></circle>
+        </svg>
+        <svg width="250" height="250" class="not_pc not_tablet">
+            <circle cx="125" cy="125" r="122" fill="none" stroke="#e6e6e6" stroke-width="6"></circle>
+            <circle class="progress__value" cx="125" cy="125" r="122" fill="none" stroke="#d55555" stroke-width="6"></circle>
         </svg>
         <div class="budget_icon budget_icon_2 active" onclick="changeStep(1)">
             <img src="img/budget_step_2.png" class="icon_step">
