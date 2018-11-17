@@ -204,7 +204,7 @@ nav.active .menuItems{
 }
 
 /* Phone */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     body.active{
         overflow: hidden;
     }
@@ -275,7 +275,7 @@ nav.active .menuItems{
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .content{
         width: 768px;
         margin-left: -384px;

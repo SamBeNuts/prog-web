@@ -590,7 +590,7 @@ header .text_bg span{
 }
 
 /* Phone */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     /*
      * Header
      */
@@ -900,5 +900,28 @@ header .text_bg span{
     .contact .mail{
         font-size: 8px;
         line-height: 20px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*
+     * Avantages
+     */
+    .avantages p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*
+     * Slider
+     */
+    .partner_schools_title{
+        margin-left: -384px !important;
+    }
+
+    .slider .slides .slide .slide_txt{
+        width: 678px;
+        margin-left: -339px;
     }
 }
