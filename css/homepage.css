@@ -133,6 +133,7 @@ header .text_bg span{
     top: 50%;
     margin-top: -15px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .navigation.previous{
@@ -151,6 +152,7 @@ header .text_bg span{
     bottom: 10px;
     width: 100%;
     text-align: center;
+    z-index: 2;
 }
 
 .page_count{
@@ -182,6 +184,7 @@ header .text_bg span{
     right: 10px;
     top: 10px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .see_more img{
@@ -215,6 +218,7 @@ header .text_bg span{
 
 .slider .slides .slide.active{
     opacity: 1;
+    z-index: 1;
 }
 
 .slider .slides .slide img{

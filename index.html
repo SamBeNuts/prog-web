@@ -258,33 +258,34 @@
     function createSlides(x , y){
         let page_count_1 = "<div class=\"page_count\" onclick=\"changeSlide(";
         let page_count_2 = ")\"></div>";
-        let slide_1 = "<div class=\"slide\"><img src=\"";
-        let slide_2 = "\"><div class=\"slide_txt\"><p class=\"name text_shadow text_white\">";
-        let slide_3 = "</p><div class=\"line\"></div><p class=\"location text_shadow text_white\">";
-        let slide_4 = "<br>";
-        let slide_5 = "</p></div></div>";
+        let slide_1 = "<a href=\"";
+        let slide_2 = "\"><div class=\"slide\"><img src=\"";
+        let slide_3 = "\"><div class=\"slide_txt\"><p class=\"name text_shadow text_white\">";
+        let slide_4 = "</p><div class=\"line\"></div><p class=\"location text_shadow text_white\">";
+        let slide_5 = "<br>";
+        let slide_6 = "</p></div></div></a>";
         x.forEach(function (el, i) {
             let school = y[el];
             pagination.innerHTML += page_count_1 + i + page_count_2;
-            slides.innerHTML += slide_1 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_2 + el + slide_3 + school.city + "," + slide_4 + school.country + slide_5;
+            slides.innerHTML += slide_1 + 'offre_details.html?school=' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
         });
         pagination.firstElementChild.classList.add("active");
-        slides.firstElementChild.classList.add("active");
+        slides.firstElementChild.firstElementChild.classList.add("active");
     }
 
     function changeSlide(x){
         if (pos_slide !== x){
-            slides.children[pos_slide].classList.remove("active");
+            slides.children[pos_slide].firstElementChild.classList.remove("active");
             pagination.children[pos_slide].classList.remove("active");
             if (x >= 0){
-                slides.children[x].classList.add("active");
+                slides.children[x].firstElementChild.classList.add("active");
                 pagination.children[x].classList.add("active");
                 pos_slide = x;
             }else{
                 let y = pos_slide+x+2;
                 if (y >= slides.children.length) y = 0;
                 else if (y < 0) y = slides.children.length-1;
-                slides.children[y].classList.add("active");
+                slides.children[y].firstElementChild.classList.add("active");
                 pagination.children[y].classList.add("active");
                 pos_slide = y;
             }
@@ -310,9 +311,8 @@
     ];
 
     let colors = [
-        '#f44336','#e91e63','#9c27b0','#673ab7','#3f51b5','#2196f3','#03a9f4','#00bcd4','#009688',
-        '#4caf50','#8bc34a','#cddc39','#ffeb3b','#ffc107','#ff9800','#ff5722','#795548','#9e9e9e',
-        '#607d8b'
+        '#f44336','#e91e63','#9c27b0','#673ab7','#3f51b5','#2196f3','#03a9f4','#00bcd4','#009688','#4caf50','#8bc34a',
+        '#cddc39','#ffeb3b','#ffc107','#ff9800','#ff5722','#795548','#9e9e9e','#607d8b'
     ];
 
     function shuffleTextEffect(str){
@@ -328,7 +328,6 @@
         }
         let s = document.querySelectorAll('.temoignages_content_txt.active span');
         let effect = setInterval(function(){
-            console.log(i);
             s[i].style.color = '#505050';
             s[i].innerHTML = str.substr(i,1);
             for (let j = i+1; j < l; j++){
