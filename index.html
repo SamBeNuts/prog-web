@@ -19,7 +19,7 @@
         <img src="img/header_bg_homepage.jpg" class="bg">
         <img src="img/student_header_homepage.png" class="student_bg not_phone">
         <p class="text_bg text_white text_shadow">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
-        <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
+        <a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
@@ -27,10 +27,10 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
-                <li><a href="offre.html" class="text_white">Écoles partenaires</a></li>
-                <li><a href="procedure.html" class="text_white">Procédure</a></li>
-                <li><a href="simu.html" class="text_white">Simulation budget</a></li>
-                <li><a href="FAQ.html" class="text_white">FAQ</a></li>
+                <li><a href="offre" class="text_white">Écoles partenaires</a></li>
+                <li><a href="procedure" class="text_white">Procédure</a></li>
+                <li><a href="simu" class="text_white">Simulation budget</a></li>
+                <li><a href="FAQ" class="text_white">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
@@ -81,7 +81,7 @@
         <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
         <div class="pagination"></div>
         <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
-        <a href="offre.html">
+        <a href="offre">
             <div class="see_more">
                 <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
             </div>
@@ -93,7 +93,7 @@
             <div class="road_arc"></div>
             <div class="step">
                 <p class="num text_red">01.</p>
-                <a href="procedure.html#01">
+                <a href="procedure#01">
                     <div><img src="img/procedure_1.png"></div>
                 </a>
                 <p class="content">Définir<br>son projet</p>
@@ -101,7 +101,7 @@
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">02.</p>
-                <a href="procedure.html#02">
+                <a href="procedure#02">
                     <div><img src="img/procedure_2.png"></div>
                 </a>
                 <p class="content">S'inscrire<br>sur Moveonline</p>
@@ -109,7 +109,7 @@
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">03.</p>
-                <a href="procedure.html#03">
+                <a href="procedure#03">
                     <div><img src="img/procedure_3.png"></div>
                 </a>
                 <p class="content">Commission<br>d'affectations DRI</p>
@@ -118,7 +118,7 @@
             <div class="road_vide"></div>
             <div class="step">
                 <p class="num text_red">04.</p>
-                <a href="procedure.html#04">
+                <a href="procedure#04">
                     <div><img src="img/procedure_4.png"></div>
                 </a>
                 <p class="content">Préparation et<br>envoie des dossiers</p>
@@ -126,7 +126,7 @@
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">05.</p>
-                <a href="procedure.html#05">
+                <a href="procedure#05">
                     <div><img src="img/procedure_5.png"></div>
                 </a>
                 <p class="content">Réponse de<br>l'école d'accueil</p>
@@ -134,14 +134,14 @@
             <div class="road_line"></div>
             <div class="step">
                 <p class="num text_red">06.</p>
-                <a href="procedure.html#06">
+                <a href="procedure#06">
                     <div><img src="img/procedure_6.png"></div>
                 </a>
                 <p class="content">Ça y est,<br>VOUS PARTEZ !!!</p>
             </div>
             <div class="road_arc"></div>
         </div>
-        <button class="procedure_btn" onclick="window.location.href='procedure.html'">Voir la procédure détaillée</button>
+        <button class="procedure_btn" onclick="window.location.href='procedure'">Voir la procédure détaillée</button>
     </div>
     <img src="img/homepage_temoignages_bg.jpg" class="temoignages_bg">
     <div class="content temoignages">
@@ -188,7 +188,7 @@
         <div class="separator_line"></div>
     </div>
     <div class="content links">
-        <a href="simu.html">
+        <a href="simu">
             <div class="square">
                 <img src="img/homepage_simu_budget.jpg" class="square_bg">
                 <div>
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </a>
-        <a href="FAQ.html">
+        <a href="FAQ">
             <div class="square">
                 <img src="img/homepage_faq.jpg" class="square_bg">
                 <div>
@@ -267,7 +267,7 @@
         x.forEach(function (el, i) {
             let school = y[el];
             pagination.innerHTML += page_count_1 + i + page_count_2;
-            slides.innerHTML += slide_1 + 'offre_details.html?school=' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
+            slides.innerHTML += slide_1 + 'offre/' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
         });
         pagination.firstElementChild.classList.add("active");
         slides.firstElementChild.firstElementChild.classList.add("active");
