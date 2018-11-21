@@ -24,9 +24,9 @@
         <a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
 
         //barre de recherche
-        <form id="searchForm" class="bar_de_recherche" action="search();">
+        <form id="searchForm" class="bar_de_recherche" action="javascript:search()">
             <input type="text" id="searchItem" name="Search" placeholder="Search" >
-            <button type="submit" class="btn_summit" onclick="document.getElementById('searchForm').submit(); return false;">
+            <button type="submit" class="btn_summit" onclick="submit()">
                 <img src="img/search_icon_white.png" height="30px">
             </button>
         </form>
@@ -48,29 +48,35 @@
         </nav>
     </header>
     <div class="content">
-        <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
-        <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        <div class="tnc">
+            <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+            <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
             ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
             semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
             eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
             scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
             volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+        </div>
 
-        <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
-        <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        <div class="tnc">
+            <div class="titreFAQ" > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+            <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
             ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
             semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
             eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
             scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
             volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+        </div>
 
-        <div class="titreFAQ"  > Lorem ipsum dolor sit amet, consectetur adipisicing?  </div>
+        <div class="tnc">
+        <div class="titreFAQ"  > Lorel ipsum dolor sit amet, consectetur adipisicing?  </div>
         <div class="contentFAQ"> Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
             ltricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
             semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
             eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
             scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
             volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+        </div>
     </div>
     <footer>
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan du site</a></p>
@@ -83,19 +89,14 @@
     }
 
     function search() {
-
-        var name = document.getElementById("searchForm").elements["searchItem"].value;
+        var name = document.querySelector("#searchForm").elements["searchItem"].value;
         var pattern = name.toLowerCase();
-        var targetId = "";
 
-        var divs = document.getElementsByClassName("titreFAQ");
+        var divs = document.querySelectorAll(".tnc");
         for (var i = 0; i < divs.length; i++) {
-            var para = divs[i].getElementsByTagName("div");
-            var index = para[0].innerText.toLowerCase().indexOf(pattern);
-            if (index != -1) {
-                targetId = divs[i].parentNode.id;
-                document.getElementById(targetId).scrollIntoView();
-                break;
+            var index = divs[i].innerText.toLowerCase().indexOf(pattern);
+            if (index === -1) {
+                divs[i].style.display = "none";
             }
         }
     }
