@@ -61,8 +61,12 @@ button:focus, input:focus, select:focus{
     color: #fff !important;
 }
 
-.text_shadow{
+.text_shadow_bt{
     text-shadow: 0 0 15px black !important;
+}
+
+.text_shadow{
+    text-shadow: 0 0 5px black !important;
 }
 
 .title{
@@ -205,10 +209,6 @@ nav.active .menuItems{
 
 /* Phone */
 @media only screen and (max-width: 767px) {
-    body.active{
-        overflow: hidden;
-    }
-
     .content{
         width: 320px;
         margin-left: -160px;
