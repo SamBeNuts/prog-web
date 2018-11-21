@@ -1,0 +1,127 @@
+/*
+ * Header
+ */
+ 
+ header .bg{
+    position: absolute;
+    left: 50%;
+    margin-left: -1000px;
+    min-width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.filter{
+	position:absolute;
+	width:1000px;
+	top:100px;
+	left:50%;
+	margin-left: -25%;
+}
+
+.filter .filter_search{
+	position: relative;
+    width: 150px; 
+	height:40px;
+	font-size: 15px;
+	border-radius: 10px;
+    border: 3px solid #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../img/next_btn_black_90deg.png') transparent right center no-repeat;
+    background-size: 15px;
+	background-color: #ffffff;
+	font-variant: small-caps;
+	color: #9E9E9E;
+	
+}
+
+.filter option{
+	color: #505050;
+}
+/*
+ * Content
+ */
+ 
+.search .research{
+    position: relative;
+    width: 50%;
+	left: 40%;
+	margin-left: -20%;
+	top: 30px;
+    height: 20px;
+    border: 3px solid #505050;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #505050;
+    font-variant: small-caps;
+    background: url('../img/search_icon.png') transparent right center no-repeat;
+    background-size: 25px;
+    background-origin: content-box;
+}
+
+.search .research_result{
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    background-color: #e6e6e6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search .research_result p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #505050;
+    padding: 10px;
+    border-bottom: 1px solid #505050;
+}
+
+.search .research_result p:last-child{
+    border-bottom: none;
+}
+
+.school{
+	position: relative;
+	width: 230px;
+	height: 230px;
+	top: 60px;
+	left: 5%;
+	
+}
+
+.school .image{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 230px;
+	height: 230px;
+}
+
+.school .name{
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	font-weight: bold;
+}
+
+.school .city{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	display: inline;
+}
+
+.city .line{
+    height: 2px;
+    width: 30px;
+    background-color: #d55555;
+}
+
+
+	
+
