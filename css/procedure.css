@@ -134,3 +134,135 @@ header .text_bg span{
     height: 14px;
     width : 14px;
 }
+
+
+/*
+ * Phone
+*/
+@media only screen and (max-width : 767px){
+
+  header .bg{
+      height: 150px;
+      margin-left: -600px;
+  }
+
+  header .text_bg{
+      font-size: 35px;
+      line-height: 35px;
+      top: 75px;
+      margin-top: -17px;
+    }
+
+    header .text_bg span{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+
+  }
+
+  .content{
+      margin-top: 20px;
+      margin-bottom: 25px;
+  }
+
+  .border_procedure_icon1{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 5px solid #e6e6e6;
+    position: relative;
+    float: right;
+  }
+
+  .border_procedure_icon1 img {
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    margin-left: -20px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .border_procedure_icon2{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 5px solid #e6e6e6;
+    position: relative;
+    float: left;
+  }
+
+  .border_procedure_icon2 img {
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    margin-left: -20px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .column_left1 {
+      float: left;
+      width: 25%;
+      height: 300px;
+      padding-right: 5%;
+  }
+
+  .column_right1 {
+      float: left;
+      width: 70%;
+      height:85px;
+      text-align: left;
+  }
+
+  .column_left2 {
+        float: left;
+        width: 70%;
+        height:85px;
+        text-align: right;
+  }
+
+  .column_right2 {
+      float: left;
+      width: 25%;
+      height:300px;
+      padding-left: 5%;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .title_step1 {
+    text-align : left;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .title_step2 {
+    text-align : right;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .txt_red_step {
+    color: #d55555;
+    line-height: 15px;
+    font-size: 9px;
+    font-style: italic;
+
+  }
+
+  .arrow {
+      height: 7px;
+      width : 7px;
+  }
+
+
+}
