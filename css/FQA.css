@@ -36,20 +36,20 @@ header .bg_FAQ{
     left: 50%;
     margin-left: -1000px;
     min-width: 100%;
+    height: 125px;
 }
 
 header .man_bg{
     position: absolute;
-    height: 310px;
     top: 40px;
     left: 37%;
 }
 header .bg_wall_FAQ{
     position: absolute;
-    height: 350px;
     top:0;
     left:0;
     z-index: 0;
+    width: 275px;
 }
 
 .bar_de_recherche{
@@ -69,7 +69,6 @@ header .bg_wall_FAQ{
     padding-right: 80px;
     border: 2px solid white;
     color: white;
-    top: 100px;
 }
 .btn_summit
 {
@@ -77,57 +76,64 @@ header .bg_wall_FAQ{
     border: none;
 }
 
-@media screen and (max-width: 767px) {
-    .titreFAQ {
+/* portable */
+@media screen and (max-width: 767px)
+{
+    .titreFAQ{
         margin: 10px 25px 2.5px 25px;
     }
 
-    .contentFAQ {
+    .contentFAQ{
         margin: 0 25px 10px 25px;
         padding-left: 2px;
         border-left: 1px solid lightgrey;
-        border-spacing: 2.5px;
+        border-spacing:2.5px;
     }
 
-    .paragraph_line {
+    .paragraph_line{
         margin-left: 20px;
     }
 
-    header {
-        height: 210px !important;
+    .content{
+        margin-bottom: 20px;
     }
 
-    header .bg_FAQ {
+    header{
+        height: 350px !important;
+    }
+
+    header .bg_FAQ{
         position: absolute;
         left: 50%;
         margin-left: -1000px;
         min-width: 100%;
-        height: 175px;
     }
 
-    header .man_bg {
+    header .man_bg{
         position: absolute;
-        height: 140px;
-        top: 60px;
-        left: 200px;
+        height: 310px;
+        top: 40px;
+        left: 37%;
+    }
+    header .bg_wall_FAQ{
+        position: absolute;
+        height: 350px;
+        top:0;
+        left:0;
+        z-index: 0;
     }
 
-    header .bg_wall_FAQ {
-        position: absolute;
-        height: 200px;
-        width: 300px;
-    }
 
-    .bar_de_recherche {
+    .bar_de_recherche{
         position: absolute;
-        top: 110px;
+        top: 75px;
         left: 5%;
-        border: 1px white;
+        border: 1px white ;
         vertical-align: middle;
 
     }
 
-    .bar_de_recherche input {
+    .bar_de_recherche input{
         border-radius: 25px;
         padding-left: 10px;
         padding-top: 5px;
@@ -137,21 +143,4 @@ header .bg_wall_FAQ{
 
     }
 
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    header .bg_wall_FAQ {
-        height: 300px;
-    }
-
-    header .bg_FAQ {
-        height: 250px;
-    }
-
-    header .man_bg {
-        height: 250px;
-        left: 450px;
-        top: 50px;
-    }
 }

@@ -91,13 +91,13 @@
     function search() {
         var name = document.querySelector("#searchForm").elements["searchItem"].value;
         var divs = document.querySelectorAll(".tnc");
+        var pattern = name.toLowerCase();
         if(name === ""){
             for (var i = 0; i < divs.length; i++) {
                 divs[i].style.display = "block";
             }
             return;
         }
-        var pattern = name.toLowerCase();
         for (var i = 0; i < divs.length; i++) {
             var index = divs[i].innerText.toLowerCase().indexOf(pattern);
             if (index === -1) {
