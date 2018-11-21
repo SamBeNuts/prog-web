@@ -75,7 +75,7 @@
             semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est
             eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
             scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. </div>
+            volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pedel. </div>
         </div>
     </div>
     <footer>
@@ -90,9 +90,14 @@
 
     function search() {
         var name = document.querySelector("#searchForm").elements["searchItem"].value;
-        var pattern = name.toLowerCase();
-
         var divs = document.querySelectorAll(".tnc");
+        if(name === ""){
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = "block";
+            }
+            return;
+        }
+        var pattern = name.toLowerCase();
         for (var i = 0; i < divs.length; i++) {
             var index = divs[i].innerText.toLowerCase().indexOf(pattern);
             if (index === -1) {

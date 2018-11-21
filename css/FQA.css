@@ -138,3 +138,20 @@ header .bg_wall_FAQ{
     }
 
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .bg_wall_FAQ {
+        height: 300px;
+    }
+
+    header .bg_FAQ {
+        height: 250px;
+    }
+
+    header .man_bg {
+        height: 250px;
+        left: 450px;
+        top: 50px;
+    }
+}
