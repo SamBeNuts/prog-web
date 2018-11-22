@@ -1,101 +1,137 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Emna">
-        <meta name="author" content="Ha">
-        <meta name="author" content="Jin Yu">
-        <meta name="author" content="Samuel">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INSA - Prog Web</title>
-        <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/base.css">
-        <link rel="stylesheet" type="text/css" href="css/offre_utah.css">
-        <script type="text/javascript" src="js/request_data.js"></script>
-    </head>
-    <body>
-    <div id="wrapper">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emna">
+    <meta name="author" content="Ha">
+    <meta name="author" content="Jin Yu">
+    <meta name="author" content="Samuel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Prog Web</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/offre_utah.css">
+    <script type="text/javascript" src="js/request_data.js"></script>
+</head>
+<body>
+<div id="wrapper">
     <header>
-        <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg" width="1280">
-        <p class="text_bg text_white text_shadow"><span class="text_bg_uni">University of Utah</span><br><span class="txt_bg_city">Salt Lake City,</span><br><span class="txt_bg_city">United States</span>
-            <button class="btn" href="#"><span>Visit website</span></button>
+        <div class="bg_img">
+            <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg" width="1280">
+        </div>
+        <p class="text_bg text_white text_shadow_bt"><span class="text_bg_uni">University of Utah</span><br><span
+                class="txt_bg_city">Salt Lake City,</span><br><span class="txt_bg_city">United States</span>
+            <button class="btn" onclick="">Visit website</button>
         </p>
         <a href="index">
             <img src="img/logo_insa_w.png" class="logo_insa">
         </a>
-
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="menuItems text_white">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="offre">Écoles partenaires</a></li>
-                <li><a href="procedure">Procédure</a></li>
-                <li><a href="#">Simulation budget</a></li>
-                <li><a href="FAQ">FAQ</a></li>
+            <ul class="menuItems">
+                <li><a href="index" class="text_white text_shadow">Accueil</a></li>
+                <li><a href="offre" class="text_white text_shadow">Écoles partenaires</a></li>
+                <li><a href="procedure" class="text_white text_shadow">Procédure</a></li>
+                <li><a href="simu" class="text_white text_shadow">Simulation budget</a></li>
+                <li><a href="FAQ" class="text_white text_shadow">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
     </header>
     <div class="content">
-      <div class="left">
-        <p class="title_offre">School information</p>
-        <p class="text_offre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus et quam nec bibendum. Ut et sem mauris. Vivamus eleifend nibh nisl, id hendrerit risus pharetra cursus. Aliquam venenatis semper ipsum, eget molestie mi malesuada eu. Sed vitae erat quam. Donec eu lacus ut metus elementum venenatis sed et lectus. Proin et ligula leo. Aliquam dolor quam, elementum in metus in, lacinia fermentum enim. Suspendisse in aliquet mi. Integer commodo hendrerit blandit. Nulla ac commodo erat. Proin hendrerit elementum finibus. Nulla porta sem ut lacus luctus, in fermentum mi gravida. <br><br> Nulla luctus mollis est, id gravida sapien varius sed. Aliquam nec velit tempor sapien blandit vestibulum scelerisque ullamcorper nisl. Mauris maximus ornare nulla, ac tempor urna varius vitae. Fusce et consequat mauris, quis fringilla erat. In est nulla, condimentum vel imperdiet eget, lacinia mollis urna. Pellentesque sollicitudin et nisl non vestibulum. Proin viverra dui a augue facilisis luctus. Vivamus sapien lectus, iaculis condimentum accumsan et, iaculis non lectus. </p>
-        <p class="title_offre">Courses available</p>
         <div class="left">
-          <p class="small_title">Computing sciences</p>
-          <p class="small_txt"> 3A MIC, 5A GMM</p>
-          <p class="small_txt"> EN, FR</p>
-          <br>
-          <p class="small_title">Mathematics</p>
-          <p class="small_txt"> All</p>
-          <p class="small_txt"> EN, FR, RU</p>
-          <br>
-          <p class="small_title">Foreign Language</p>
-          <p class="small_txt"> All</p>
-          <p class="small_txt"> EN, FR, ES, RU, CN </p>
+            <div class="school_infos">
+                <p class="title">School information</p>
+                <p class="school_infos_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus et quam nec
+                    bibendum. Ut et sem mauris. Vivamus eleifend nibh nisl, id hendrerit risus pharetra cursus. Aliquam
+                    venenatis semper ipsum, eget molestie mi malesuada eu. Sed vitae erat quam. Donec eu lacus ut metus
+                    elementum venenatis sed et lectus. Proin et ligula leo. Aliquam dolor quam, elementum in metus in,
+                    lacinia fermentum enim. Suspendisse in aliquet mi. Integer commodo hendrerit blandit. Nulla ac commodo
+                    erat. Proin hendrerit elementum finibus. Nulla porta sem ut lacus luctus, in fermentum mi gravida.
+                    <br><br> Nulla luctus mollis est, id gravida sapien varius sed. Aliquam nec velit tempor sapien blandit
+                    vestibulum scelerisque ullamcorper nisl. Mauris maximus ornare nulla, ac tempor urna varius vitae. Fusce
+                    et consequat mauris, quis fringilla erat. In est nulla, condimentum vel imperdiet eget, lacinia mollis
+                    urna. Pellentesque sollicitudin et nisl non vestibulum. Proin viverra dui a augue facilisis luctus.
+                    Vivamus sapien lectus, iaculis condimentum accumsan et, iaculis non lectus. </p>
+            </div>
+            <div class="courses">
+                <p class="title">Courses available</p>
+                <div class="course">
+                    <p class="name">Computing sciences</p>
+                    <p class="year"> 3A MIC, 5A GMM</p>
+                    <p class="languages"><img src="img/language_icon_black.png"> EN, FR</p>
+                </div>
+                <div class="course">
+                    <p class="name">Mathematics</p>
+                    <p class="year"> All</p>
+                    <p class="languages"><img src="img/language_icon_black.png"> EN, FR, RU</p>
+                </div>
+                <div class="course">
+                    <p class="name">Foreign Language</p>
+                    <p class="year"> All</p>
+                    <p class="languages"><img src="img/language_icon_black.png"> EN, FR, ES, RU, CN </p>
+                </div>
+                <div class="course">
+                    <p class="name">Telecom</p>
+                    <p class="year"> 4A/5A IR</p>
+                    <p class="languages"><img src="img/language_icon_black.png"> EN</p>
+                </div>
+                <div class="course">
+                    <p class="name">Database Analysis</p>
+                    <p class="year"> 5A GMM</p>
+                    <p class="languages"><img src="img/language_icon_black.png"> EN, FR</p>
+                </div>
+            </div>
         </div>
-          <div class="right">
-          <p class="small_title">Telecom</p>
-          <p class="small_txt"> 4A/5A IR</p>
-          <p class="small_txt"> EN</p>
-          <br>
-          <p class="small_title">Database Analysis</p>
-          <p class="small_txt"> 5A GMM</p>
-          <p class="small_txt"> EN, FR</p>
-          <br>
+        <div class="right">
 
         </div>
-    <div>
-        <div class="cost_left">
-            <p class="title_offre">Estimated Cost</p>
-            <p class="costDetail">AVERAGE TUITION COST</p>
-            <p class="costDetail"> <strong>200€</strong> PER SEMESTER</p>
-            <br>
-            <p class="costDetail">OVERALL LIVING COST</p>
-            <p class="costDetail"> <strong>450€</strong> PER SEMESTER</p>
-            <br>
-        </div>
-
-        <div class="cost_right">
-            <p class="costDetail">CAMPUS ACCOMODATION</p>
-            <p class="costDetail"> <strong>500€</strong> PER SEMESTER</p>
-            <br>
+        <div class="costs">
+            <p class="title">Estimated Cost</p>
+            <div class="cost">
+                <div class="cost_icon">
+                    <img src="">
+                </div>
+                <div class="cost_content">
+                    <p>AVERAGE TUITION COST</p>
+                    <p><strong>200€</strong> PER SEMESTER</p>
+                </div>
+            </div>
+            <div class="cost">
+                <div class="cost_icon">
+                    <img src="">
+                </div>
+                <div class="cost_content">
+                    <p class="costDetail">OVERALL LIVING COST</p>
+                    <p class="costDetail"><strong>450€</strong> PER SEMESTER</p>
+                </div>
+            </div>
+            <div class="cost">
+                <div class="cost_icon">
+                    <img src="">
+                </div>
+                <div class="cost_content">
+                    <p class="costDetail">CAMPUS ACCOMODATION</p>
+                    <p class="costDetail"><strong>500€</strong> PER SEMESTER</p>
+                </div>
+            </div>
         </div>
     </div>
-
-        <footer>
-            <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan du site</a></p>
-        </footer>
-    <script type="text/javascript">
-            function menuToggle(x){
-                x.parentElement.classList.toggle("active");
-            }
-    </script>
-    </div>
-    </body>
-    </html>
+    <footer>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a,
+            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan
+                du site</a></p>
+    </footer>
+</div>
+<script type="text/javascript">
+    function menuToggle(x) {
+        x.parentElement.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
