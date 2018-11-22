@@ -1,5 +1,5 @@
-#Aides Javascript
-###Utiliser les données du fichier `data.json`
+﻿# Aides Javascript
+### Utiliser les données du fichier `data.json`
 Mettre le code suisant dans votre script :
 ```
 request.onload = function () {
@@ -18,7 +18,7 @@ request.onload = function () {
 };
 ```
 
-###Créer une liste de toutes les écoles
+### Créer une liste de toutes les écoles
 > Utile pour la page `offre.html` et `offre_utah.html`
 
 Extrait de la page HTML :
@@ -39,9 +39,9 @@ for(let school in schools){ //schools est l'objet qui contient les données de d
 <br>[La fonction querySelector](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector)
 <br>[Utilisation des objets](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_objets)
 
-###Obtenir une donnée qui se trouve dans l'url
+### Obtenir une donnée qui se trouve dans l'url
 > Utile pour la page `offre_utah.html`
-* window.location.href = "https://etud.insa-toulouse.fr/offre/Universty%20of%20Utah"
+* window.location.href = "https://<span></span>etud.insa-toulouse.fr/offre/Universty%20of%20Utah"
 * window.location.protocol = "https:"
 * window.location.host = "etud.insa-toulouse.fr"
 * window.location.pathname = "/offre/University%20of%20Utah"
