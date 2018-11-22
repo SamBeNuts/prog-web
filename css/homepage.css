@@ -424,11 +424,11 @@ header .text_bg span{
     border: 2px solid #fff;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 .temoignages_profile.active img{
@@ -492,6 +492,16 @@ header .text_bg span{
     position: absolute;
     left: 0;
     top: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.links .square:hover .square_bg{
+    filter: contrast(130%);
+    -webkit-filter: contrast(130%);
 }
 
 .links .square div{
@@ -685,7 +695,16 @@ header .text_bg span{
 
     .navigation{
         height: 15px;
-        margin-top: -15px;
+        margin-top: -30px;
+        padding: 15px;
+    }
+
+    .navigation.previous{
+        left: -5px;
+    }
+
+    .navigation.next{
+        right: -5px;
     }
 
     .page_count{

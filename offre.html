@@ -11,16 +11,39 @@
     <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/simu.css">
+    <link rel="stylesheet" type="text/css" href="css/offre.css">
 </head>
-
 <body>
 <div id="wrapper">
     <header>
-        <img src="img/header_bg_procedure.jpg" class="bg">
-        <a href="index">
-            <img src="img/logo_insa_w.png" class="logo_insa">
-        </a>
+        <img src="img/header_bg_offers.jpg" class="bg">
+		<div class="filter">
+            <select class="filter_search">
+				<option hidden>Année</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+			<select class="filter_search">
+				<option hidden>Département</option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </select>
+			<select class="filter_search">
+				<option hidden>Langue du Cours</option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </select>
+			<select class="filter_search">
+				<option hidden>Pays</option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </select>
+        </div>
+		<a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
@@ -36,31 +59,41 @@
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
-		<div class="answer">
-            <select class="Year">
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-            </select>
-			<select class="month">
-                <option value="1">Janvier</option>
-                <option value="2">Février</option>
-                <option value="3">Mars</option>
-                <option value="4">Avril</option>
-                <option value="5">Mai</option>
-                <option value="6">Juin</option>
-                <option value="7">Juillet</option>
-                <option value="8">Août</option>
-                <option value="9">Septembre</option>
-                <option value="10">Octobre</option>
-                <option value="11">Novembre</option>
-                <option value="12">Décembre</option>
-            </select>
-        </div>
     </header>
+	<div class="content">
+		<div class="search">
+			<input class="research" type="text" placeholder="Filtrer par nom" onkeyup="search()">
+			<div class="research_result"></div>
+		</div>
+		<div class="school">
+			<img class="image" src="img/data/universidad_autónoma_de_san_luis_potosí_thumbnail.jpg">
+			<p class="text_white name">University of Toronto</p>
+			<div class="city">
+				<div class="line"></div>
+				<p class="text_white">Toronto, Canada</p>
+			</div>
+		</div>
+	</div>
+</div>
 <script type="text/javascript">
     function menuToggle(x) {
         x.parentElement.classList.toggle("active");
+    }
+	
+	function search() {
+        let research = document.querySelector('.answer .research').value;
+        let research_result = document.querySelector('.answer .research_result');
+        research_result.innerHTML = "";
+        if (research != ""){
+            let nb_result = 0;
+            for (let school in schools){
+                if (school.toLowerCase().includes(research.toLowerCase())){
+                    research_result.innerHTML += "<p onclick='addPrices(\"" + schools[school].country + "\"," + schools[school].tuiton_cost + "," + schools[school].campus_cost + "," + schools[school].accomodation_cost + ")'>" + school + "</p>";
+                    nb_result++;
+                }
+                if (nb_result > 3) break;
+            }
+        }
     }
 </script>
 </body>
