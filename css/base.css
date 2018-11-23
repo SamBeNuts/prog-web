@@ -1,18 +1,28 @@
 @font-face {
     font-family: "Segoe UI";
-    src: url("../fonts/segoeui.ttf") format("opentype");
+    src: url("../fonts/segoeui.woff2") format("woff2"),
+    url("../fonts/segoeui.woff") format("woff"),
+    url("../fonts/segoeui.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe UI";
-    src: url("../fonts/segoeuib.ttf") format("opentype");
-    font-weight: 700; /* bold */
+    src: url("../fonts/segoeuib.woff2") format("woff2"),
+    url("../fonts/segoeuib.woff") format("woff"),
+    url("../fonts/segoeuib.ttf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Segoe UI";
-    src: url("../fonts/segoeuil.ttf") format("opentype");
-    font-weight: 100; /* lighter */
+    src: url("../fonts/segoeuil.woff2") format("woff2"),
+    url("../fonts/segoeuil.woff") format("woff"),
+    url("../fonts/segoeuil.ttf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*
