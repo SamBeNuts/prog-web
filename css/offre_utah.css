@@ -85,10 +85,6 @@ header .btn span {
     margin-bottom: 20px;
 }
 
-.costs{
-    position: relative;
-    margin-bottom: 50px;
-}
 
 .school_infos_content {
     margin-top: 10px;
@@ -135,6 +131,8 @@ header .btn span {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .cost{
