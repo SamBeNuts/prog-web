@@ -1,5 +1,5 @@
 Options +FollowSymlinks
 RewriteEngine on
 RewriteRule ^accueil$  /index.html [L]
-RewriteRule ^([A-Za-z]+)$  /$1.html [L]
+RewriteRule ^([A-Za-z_]+)$  /$1.html [L]
 RewriteRule ^offre/(.+)$   /offre.html?school=$1 [L]
