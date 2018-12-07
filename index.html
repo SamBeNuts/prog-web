@@ -237,10 +237,10 @@
 <script type="text/javascript">
     let temoignages;
 
-    request.onload = function () {
-        let data = request.response;
+    request.onload = function () { //
+        let data = request.response; //on stocke toutes les données de data.json
         temoignages = data.temoignages;
-        document.querySelector('.temoignages_content_txt.active').innerText = temoignages[0];
+        document.querySelector('.temoignages_content_txt.active').innerText = temoignages[0]; //on fait apparaître le premier témoignage
         createSlides(data.slider.slides, data.schools);
     };
 
@@ -248,51 +248,55 @@
         x.parentElement.classList.toggle("active");
     }
 
-    let pagination = document.querySelector('.slider .pagination');
-    let slides = document.querySelector('.slider .slides');
-    let pos_slide = 0;
+    let pagination = document.querySelector('.slider .pagination'); //barre de navigation du diaporama
+    let slides = document.querySelector('.slider .slides'); //diaporama
+    let pos_slide = 0; //diapo active du diaporama
     let autoSlide = setInterval(function(){
         changeSlide(-1);
-    }, 3000);
+    }, 3000); //toutes les 3s on change la diapo active
 
-    function createSlides(x , y){
+    function createSlides(x , y){ //x: les écoles à faire apparaître dans le diaporama / y: liste de toutes les écoles
+        //on divise la div .page_count en différentes string afin de rajouter des pages à la pagination (barre de navigation) dynamiquement
         let page_count_1 = "<div class=\"page_count\" onclick=\"changeSlide(";
         let page_count_2 = ")\"></div>";
+        //on divise la div .slide en différentes string afin de rajouter les informations des écoles dynamiquement
         let slide_1 = "<a href=\"";
         let slide_2 = "\"><div class=\"slide\"><img src=\"";
         let slide_3 = "\"><div class=\"slide_txt\"><p class=\"name text_shadow_bt text_white\">";
         let slide_4 = "</p><div class=\"line\"></div><p class=\"location text_shadow text_white\">";
         let slide_5 = "<br>";
         let slide_6 = "</p></div></div></a>";
-        x.forEach(function (el, i) {
-            let school = y[el];
+        x.forEach(function (el, i) { //pour chaque élément du tableau, el: nom de l'école / i: indice de l'élément de x
+            let school = y[el]; //on récupère les données de l'école qui correspond à el
+            //on rajoute une page à la pagination et les informations des écoles dynamiquement
             pagination.innerHTML += page_count_1 + i + page_count_2;
             slides.innerHTML += slide_1 + 'offre/' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
         });
+        //on fait apparaître la première diapo du diaporama
         pagination.firstElementChild.classList.add("active");
         slides.firstElementChild.firstElementChild.classList.add("active");
     }
 
     function changeSlide(x){
-        if (pos_slide !== x){
-            slides.children[pos_slide].firstElementChild.classList.remove("active");
-            pagination.children[pos_slide].classList.remove("active");
-            if (x >= 0){
+        if (pos_slide !== x){ //on vérifie que la diapo n'est pas déjà active
+            slides.children[pos_slide].firstElementChild.classList.remove("active"); //on rend inactive l'ancienne diapo active
+            pagination.children[pos_slide].classList.remove("active"); //de même pour la pagination
+            if (x >= 0){ //si x est supérieur à 0, on rend active la diapo d'indice x
                 slides.children[x].firstElementChild.classList.add("active");
                 pagination.children[x].classList.add("active");
                 pos_slide = x;
-            }else{
+            }else{ //sinon on rend active la diapo précédente (si x=-3) ou suivante (si x=-1)
                 let y = pos_slide+x+2;
-                if (y >= slides.children.length) y = 0;
-                else if (y < 0) y = slides.children.length-1;
+                if (y >= slides.children.length) y = 0; //si on est à la fin de la diapo et qu'on va à la diapo suivante, on retourne au début de la diapo
+                else if (y < 0) y = slides.children.length-1; //si on est au début de la diapo et qu'on va à la diapo précédente, on va à la fin de la diapo
                 slides.children[y].firstElementChild.classList.add("active");
                 pagination.children[y].classList.add("active");
                 pos_slide = y;
             }
-            clearInterval(autoSlide);
+            clearInterval(autoSlide); //on arrête le défilement de la diapo
             autoSlide = setInterval(function(){
                 changeSlide(-1);
-            }, 3000);
+            }, 3000); //on redémarre le défilement de la diapo (ce qui revient à restart le défilement de la diapo
         }
     }
 
@@ -300,9 +304,9 @@
         let i = 0;
         document.querySelector('.temoignages_content').children[1].querySelectorAll('div').forEach(function(el, j){
             if (el.classList.contains("active")) i = j;
-        });
-        document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active");
-        document.querySelector('.temoignages_content').children[1].children[x].classList.add("active");
+        }); //on cherche le témoignages actif de la page
+        document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active"); //on rend inactif ce témoignage
+        document.querySelector('.temoignages_content').children[1].children[x].classList.add("active"); //on rend actif le témoignage d'indice x (passé en paramètre)
         shuffleTextEffect(temoignages[x]);
     }
 
