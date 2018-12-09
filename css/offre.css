@@ -91,15 +91,15 @@
 	height: 230px;
 	top: 60px;
 	left: 5%;
-	
+	display: inline-block;
+	margin: 7px;
 }
 
 .school .image{
 	position: absolute;
 	top:0;
-	left:0;
-	width: 230px;
-	height: 230px;
+	width: 100%;
+	height: 100%;
 }
 
 .school .name{
@@ -113,15 +113,247 @@
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	display: inline;
+	display: inline-block;
+}
+
+.school .city p{
+	display: inline-block;
 }
 
 .city .line{
     height: 2px;
-    width: 30px;
+    width: 20px;
     background-color: #d55555;
+	display: inline-block;
+	vertical-align: middle;
 }
 
+.school:hover .over{
+	opacity: 1;
+}
 
+.school .over{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+	font-size: 15px;
+    background-size: 15px;
+	font-variant: small-caps;
+	color: #9E9E9E;
+	display: inline-block;
+}
+
+.school .over img{
+	width: 20px;
+	height: 20px;
+}
+
+.school .info{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.school .info p{
+	margin: 7px;
+}
+
+.school .visit{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.school .visit img{
+	width: 30px;
+	height: 30px;
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+	/* Header */
+	 
+	 header .bg{
+		position: absolute;
+		left: 50%;
+		margin-left: -500px;
+		min-width: 100%;
+		filter: blur(1px);
+		-webkit-filter: blur(1px);
+	}
+
+	.filter{
+		position:absolute;
+		width:500px;
+		top:50px;
+		left:50%;
+		margin-left: -25%;
+	}
+
+	.filter .filter_search{
+		position: relative;
+		width: 75px; 
+		height:20px;
+		font-size: 7px;
+		border-radius: 5px;
+		border: 1px solid #ffffff;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background: url('../img/next_btn_black_90deg.png') transparent right center no-repeat;
+		background-size: 7px;
+		background-color: #ffffff;
+		font-variant: small-caps;
+		color: #9E9E9E;
+		
+	}
+
+	.filter option{
+		color: #505050;
+	}
 	
+	/* Content */
+	 
+	.search .research{
+		position: relative;
+		width: 50%;
+		left: 40%;
+		margin-left: -20%;
+		top: 15px;
+		height: 10px;
+		border: 1px solid #505050;
+		border-radius: 30px;
+		padding: 5px 10px;
+		font-size: 10px;
+		line-height: 10px;
+		color: #505050;
+		font-variant: small-caps;
+		background: url('../img/search_icon.png') transparent right center no-repeat;
+		background-size: 12px;
+		background-origin: content-box;
+	}
 
+	.search .research_result{
+		position: relative;
+		width: 70%;
+		height: auto;
+		left: 15%;
+		background-color: #e6e6e6;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.search .research_result p{
+		font-size: 7px;
+		font-weight: lighter;
+		color: #505050;
+		padding: 5px;
+		border-bottom: 1px solid #505050;
+	}
+
+	.search .research_result p:last-child{
+		border-bottom: none;
+	}
+
+	.school{
+		position: relative;
+		width: 115px;
+		height: 115px;
+		top: 30px;
+		left: 5%;
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.school .image{
+		position: absolute;
+		top:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.school .name{
+		position: absolute;
+		bottom: 15px;
+		left: 5px;
+		font-weight: bold;
+	}
+
+	.school .city{
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		display: inline-block;
+	}
+
+	.school .city p{
+		display: inline-block;
+	}
+
+	.city .line{
+		height: 1px;
+		width: 10px;
+		background-color: #d55555;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.school:hover .over{
+		opacity: 1;
+	}
+
+	.school .over{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		opacity: 0;
+		-webkit-transition: 0.4s;
+		-moz-transition: 0.4s;
+		-ms-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+		font-size: 7px;
+		background-size: 7px;
+		font-variant: small-caps;
+		color: #9E9E9E;
+		display: inline-block;
+	}
+
+	.school .over img{
+		width: 10px;
+		height: 10px;
+	}
+
+	.school .info{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+
+	.school .info p{
+		margin: 3px;
+	}
+
+	.school .visit{
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	.school .visit img{
+		width: 15px;
+		height: 15px;
+	}
+}

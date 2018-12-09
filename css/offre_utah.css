@@ -7,6 +7,17 @@ header {
 
 header .bg_img{
     position: absolute;
+<<<<<<< HEAD
+    left: 50%;
+    margin-left: -640px;
+    min-width: 100%;
+    top: 70%;
+    margin-top: -770px;
+    /*filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);*/
+}
+header .text_bg{
+=======
     top: 0;
     left: 0;
     height: 260px;
@@ -22,6 +33,7 @@ header .bg {
 }
 
 header .text_bg {
+>>>>>>> preprod
     position: absolute;
     text-align: left;
     width: 100%;
