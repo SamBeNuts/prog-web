@@ -95,13 +95,14 @@
 		let school_3 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
 		let school_4 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
 		let school_5 = " courses</p><p class='text_white'><img src='";
-		let school_6 = "'/> estimated</p></div><div class='visit'><a href=''><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
-		let school_7 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
-		let school_8 = "</p></div></div>";
+		let school_6 = "'/> estimated</p></div><div class='visit'><a href='offre_utah/";
+		let school_7 = "'><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
+		let school_8 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
+		let school_9 = "</p></div></div>";
 		
 		for (let school in schools){
 			document.querySelector('.schools').innerHTML += school_1 + school.toLowerCase().replace(/ /g, '_') + '_thumbnail.jpg' + school_2 + schools[school].courses[0][1] + school_3 + schools[school].top +school_4 + schools[school].courses[0][2] + school_5
-			+ school_6 + school + school_7 + schools[school].city + ", " + schools[school].country + school_8;
+			+ school_6 + school + school_7 + school + school_8 + schools[school].city + ", " + schools[school].country + school_9;
 		}
 	}
 	
