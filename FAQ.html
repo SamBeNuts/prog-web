@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/FQA.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <script type="text/javascript" src="js/request_data.js"></script>
@@ -24,9 +23,9 @@
         <a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
 
         //barre de recherche
-        <form id="searchForm" class="bar_de_recherche" action="javascript:search()">
-            <input type="text" id="searchItem" name="Search" placeholder="Search" >
-            <button type="submit" class="btn_summit" onclick="submit()">
+        <form id="searchForm" class="bar_de_recherche" >
+            <input type="text" id="searchItem" name="Search" placeholder="Search" onkeyup="search()">
+            <button type="submit" class="btn_summit">
                 <img src="img/search_icon_white.png" height="30px">
             </button>
         </form>
@@ -89,15 +88,19 @@
     }
 
     function search() {
+        //on récupere l'input de la barre de recherche(name)
         var name = document.querySelector("#searchForm").elements["searchItem"].value;
+        //on récupere tous les contenus de la page (divs)
         var divs = document.querySelectorAll(".tnc");
         if(name === ""){
+            //si on tape rien dans la barre de recherchem on affiche normalement
             for (var i = 0; i < divs.length; i++) {
                 divs[i].style.display = "block";
             }
             return;
         }
         var pattern = name.toLowerCase();
+        //on cache les divs qui ne concernent pas à la demande d'utilisateur
         for (var i = 0; i < divs.length; i++) {
             var index = divs[i].innerText.toLowerCase().indexOf(pattern);
             if (index === -1) {
