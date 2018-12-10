@@ -98,11 +98,8 @@ header .bg_wall_FAQ{
     }
 
     header .bg_FAQ {
-        position: absolute;
-        left: 50%;
-        margin-left: -1000px;
-        min-width: 100%;
         height: 175px;
+        left: 1000px;
     }
 
     header .man_bg {
