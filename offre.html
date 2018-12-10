@@ -85,9 +85,8 @@
 	request.onload = function () {
         let data = request.response;
         add_schools(data.schools);
-		//console.log(data.schools, data.schools.length);
-		//document.querySelector(".nb_result").innerHTML = data.schools.size;
-    }
+		document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
+    };
 	
 	function add_schools(schools) {
 		let school_1 = "<div class='school'><img class='image' src='img/data/";
