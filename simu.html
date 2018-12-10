@@ -191,18 +191,18 @@
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
-    let schools;
-    let plane_cost_list;
-    let plane_cost;
-    let cost_of_living_list;
-    let cost_of_living;
-    let tuiton_cost;
-    let campus_cost;
-    let accomodation_cost;
-    let type_accomodation;
+    let schools; //liste de toutes les écoles
+    let plane_cost_list; //liste des prix des vols
+    let plane_cost; //prix du vol en fonction de l'école sélectionnée
+    let cost_of_living_list; //liste des prix des coûts de vie
+    let cost_of_living; //prix du coût de vie en fonction de l'école sélectionnée
+    let tuiton_cost; //prix du coût d'étude en fonction de l'école sélectionnée
+    let campus_cost; //prix d'un loyer de résidence universitaire en fonction de l'école sélectionnée
+    let accomodation_cost; //prix d'un loyer de studio en fonction de l'école sélectionnée
+    let type_accomodation; //type de logement (1: résidence universitaire, 2: studio, 3: colocation
 
-    request.onload = function () {
-        let data = request.response;
+    request.onload = function () { //
+        let data = request.response; //on stocke toutes les données de data.json
         schools = data.schools;
         plane_cost_list = data.plane_cost;
         cost_of_living_list = data.cost_of_living;
@@ -212,25 +212,28 @@
         x.parentElement.classList.toggle("active");
     }
 
-    let pos_step = 1;
+    let pos_step = 1; //étape active de la simulation
 
-    function changeStep(x){
-        if ((x === 0 && pos_step !== 7) || (x !== 0 && x < pos_step)){
+    function changeStep(x){ //permet de se rendre à l'étape x de la simulation (sauf si x=0, où l'on se rend juste à l'étape suivante)
+        if ((x === 0 && pos_step !== 7) || (x !== 0 && x < pos_step)){ //on vérifie qu'on n'essaie pas d'accéder à l'étape suivante si on est déjà à la dernière étape, mais aussi qu'on n'essaie pas d'accéder à une étape trop supérieure (+2) à celle active
+            //on rend inactive l'ancienne étape active
             document.querySelector('.progress').classList.remove('step_' + pos_step);
             document.querySelector('.budget_icon.active').classList.remove('active');
             document.querySelector('.form_step.active').classList.remove('active');
-            if (x === 0){
+            if (x === 0){ //si x=0, on se rend juste à l'étape suivante
                 pos_step++;
-                document.querySelectorAll('.budget_icon').item(pos_step-2).classList.add('done');
+                document.querySelectorAll('.budget_icon').item(pos_step-2).classList.add('done'); //on change la couleur de l'icone de l'ancienne étape active
+                //on rend active l'étape suivante
                 document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
                 document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
             }
             else{
-                for (let i = pos_step - 1; i >= x; i--){
+                for (let i = pos_step - 1; i >= x; i--){ //on change la couleur des icones des étapes inférieures à x
                     document.querySelectorAll('.budget_icon').item(i-1).classList.remove('done');
                 }
                 pos_step = x;
             }
+            //on rend active l'étape x
             document.querySelector('.progress').classList.add('step_' + pos_step);
             document.querySelectorAll('.budget_icon').item(pos_step-1).classList.add('active');
             document.querySelectorAll('.form_step').item(pos_step-1).classList.add('active');
