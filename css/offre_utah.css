@@ -77,13 +77,13 @@ header .btn span {
 /* Content */
 
 .left {
-    width: 50%;
+    width: 55%;
     float: left;
     margin-top: 10px;
 }
 
 .right {
-    width: 50%;
+    width: 45%;
     float: right;
     padding-top: 10px;
     margin-top: 30px;
@@ -173,6 +173,7 @@ header .btn span {
     border: 10px solid #e6e6e6;
     position: relative;
     padding-top: 5px;
+    flex:none;
 }
 
 .border_icon img{
@@ -188,8 +189,7 @@ header .btn span {
 .cost_content{
     font-size: 18px;
     font-weight: bold;
-    padding-top:35px;
-    padding-left: 30px;
+    margin:auto 15px;
 }
 
 .cost_content span{
@@ -219,7 +219,7 @@ header .btn span {
 
 .chiffres .info {
     text-align: right;
-    border-right: 2px solid darkred;
+    border-right: 2px solid #d55555;
     font-size: 30px;
     padding-bottom: 10px;
     font-weight: lighter;
@@ -229,5 +229,5 @@ header .btn span {
 .chiffres .info span{
     font-weight: normal;
     font-size: 40px;
-    color:darkred;
+    color:#d55555;
 }
