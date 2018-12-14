@@ -16,7 +16,8 @@ header .bg {
     width: 1000px;
     top: 100px;
     left: 50%;
-    margin-left: -25%;
+    margin-left: -500px;
+    text-align: center;
 }
 
 .filter .filter_search {
@@ -45,12 +46,11 @@ header .bg {
  * Content
  */
 
-.search .research {
+.research {
     position: relative;
     width: 50%;
-    left: 40%;
-    margin-left: -20%;
-    top: 30px;
+    left: 50%;
+    margin: 10px 0 30px -25%;
     height: 20px;
     border: 3px solid #505050;
     border-radius: 60px;
@@ -64,7 +64,7 @@ header .bg {
     background-origin: content-box;
 }
 
-.search .research_result {
+.research_result {
     position: relative;
     width: 70%;
     height: auto;
@@ -74,7 +74,7 @@ header .bg {
     cursor: pointer;
 }
 
-.search .research_result p {
+.research_result p {
     font-size: 15px;
     font-weight: lighter;
     color: #505050;
@@ -82,20 +82,26 @@ header .bg {
     border-bottom: 1px solid #505050;
 }
 
-.search .research_result p:last-child {
+ .research_result p:last-child {
     border-bottom: none;
 }
 
-.schools {
-    margin-bottom: 110px;
+.schools, .favoris {
     text-align: center;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.schools{
+    margin-bottom: 40px;
 }
 
 .school {
     position: relative;
     width: 230px;
     height: 230px;
-    top: 60px;
     display: inline-block;
     margin: 7px;
     text-align: left;
@@ -227,7 +233,7 @@ header .bg {
     }
 
     /* Content */
-    .search .research {
+    .research {
         position: relative;
         width: 50%;
         left: 40%;
@@ -246,7 +252,7 @@ header .bg {
         background-origin: content-box;
     }
 
-    .search .research_result {
+    .research_result {
         position: relative;
         width: 70%;
         height: auto;
@@ -256,7 +262,7 @@ header .bg {
         cursor: pointer;
     }
 
-    .search .research_result p {
+    .research_result p {
         font-size: 7px;
         font-weight: lighter;
         color: #505050;
@@ -264,7 +270,7 @@ header .bg {
         border-bottom: 1px solid #505050;
     }
 
-    .search .research_result p:last-child {
+    .research_result p:last-child {
         border-bottom: none;
     }
 
