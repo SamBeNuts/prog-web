@@ -7,403 +7,1469 @@
       "city": "Hamburg",
       "country": "Allemagne",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Quamquam te quidem video minime esse deterritum. Post enim Chrysippum eum non sane est disputatum. Cur ipse Pythagoras et Aegyptum lustravit et Persarum magos adiit? Ut scias me intellegere, primum idem esse dico voluptatem, quod ille don. \n\nDuo Reges: constructio interrete. Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; An est aliquid, quod te sua sponte delectet? Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Ut proverbia non nulla veriora sint quam vestra dogmata. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis vitia posuisse contraria.",
       "medias": [],
-      "top": 45,
-      "deadline_number": 9,
-      "deadline_date": "Novembre, 2018",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 35,
+      "deadline_number": 23,
+      "deadline_date": "Octobre 2018",
+      "courses_year": [
+        "3a GMM",
+        "4a\/5a GB"
       ],
-      "tuiton_cost": 250,
-      "campus_cost": 450,
-      "accomodation_cost": 600
+      "courses_languages": [
+        "de",
+        "en",
+        "es",
+        "fr"
+      ],
+      "courses": [
+        [
+          "POO",
+          [
+            "3a GMM",
+            "4a\/5a GB"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a GMM",
+            "4a\/5a GB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "3a GMM",
+            "4a\/5a GB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "3a GMM",
+            "4a\/5a GB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a GMM",
+            "4a\/5a GB"
+          ],
+          [
+            "de",
+            "en",
+            "es",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 600,
+      "campus_cost": 600,
+      "accomodation_cost": 400
     },
     "Concordia University": {
       "city": "Montréal",
       "country": "Canada",
-      "website": "https://www.concordia.ca/",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "website": "#",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Haec para\/doca illi, nos admirabilia dicamus. At iste non dolendi status non vocatur voluptas. Quid, cum fictas fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus? Tollenda est atque extrahenda radicitus. Sed vos squalidius, illorum vides quam niteat oratio. \n\nEquidem soleo etiam quod uno Graeci, si aliter non possum, idem pluribus verbis exponere. Tanti autem aderant vesicae et torminum morbi, ut nihil ad eorum magnitudinem posset accedere. Duo Reges: constructio interrete. Laboro autem non sine causa; Unum est sine dolore esse, alterum cum voluptate. Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis. Quid, si non sensus modo ei sit datus, verum etiam animus hominis? Videamus igitur sententias eorum, tum ad verba redeamus. Quae in controversiam veniunt, de iis, si placet, disseramus. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.",
       "medias": [],
-      "top": 20,
-      "deadline_number": 15,
-      "deadline_date": "Janvier, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 40,
+      "deadline_number": 13,
+      "deadline_date": "Décembre 2018",
+      "courses_year": [
+        "4a\/5a GM"
       ],
-      "tuiton_cost": 200,
-      "campus_cost": 600,
-      "accomodation_cost": 450
+      "courses_languages": [
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "POO",
+          [
+            "4a\/5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "4a\/5a GM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "4a\/5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "4a\/5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 500,
+      "accomodation_cost": 250
     },
     "Ecole Polytechnique de Montréal": {
       "city": "Montréal",
       "country": "Canada",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ille non pertimuit saneque fidenter: Istis quidem ipsis verbis, inquit; Nam Pyrrho, Aristo, Erillus iam diu abiecti. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Vide, quantum, inquam, fallare, Torquate. Beatus autem esse in maximarum rerum timore nemo potest. Duo Reges: constructio interrete. Theophrastus mediocriterne delectat, cum tractat locos ab Aristotele ante tractatos? \n\nAn ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Quae diligentissime contra Aristonem dicuntur a Chryippo. Hunc vos beatum; Nos vero, inquit ille; Praeclare hoc quidem. Quae animi affectio suum cuique tribuens atque hanc, quam dico.",
       "medias": [],
-      "top": 5,
-      "deadline_number": 7,
-      "deadline_date": "Février, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 15,
+      "deadline_number": 9,
+      "deadline_date": "Avril 2019",
+      "courses_year": [
+        "3a\/4a GB",
+        "4a AE"
       ],
-      "tuiton_cost": 250,
-      "campus_cost": 500,
-      "accomodation_cost": 350
+      "courses_languages": [
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "POO",
+          [
+            "4a AE"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Signaux aléatoires",
+          [
+            "4a AE"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "3a\/4a GB",
+            "4a AE"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a\/4a GB",
+            "4a AE"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 550,
+      "campus_cost": 600,
+      "accomodation_cost": 550
     },
     "University of Sherbrooke": {
       "city": "Sherbrooke",
       "country": "Canada",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illis videtur, qui illud non dubitant bonum dicere -; Nihil opus est exemplis hoc facere longius. Neque solum ea communia, verum etiam paria esse dixerunt. Nam bonum ex quo appellatum sit, nescio, praepositum ex eo credo, quod praeponatur aliis. \n\nMaximeque eos videre possumus res gestas audire et legere velle, qui a spe gerendi absunt confecti senectute. Cur fortior sit, si illud, quod tute concedis, asperum et vix ferendum putabit?",
       "medias": [],
-      "top": 60,
-      "deadline_number": 21,
-      "deadline_date": "Février, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 10,
+      "deadline_number": 6,
+      "deadline_date": "Avril 2019",
+      "courses_year": [
+        "3a\/4a\/5aGB"
       ],
-      "tuiton_cost": 200,
-      "campus_cost": 450,
-      "accomodation_cost": 300
+      "courses_languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "courses": [
+        [
+          "Probabilités",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en",
+            "es",
+            "fr"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Signaux aléatoires",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "3a\/4a\/5aGB"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 600,
+      "accomodation_cost": 500
     },
     "Beihang University": {
       "city": "Pékin",
       "country": "Chine",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atque ita re simpliciter primo collocata reliqua subtilius persequentes corporis bona facilem quandam rationem habere censebant; Quia voluptatem hanc esse sentiunt omnes, quam sensus accipiens movetur et iucunditate quadam perfunditur. Recte, inquit, intellegis. Comprehensum, quod cognitum non habet? Duo Reges: constructio interrete. Non modo carum sibi quemque, verum etiam vehementer carum esse? Sic enim maiores nostri labores non fugiendos tristissimo tamen verbo aerumnas etiam in deo nominaverunt. \n\nQui enim existimabit posse se miserum esse beatus non erit. Saepe ab Aristotele, a Theophrasto mirabiliter est laudata per se ipsa rerum scientia; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quamvis enim depravatae non sint, pravae tamen esse possunt. At iam decimum annum in spelunca iacet.",
       "medias": [],
-      "top": 40,
-      "deadline_number": 30,
-      "deadline_date": "Décembre, 2018",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 25,
+      "deadline_number": 7,
+      "deadline_date": "Février 2019",
+      "courses_year": [
+        "4a AE",
+        "4a\/5a GM"
       ],
-      "tuiton_cost": 350,
-      "campus_cost": 550,
-      "accomodation_cost": 200
+      "courses_languages": [
+        "cn",
+        "en",
+        "zh"
+      ],
+      "courses": [
+        [
+          "Statistique",
+          [
+            "4a AE",
+            "4a\/5a GM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "4a AE",
+            "4a\/5a GM"
+          ],
+          [
+            "cn",
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "4a\/5a GM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "4a AE",
+            "4a\/5a GM"
+          ],
+          [
+            "en",
+            "zh"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "4a AE",
+            "4a\/5a GM"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 600,
+      "campus_cost": 600,
+      "accomodation_cost": 450
     },
     "City University of Hong Kong": {
       "city": "Hong Kong",
       "country": "Chine",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil illinc huc pervenit. Immo istud quidem, inquam, quo loco quidque, nisi iniquum postulo, arbitratu meo. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Fortemne possumus dicere eundem illum Torquatum? Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. \n\nDuo Reges: constructio interrete. Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Itaque fecimus. Modo etiam paulum ad dexteram de via declinavi, ut ad Pericli sepulcrum accederem. Tum ego: Non mehercule, inquam, soleo temere contra Stoicos, non quo illis admodum assentiar, sed pudore impedior; Nam adhuc, meo fortasse vitio, quid ego quaeram non perspicis. Falli igitur possumus. Hos contra singulos dici est melius. Traditur, inquit, ab Epicuro ratio neglegendi doloris.",
       "medias": [],
-      "top": 30,
-      "deadline_number": 25,
-      "deadline_date": "Décembre, 2018",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 45,
+      "deadline_number": 18,
+      "deadline_date": "Mai 2019",
+      "courses_year": [
+        "3a\/4a GP"
       ],
-      "tuiton_cost": 400,
-      "campus_cost": 500,
-      "accomodation_cost": 250
+      "courses_languages": [
+        "en"
+      ],
+      "courses": [
+        [
+          "Probabilités",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 150,
+      "campus_cost": 250,
+      "accomodation_cost": 600
     },
     "The University of Hong Kong": {
       "city": "Hong Kong",
       "country": "Chine",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam prius a se poterit quisque discedere quam appetitum earum rerum, quae sibi conducant, amittere. Et ais, si una littera commota sit, fore tota ut labet disciplina. Duo Reges: constructio interrete. Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Ergo hoc quidem apparet, nos ad agendum esse natos. Dic in quovis conventu te omnia facere, ne doleas. \n\nEt quidem, Cato, hanc totam copiam iam Lucullo nostro notam esse oportebit; Satisne vobis videor pro meo iure in vestris auribus commentatus? Theophrasti igitur, inquit, tibi liber ille placet de beata vita? Est enim effectrix multarum et magnarum voluptatum. Quia nec honesto quic quam honestius nec turpi turpius. Sint ista Graecorum; Re mihi non aeque satisfacit, et quidem locis pluribus.",
       "medias": [],
-      "top": 50,
-      "deadline_number": 10,
-      "deadline_date": "Janvier, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 70,
+      "deadline_number": 4,
+      "deadline_date": "Novembre 2018",
+      "courses_year": [
+        "4a\/5a AE"
       ],
-      "tuiton_cost": 250,
-      "campus_cost": 450,
-      "accomodation_cost": 300
+      "courses_languages": [
+        "de",
+        "en",
+        "es"
+      ],
+      "courses": [
+        [
+          "Statistique",
+          [
+            "4a\/5a AE"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "4a\/5a AE"
+          ],
+          [
+            "de",
+            "en"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "4a\/5a AE"
+          ],
+          [
+            "de",
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "4a\/5a AE"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "POO",
+          [
+            "4a\/5a AE"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 550,
+      "accomodation_cost": 250
     },
     "Chung-Ang University": {
       "city": "Séoul",
       "country": "Corée",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? Hoc Hieronymus summum bonum esse dixit. Si enim ad populum me vocas, eum. \n\nAut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Utrum igitur tibi litteram videor an totas paginas commovere? Duo Reges: constructio interrete. Sed tempus est, si videtur, et recta quidem ad me. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. Sed haec nihil sane ad rem;",
       "medias": [],
-      "top": 10,
-      "deadline_number": 20,
-      "deadline_date": "Janvier, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 15,
+      "deadline_number": 3,
+      "deadline_date": "Octobre 2018",
+      "courses_year": [
+        "3a\/4a GMM"
       ],
-      "tuiton_cost": 250,
-      "campus_cost": 250,
-      "accomodation_cost": 150
+      "courses_languages": [
+        "en",
+        "ru"
+      ],
+      "courses": [
+        [
+          "Analyse numérique",
+          [
+            "3a\/4a GMM"
+          ],
+          [
+            "en",
+            "ru"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a\/4a GMM"
+          ],
+          [
+            "en",
+            "ru"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "3a\/4a GMM"
+          ],
+          [
+            "en",
+            "ru"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "3a\/4a GMM"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 300,
+      "accomodation_cost": 450
     },
     "Inha University": {
       "city": "Incheon",
       "country": "Corée",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, an parum disserui non verbis Stoicos a Peripateticis, sed universa re et tota sententia dissidere? Et ille ridens: Video, inquit, quid agas; Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Quod autem ratione actum est, id officium appellamus. \n\nEsse enim quam vellet iniquus iustus poterat inpune. Hoc loco discipulos quaerere videtur, ut, qui asoti esse velint, philosophi ante fiant. Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Sed potestne rerum maior esse dissensio? Quis istud, quaeso, nesciebat? Vide, quantum, inquam, fallare, Torquate.",
       "medias": [],
-      "top": 15,
-      "deadline_number": 10,
-      "deadline_date": "Mars, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 55,
+      "deadline_number": 17,
+      "deadline_date": "Décembre 2018",
+      "courses_year": [
+        "3a\/4a\/5aAE",
+        "4a GB"
       ],
-      "tuiton_cost": 250,
+      "courses_languages": [
+        "cn",
+        "de",
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "Analyse numérique",
+          [
+            "3a\/4a\/5aAE",
+            "4a GB"
+          ],
+          [
+            "cn",
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a\/5aAE",
+            "4a GB"
+          ],
+          [
+            "cn",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "3a\/4a\/5aAE",
+            "4a GB"
+          ],
+          [
+            "cn",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a\/4a\/5aAE",
+            "4a GB"
+          ],
+          [
+            "cn",
+            "de",
+            "en",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 500,
       "campus_cost": 250,
-      "accomodation_cost": 200
+      "accomodation_cost": 400
     },
     "Pohang University of Science and Technology": {
       "city": "Pohang",
       "country": "Corée",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali. Satis est ad hoc responsum. Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Minime vero, inquit ille, consentit. Duo Reges: constructio interrete. Hoc enim constituto in philosophia constituta sunt omnia. Tamen aberramus a proposito, et, ne longius, prorsus, inquam, Piso, si ista mala sunt, placet. Quae sunt igitur communia vobis cum antiquis, iis sic utamur quasi concessis; Est autem etiam actio quaedam corporis, quae motus et status naturae congruentis tenet; \n\nCerte non potest. Hoc loco discipulos quaerere videtur, ut, qui asoti esse velint, philosophi ante fiant. Propter nos enim illam, non propter eam nosmet ipsos diligimus. Quibusnam praeteritis? Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Sed haec nihil sane ad rem; De illis, cum volemus. Ita enim vivunt quidam, ut eorum vita refellatur oratio.",
       "medias": [],
       "top": 25,
-      "deadline_number": 1,
-      "deadline_date": "Janvier, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "deadline_number": 11,
+      "deadline_date": "Novembre 2018",
+      "courses_year": [
+        "5a IR"
       ],
-      "tuiton_cost": 150,
-      "campus_cost": 250,
-      "accomodation_cost": 300
+      "courses_languages": [
+        "de",
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "POO",
+          [
+            "5a IR"
+          ],
+          [
+            "de",
+            "en"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "5a IR"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "5a IR"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "5a IR"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "5a IR"
+          ],
+          [
+            "de",
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 600,
+      "campus_cost": 400,
+      "accomodation_cost": 500
     },
     "Seoul National University": {
       "city": "Séoul",
       "country": "Corée",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Quantum Aristoxeni ingenium consumptum videmus in musicis? Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia? Duo Reges: constructio interrete. Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. \n\nBeatus autem esse in maximarum rerum timore nemo potest. In eo enim positum est id, quod dicimus esse expetendum. Quare si potest esse beatus is, qui est in asperis reiciendisque rebus, potest is quoque esse. Cui Tubuli nomen odio non est? Ita fit beatae vitae domina fortuna, quam Epicurus ait exiguam intervenire sapienti. Rapior illuc, revocat autem Antiochus, nec est praeterea, quem audiamus.",
       "medias": [],
-      "top": 5,
-      "deadline_number": 15,
-      "deadline_date": "Avril, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 25,
+      "deadline_number": 1,
+      "deadline_date": "Février 2019",
+      "courses_year": [
+        "3a GMM"
       ],
-      "tuiton_cost": 350,
+      "courses_languages": [
+        "cn",
+        "de",
+        "en"
+      ],
+      "courses": [
+        [
+          "Statistique",
+          [
+            "3a GMM"
+          ],
+          [
+            "cn",
+            "de",
+            "en"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "3a GMM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a GMM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "3a GMM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "POO",
+          [
+            "3a GMM"
+          ],
+          [
+            "de",
+            "en"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "3a GMM"
+          ],
+          [
+            "en"
+          ]
+        ]
+      ],
+      "tuiton_cost": 300,
       "campus_cost": 250,
-      "accomodation_cost": 200
+      "accomodation_cost": 150
     },
     "Ulsan National University of Science and Technology": {
       "city": "Ulsan",
       "country": "Corée",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad corpus diceres pertinere-, sed ea, quae dixi, ad corpusne refers? Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; Ex eorum enim scriptis et institutis cum omnis doctrina liberalis, omnis historia. Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Duo Reges: constructio interrete. Quae similitudo in genere etiam humano apparet. Ut optime, secundum naturam affectum esse possit. Quem si tenueris, non modo meum Ciceronem, sed etiam me ipsum abducas licebit. \n\nSed et illum, quem nominavi, et ceteros sophistas, ut e Platone intellegi potest, lusos videmus a Socrate. Atqui reperies, inquit, in hoc quidem pertinacem; Sint ista Graecorum; Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas? Sed quoniam et advesperascit et mihi ad villam revertendum est, nunc quidem hactenus; Et harum quidem rerum facilis est et expedita distinctio.",
       "medias": [],
-      "top": 25,
-      "deadline_number": 14,
-      "deadline_date": "Novembre, 2018",
+      "top": 70,
+      "deadline_number": 9,
+      "deadline_date": "Avril 2019",
+      "courses_year": [
+        "3a\/4a\/5aGC"
+      ],
+      "courses_languages": [
+        "cn",
+        "en",
+        "fr"
+      ],
       "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+        [
+          "Analyse numérique",
+          [
+            "3a\/4a\/5aGC"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "3a\/4a\/5aGC"
+          ],
+          [
+            "cn",
+            "en"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "3a\/4a\/5aGC"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a\/5aGC"
+          ],
+          [
+            "en"
+          ]
+        ]
       ],
       "tuiton_cost": 250,
-      "campus_cost": 450,
-      "accomodation_cost": 300
+      "campus_cost": 600,
+      "accomodation_cost": 150
     },
     "Mississippi State University": {
       "city": "Starkville",
       "country": "Etats-Unis",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in geometria, prima si dederis, danda sunt omnia. Morbo gravissimo affectus, exul, orbus, egens, torqueatur eculeo: quem hunc appellas, Zeno? Duo Reges: constructio interrete. At miser, si in flagitiosa et vitiosa vita afflueret voluptatibus. Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur? Qua tu etiam inprudens utebare non numquam. \n\nSed quanta sit alias, nunc tantum possitne esse tanta. Facillimum id quidem est, inquam. Urgent tamen et nihil remittunt. Negat esse eam, inquit, propter se expetendam.",
       "medias": [],
-      "top": 70,
-      "deadline_number": 24,
-      "deadline_date": "Décembre, 2018",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 35,
+      "deadline_number": 7,
+      "deadline_date": "Mars 2019",
+      "courses_year": [
+        "3a GM",
+        "3a\/4a\/5aGP"
       ],
-      "tuiton_cost": 100,
-      "campus_cost": 750,
-      "accomodation_cost": 600
+      "courses_languages": [
+        "cn",
+        "en",
+        "es",
+        "fr",
+        "ru"
+      ],
+      "courses": [
+        [
+          "Programmation système",
+          [
+            "3a GM",
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "es",
+            "ru"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a GM"
+          ],
+          [
+            "cn",
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a GM",
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "POO",
+          [
+            "3a GM",
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "3a GM",
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "es",
+            "fr"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ]
+      ],
+      "tuiton_cost": 400,
+      "campus_cost": 450,
+      "accomodation_cost": 250
     },
     "University of Texas at Austin": {
       "city": "Austin",
       "country": "Etats-Unis",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullus est igitur cuiusquam dies natalis. Idemne, quod iucunde? Ut in voluptate sit, qui epuletur, in dolore, qui torqueatur. Quo modo autem philosophus loquitur? Multa sunt dicta ab antiquis de contemnendis ac despiciendis rebus humanis; Bonum liberi: misera orbitas. \n\nDuo Reges: constructio interrete. Ita ne hoc quidem modo paria peccata sunt. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Hoc est non modo cor non habere, sed ne palatum quidem. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Omnes enim iucundum motum, quo sensus hilaretur. Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.",
       "medias": [],
-      "top": 50,
-      "deadline_number": 5,
-      "deadline_date": "Février, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 35,
+      "deadline_number": 10,
+      "deadline_date": "Janvier 2019",
+      "courses_year": [
+        "3a GM"
       ],
-      "tuiton_cost": 100,
-      "campus_cost": 650,
-      "accomodation_cost": 650
+      "courses_languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "courses": [
+        [
+          "POO",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Signaux aléatoires",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es",
+            "fr"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es",
+            "fr"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "3a GM"
+          ],
+          [
+            "en",
+            "es",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 450,
+      "accomodation_cost": 500
     },
     "Benemérita Universidad Autónoma de Puebla": {
       "city": "Puebla",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mihi quidem Antiochum, quem audis, satis belle videris attendere. Quid de Platone aut de Democrito loquar? Ne discipulum abducam, times. \n\nProfectus in exilium Tubulus statim nec respondere ausus; Quid censes in Latino fore? Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii. Duo Reges: constructio interrete. Sin dicit obscurari quaedam nec apparere, quia valde parva sint, nos quoque concedimus; Vide, ne etiam menses! nisi forte eum dicis, qui, simul atque arripuit, interficit. Nihil opus est exemplis hoc facere longius. Igitur neque stultorum quisquam beatus neque sapientium non beatus.",
       "medias": [],
-      "top": 80,
-      "deadline_number": 5,
-      "deadline_date": "Février, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 60,
+      "deadline_number": 14,
+      "deadline_date": "Mars 2019",
+      "courses_year": [
+        "3a\/4a GP"
       ],
-      "tuiton_cost": 150,
-      "campus_cost": 250,
-      "accomodation_cost": 250
+      "courses_languages": [
+        "en",
+        "fr",
+        "zh"
+      ],
+      "courses": [
+        [
+          "Programmation système",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en",
+            "zh"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en",
+            "fr",
+            "zh"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "3a\/4a GP"
+          ],
+          [
+            "en",
+            "zh"
+          ]
+        ]
+      ],
+      "tuiton_cost": 450,
+      "campus_cost": 150,
+      "accomodation_cost": 150
     },
     "Universidad Autónoma de San Luis Potosí": {
       "city": "San Luis Potosí",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Quod si ita se habeat, non possit beatam praestare vitam sapientia. Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quod autem in homine praestantissimum atque optimum est, id deseruit. Et quod est munus, quod opus sapientiae? Duo Reges: constructio interrete. Sed quae tandem ista ratio est? Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? \n\nQuae cum magnifice primo dici viderentur, considerata minus probabantur. Illi enim inter se dissentiunt. Iubet igitur nos Pythius Apollo noscere nosmet ipsos. Quis istud possit, inquit, negare? Sed in rebus apertissimis nimium longi sumus. Sed tu istuc dixti bene Latine, parum plane. Bestiarum vero nullum iudicium puto. Modo etiam paulum ad dexteram de via declinavi, ut ad Pericli sepulcrum accederem. Si autem id non concedatur, non continuo vita beata tollitur. Illud non continuo, ut aeque incontentae. Deinde disputat, quod cuiusque generis animantium statui deceat extremum.",
       "medias": [],
-      "top": 60,
-      "deadline_number": 14,
-      "deadline_date": "Mars, 2019",
+      "top": 30,
+      "deadline_number": 9,
+      "deadline_date": "Janvier 2019",
+      "courses_year": [
+        "3a\/4a GP",
+        "4a\/5a IR"
+      ],
+      "courses_languages": [
+        "cn",
+        "en",
+        "ru",
+        "zh"
+      ],
       "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+        [
+          "Base de données",
+          [
+            "3a\/4a GP",
+            "4a\/5a IR"
+          ],
+          [
+            "en",
+            "zh"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "3a\/4a GP",
+            "4a\/5a IR"
+          ],
+          [
+            "cn",
+            "en",
+            "ru"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "4a\/5a IR"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a GP",
+            "4a\/5a IR"
+          ],
+          [
+            "cn",
+            "en",
+            "zh"
+          ]
+        ],
+        [
+          "Réseaux",
+          [
+            "4a\/5a IR"
+          ],
+          [
+            "cn",
+            "en",
+            "zh"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "3a\/4a GP",
+            "4a\/5a IR"
+          ],
+          [
+            "cn",
+            "en"
+          ]
+        ]
       ],
       "tuiton_cost": 250,
       "campus_cost": 350,
-      "accomodation_cost": 250
+      "accomodation_cost": 150
     },
     "Universidad Autónoma de Yucatán": {
       "city": "Yucatán",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atque adhuc ea dixi, causa cur Zenoni non fuisset, quam ob rem a superiorum auctoritate discederet. Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Ut necesse sit omnium rerum, quae natura vigeant, similem esse finem, non eundem. Sin laboramus, quis est, qui alienae modum statuat industriae? A villa enim, credo, et: Si ibi te esse scissem, ad te ipse venissem. Duo Reges: constructio interrete. \n\nItaque hic ipse iam pridem est reiectus; Nunc vides, quid faciat. Quod quidem iam fit etiam in Academia.",
       "medias": [],
-      "top": 50,
-      "deadline_number": 5,
-      "deadline_date": "Novembre, 2018",
+      "top": 5,
+      "deadline_number": 7,
+      "deadline_date": "Novembre 2018",
+      "courses_year": [
+        "4a IR",
+        "5a GM"
+      ],
+      "courses_languages": [
+        "en",
+        "fr"
+      ],
       "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+        [
+          "Probabilités",
+          [
+            "4a IR",
+            "5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "4a IR",
+            "5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "POO",
+          [
+            "4a IR",
+            "5a GM"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Langues étrangères",
+          [
+            "5a GM"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ]
       ],
       "tuiton_cost": 150,
-      "campus_cost": 450,
-      "accomodation_cost": 250
+      "campus_cost": 300,
+      "accomodation_cost": 500
     },
     "Universidad de Guadalajara": {
       "city": "Guadalajara",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc enim constituto in philosophia constituta sunt omnia. Videamus igitur sententias eorum, tum ad verba redeamus. Ut id aliis narrare gestiant? Erit enim mecum, si tecum erit. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Cenasti in vita numquam bene, cum omnia in ista Consumis squilla atque acupensere cum decimano. Duo Reges: constructio interrete. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? \n\nNam his libris eum malo quam reliquo ornatu villae delectari. Ita relinquet duas, de quibus etiam atque etiam consideret. Rhetorice igitur, inquam, nos mavis quam dialectice disputare? His singulis copiose responderi solet, sed quae perspicua sunt longa esse non debent. Quae cum dixisset paulumque institisset, Quid est? Verba tu fingas et ea dicas, quae non sentias?",
       "medias": [],
-      "top": 40,
-      "deadline_number": 30,
-      "deadline_date": "Janvier, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 65,
+      "deadline_number": 15,
+      "deadline_date": "Mai 2019",
+      "courses_year": [
+        "3a\/4a\/5aGP"
       ],
-      "tuiton_cost": 150,
-      "campus_cost": 250,
-      "accomodation_cost": 250
+      "courses_languages": [
+        "en",
+        "es",
+        "ru"
+      ],
+      "courses": [
+        [
+          "Statistique",
+          [
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "es",
+            "ru"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "es"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "es",
+            "ru"
+          ]
+        ],
+        [
+          "POO",
+          [
+            "3a\/4a\/5aGP"
+          ],
+          [
+            "en",
+            "ru"
+          ]
+        ]
+      ],
+      "tuiton_cost": 200,
+      "campus_cost": 200,
+      "accomodation_cost": 150
     },
     "Universidad Popular Autónoma del Estado de Puebla": {
       "city": "Puebla",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud quaero, quid ei, qui in voluptate summum bonum ponat, consentaneum sit dicere. Duae sunt enim res quoque, ne tu verba solum putes. Apud ceteros autem philosophos, qui quaesivit aliquid, tacet; Et ille ridens: Video, inquit, quid agas; Ita redarguitur ipse a sese, convincunturque scripta eius probitate ipsius ac moribus. \n\nIn qua si nihil est praeter rationem, sit in una virtute finis bonorum; Easdemne res?",
       "medias": [],
-      "top": 80,
-      "deadline_number": 22,
-      "deadline_date": "Décembre, 2018",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 50,
+      "deadline_number": 5,
+      "deadline_date": "Février 2019",
+      "courses_year": [
+        "4a AE"
       ],
-      "tuiton_cost": 100,
-      "campus_cost": 350,
-      "accomodation_cost": 200
+      "courses_languages": [
+        "de",
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "Analyse numérique",
+          [
+            "4a AE"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Base de données",
+          [
+            "4a AE"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Probabilités",
+          [
+            "4a AE"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Statistique",
+          [
+            "4a AE"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Mathématiques",
+          [
+            "4a AE"
+          ],
+          [
+            "de",
+            "en",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 250,
+      "campus_cost": 150,
+      "accomodation_cost": 350
     },
     "Université de Guanajuato": {
       "city": "Guanajuato",
       "country": "Mexique",
       "website": "#",
-      "information": "Cras malesuada libero pretium augue convallis tempus. Praesent luctus risus vel ipsum commodo consequat. Vivamus dictum felis eget viverra maximus. Quisque felis urna, dapibus et urna ac, feugiat tincidunt massa. Phasellus a consectetur enim. Vivamus fermentum, lorem quis rutrum interdum, diam dolor molestie diam, nec bibendum elit nunc ut urna. Pellentesque ligula lorem, eleifend commodo egestas vitae, commodo quis magna. Duis quis odio sed ipsum placerat interdum.<br><br>Aenean maximus, diam at lacinia accumsan, elit lectus malesuada tortor, hendrerit vestibulum justo dolor vel risus. Cras placerat arcu mi, in aliquet turpis tempus nec. Quisque molestie mattis diam. Aliquam erat volutpat. Sed orci mi, blandit eu neque vitae, blandit ullamcorper ipsum. In in sem eu nisi cursus aliquam eget id erat. Suspendisse aliquet rhoncus velit, et ornare enim tempor in.",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quis contra in illa aetate pudorem, constantiam, etiamsi sua nihil intersit, non tamen diligat? Sit enim idem caecus, debilis. Beatus autem esse in maximarum rerum timore nemo potest. Itaque ad tempus ad Pisonem omnes. Duo Reges: constructio interrete. Ex rebus enim timiditas, non ex vocabulis nascitur. Erit enim instructus ad mortem contemnendam, ad exilium, ad ipsum etiam dolorem. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur. Quarum cum una sit, qua mores conformari putantur, differo eam partem, quae quasi stirps ets huius quaestionis. \n\nIn primo enim ortu inest teneritas ac mollitia quaedam, ut nec res videre optimas nec agere possint. Et ille ridens: Video, inquit, quid agas; Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen; Quamquam id quidem, infinitum est in hac urbe; Earum etiam rerum, quas terra gignit, educatio quaedam et perfectio est non dissimilis animantium. Illud urgueam, non intellegere eum quid sibi dicendum sit, cum dolorem summum malum esse dixerit. Aperiendum est igitur, quid sit voluptas; Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Aliter enim explicari, quod quaeritur, non potest. At negat Epicurus-hoc enim vestrum lumen estquemquam, qui honeste non vivat, iucunde posse vivere.",
       "medias": [],
-      "top": 50,
-      "deadline_number": 15,
-      "deadline_date": "Mai, 2019",
-      "courses": [
-        ["Programmation embarquée", ["3a mic", "5a gmm"], ["en", "fr"]],
-        ["Réseaux", ["4e/5e ir"], ["en"]],
-        ["Mathématiques", ["all"], ["en", "fr", "ru"]],
-        ["Base de données", ["5a gmm"], ["en", "fr"]],
-        ["Langues étrangères", ["all"], ["en", "fr", "es", "ru", "cn"]]
+      "top": 5,
+      "deadline_number": 12,
+      "deadline_date": "Avril 2019",
+      "courses_year": [
+        "5a GB"
       ],
-      "tuiton_cost": 100,
-      "campus_cost": 300,
-      "accomodation_cost": 300
+      "courses_languages": [
+        "en",
+        "fr"
+      ],
+      "courses": [
+        [
+          "Mathématiques",
+          [
+            "5a GB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation système",
+          [
+            "5a GB"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ],
+        [
+          "Analyse numérique",
+          [
+            "5a GB"
+          ],
+          [
+            "en"
+          ]
+        ],
+        [
+          "Programmation embarquée",
+          [
+            "5a GB"
+          ],
+          [
+            "en",
+            "fr"
+          ]
+        ]
+      ],
+      "tuiton_cost": 600,
+      "campus_cost": 350,
+      "accomodation_cost": 150
     }
   },
+  "years": [3,4,5],
+  "orientations": ["GB", "GC", "AE", "IR", "GMM", "GM", "GP"],
+  "languages": ["ru", "cn", "es", "zh", "de"],
+  "countries": ["Allemagne", "Canada", "Chine", "Corée", "Etats-Unis", "Mexique"],
   "plane_cost": {
     "Allemagne": 150,
     "Canada": 900,
