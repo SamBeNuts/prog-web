@@ -88,17 +88,18 @@
     }
 
     function search() {
+        console.dir("test");
         //on récupere l'input de la barre de recherche(name)
         var name = document.querySelector("#searchForm").elements["searchItem"].value;
         //on récupere tous les contenus de la page (divs)
         var divs = document.querySelectorAll(".tnc");
-        if(name === ""){
+        //if(name === ""){
             //si on tape rien dans la barre de recherchem on affiche normalement
             for (var i = 0; i < divs.length; i++) {
                 divs[i].style.display = "block";
             }
-            return;
-        }
+            /*return;
+        }*/
         var pattern = name.toLowerCase();
         //on cache les divs qui ne concernent pas à la demande d'utilisateur
         for (var i = 0; i < divs.length; i++) {
