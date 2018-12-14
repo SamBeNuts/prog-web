@@ -64,31 +64,17 @@
 			<input class="research" type="text" placeholder="Filtrer par nom" onkeyup="search()">
 		</div>
 		<div class="schools">
-			<div class="school">
-				<img class="image" src="img/data/.jpg">
-				<div class="over">
-					<div class="info">
-						<p class="text_white"><img src="img/student_icon.png"> 3a mic,4a/5a ir,5a gmm</p>
-						<p class="text_white"><img src="img/rank_icon.png"> the top 20%</p>
-						<p class="text_white text"><img src="img/language_icon.png"> en, fr, cn courses</p>
-						<p class="text_white text"><img src="img/budget_step_1.png"> estimated</p>
-					</div>
-					<div class="visit">
-						<a href=""><img src="img/visit_btn.png"></a>
-					</div>
-				</div>
-					<p class="text_white name">Oxford University</p>
-				<div class="city">
-					<div class="line"></div>
-					<p class="text_white">Oxford, United Kingdom</p>
-				</div>
-			</div>
 		</div>
 		<div class="number">
 			<div class="line"></div>
 			<p class="nb_result"></p>
 		</div>
 	</div>
+    <footer>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a,
+            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan
+                du site</a></p>
+    </footer>
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
@@ -99,9 +85,8 @@
 	request.onload = function () {
         let data = request.response;
         add_schools(data.schools);
-		//console.log(data.schools, data.schools.length);
-		//document.querySelector(".nb_result").innerHTML = data.schools.size;
-    }
+		document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
+    };
 	
 	function add_schools(schools) {
 		let school_1 = "<div class='school'><img class='image' src='img/data/";
@@ -109,13 +94,14 @@
 		let school_3 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
 		let school_4 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
 		let school_5 = " courses</p><p class='text_white'><img src='";
-		let school_6 = "'/> estimated</p></div><div class='visit'><a href=''><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
-		let school_7 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
-		let school_8 = "</p></div></div>";
+		let school_6 = "'/> estimated</p></div><div class='visit'><a href='offre_utah/";
+		let school_7 = "'><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
+		let school_8 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
+		let school_9 = "</p></div></div>";
 		
 		for (let school in schools){
 			document.querySelector('.schools').innerHTML += school_1 + school.toLowerCase().replace(/ /g, '_') + '_thumbnail.jpg' + school_2 + schools[school].courses[0][1] + school_3 + schools[school].top +school_4 + schools[school].courses[0][2] + school_5
-			+ school_6 + school + school_7 + schools[school].city + ", " + schools[school].country + school_8;
+			+ school_6 + school + school_7 + school + school_8 + schools[school].city + ", " + schools[school].country + school_9;
 		}
 	}
 	
