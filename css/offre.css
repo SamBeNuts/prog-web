@@ -23,13 +23,11 @@ header .bg {
 
 header .text_bg {
     position: absolute;
-    text-align: left;
-    width: 100%;
-    /*font-size: 40px;
-    line-height: 40px;*/
-    top: 200px;
-    margin-top: -60px;
-    margin-left: 10px;
+    width: 1000px;
+    top: 100px;
+    left: 50%;
+    margin-left: -500px;
+    text-align: center;
 }
 
 header .text_bg_uni {
@@ -62,41 +60,66 @@ header .btn span {
     text-align: center;
 }
 
-/* Content */
-
-.left {
-    width: 50%;
-    float: left;
-    margin-top: 10px;
-}
-
-.right {
-    width: 50%;
-    float: right;
-    padding-top: 10px;
-    margin-top: 30px;
-}
-
-.right p {
-    text-align: left;
-}
-
-.school_infos, .courses{
+.research {
     position: relative;
-    margin-bottom: 20px;
+    width: 50%;
+    left: 50%;
+    margin: 10px 0 30px -25%;
+    height: 20px;
+    border: 3px solid #505050;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #505050;
+    font-variant: small-caps;
+    background: url('../img/search_icon.png') transparent right center no-repeat;
+    background-size: 25px;
+    background-origin: content-box;
 }
 
+.research_result {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    background-color: #e6e6e6;
+    text-align: center;
+    cursor: pointer;
+}
 
-.school_infos_content {
-    margin-top: 10px;
-    font-size: 22px;
+.research_result p {
+    font-size: 15px;
     font-weight: lighter;
+    color: #505050;
+    padding: 10px;
+    border-bottom: 1px solid #505050;
 }
 
-.courses{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
+ .research_result p:last-child {
+    border-bottom: none;
+}
+
+.schools, .favoris {
+    text-align: center;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.schools{
+    margin-bottom: 40px;
+}
+
+.school {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    margin: 7px;
+    text-align: left;
+    overflow: hidden;
 }
 
 .courses .course{
@@ -215,28 +238,47 @@ header .btn span {
     padding-right: 8px;
 }
 
-.chiffres .info span{
-    font-weight: normal;
-    font-size: 40px;
-    color:darkred;
-}
+    /* Content */
+    .research {
+        position: relative;
+        width: 50%;
+        left: 40%;
+        margin-left: -20%;
+        top: 15px;
+        height: 10px;
+        border: 1px solid #505050;
+        border-radius: 30px;
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 10px;
+        color: #505050;
+        font-variant: small-caps;
+        background: url('../img/search_icon.png') transparent right center no-repeat;
+        background-size: 12px;
+        background-origin: content-box;
+    }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 20px;
-}
+    .research_result {
+        position: relative;
+        width: 70%;
+        height: auto;
+        left: 15%;
+        background-color: #e6e6e6;
+        text-align: center;
+        cursor: pointer;
+    }
 
-.gallery .column{
-    float: left;
-    width: 30%;
-    padding: 1.5%;
-}
+    .research_result p {
+        font-size: 7px;
+        font-weight: lighter;
+        color: #505050;
+        padding: 5px;
+        border-bottom: 1px solid #505050;
+    }
 
-.gallery .column img {
-    opacity: 0.8;
-    cursor: pointer;
-}
+    .research_result p:last-child {
+        border-bottom: none;
+    }
 
 .gallery .column img:hover {
     opacity: 1;
