@@ -16,16 +16,6 @@
 </head>
 <body>
 <div id="wrapper">
-<<<<<<< HEAD
-<header>
-    <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg" width="1280">
-    <p class="text_bg text_white text_shadow"><span class="text_bg_uni">University of Utah</span><br><span class="txt_bg_city">Salt Lake City,</span><br><span class="txt_bg_city">United States</span>
-        <button class="btn" href="#"><span>Visit website</span></button>
-    </p>
-    <a href="index">
-        <img src="img/logo_insa_w.png" class="logo_insa">
-    </a>
-=======
     <header>
         <div class="bg_img">
             <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg" width="1280">
@@ -100,12 +90,27 @@
             </div>
         </div>
         <div class="right">
-
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;
+                </span>
+                <img id="expandedImg" style="width:100%">
+            </div>
+            <div class="gallery">
+                <div class="column">
+                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
+                </div>
+                <div class="column">
+                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
+                </div>
+                <div class="column">
+                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
+                </div>
+            </div>
             <div class="chiffres">
                 <div class="info"> The top<br><span>20%</span><br> ranked </div>
                 <br>
                 <div class="info"> Deadline<br><span>8</span><br>November,2018 </div>
-            </div>
+              </div>
         </div>
         <div class="costs">
             <p class="title">Estimated Cost</p>
@@ -144,16 +149,16 @@
                 du site</a></p>
     </footer>
 </div>
-<<<<<<< HEAD
-</div>
-
-=======
->>>>>>> preprod
 <script type="text/javascript">
     //setCookie('favoris','['+getCookie("favoris").toString()+',City University of Hong Kong]',60)
     //setCookie('favoris','['+getCookie("favoris").toString().replace(',City University of Hong Kong','')+']',60)
     function menuToggle(x) {
         x.parentElement.classList.toggle("active");
+    }
+    function mygallery(imgs) {
+      var expanding = document.getElementById("expandedImg");
+      expandImg.src = imgs.src;
+      expandImg.parentElement.style.display = "block";
     }
 </script>
 </body>
