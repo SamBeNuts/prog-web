@@ -20,9 +20,9 @@
         <div class="bg_img">
             <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg" width="1280">
         </div>
-        <p class="text_bg text_white text_shadow_bt"><span class="text_bg_uni">University of Utah</span><br><span
-                class="txt_bg_city">Salt Lake City,</span><br><span class="txt_bg_city">United States</span>
-            <button class="btn" onclick="">Visit website</button>
+        <p class="text_bg text_white text_shadow_bt"><span class="text_bg_uni name">University of Utah</span><br><span
+                class="txt_bg_city city">Salt Lake City,</span><br><span class="txt_bg_city country">United States</span>
+            <button class="btn " onclick="">Visit website</button>
         </p>
         <a href="index">
             <img src="img/logo_insa_w.png" class="logo_insa">
@@ -93,8 +93,10 @@
             <div class="container">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;
                 </span>
-                <img id="expandedImg" style="width:100%">
+                <img id="expandedImg" src="img/video.PNG" style="width:100%">
+
             </div>
+            <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
             <div class="gallery">
                 <div class="column">
                     <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
@@ -107,9 +109,9 @@
                 </div>
             </div>
             <div class="chiffres">
-                <div class="info"> The top<br><span>20%</span><br> ranked </div>
+                <div class="info top"> The top<br><span>20%</span><br> ranked </div>
                 <br>
-                <div class="info"> Deadline<br><span>8</span><br>November,2018 </div>
+                <div class="info"> Deadline<br><span class="deadline_number">8</span><br class="deadline_date">November,2018 </div>
               </div>
         </div>
         <div class="costs">
@@ -120,7 +122,7 @@
                 </div>
                 <div class="cost_content">
                     <p>AVERAGE TUITION COST</p>
-                    <p>200€ <span> PER SEMESTER</span></p>
+                    <p class="tuition_cost">200€ <span> PER SEMESTER</span></p>
                 </div>
             </div>
             <div class="cost">
@@ -129,7 +131,7 @@
                 </div>
                 <div class="cost_content">
                     <p class="costDetail">OVERALL LIVING COST</p>
-                    <p class="costDetail">450€ <span> PER SEMESTER</span></p>
+                    <p class="costDetail campus_cost">450€ <span> PER SEMESTER</span></p>
                 </div>
             </div>
             <div class="cost">
@@ -138,7 +140,7 @@
                 </div>
                 <div class="cost_content">
                     <p class="costDetail">CAMPUS ACCOMODATION</p>
-                    <p class="costDetail">500€ <span> PER SEMESTER</span> </p>
+                    <p class="costDetail accomodation_cost">500€ <span> PER SEMESTER</span> </p>
                 </div>
             </div>
         </div>
@@ -153,11 +155,34 @@
     function menuToggle(x) {
         x.parentElement.classList.toggle("active");
     }
+
     function mygallery(imgs) {
       var expanding = document.getElementById("expandedImg");
       expandImg.src = imgs.src;
       expandImg.parentElement.style.display = "block";
     }
+    request.onload = function () {
+          let data = request.response;
+          let url = window.location.href;
+          let name_school = decodeURI(url.substring(url.lastIndexOf("=")+1));
+          console.log(name_school);
+          let school = data.schools[name_school];
+          console.log(school);
+          document.querySelector('.name').innerHTML = name_school;
+          document.querySelector('.city').innerHTML = school.city;
+          document.querySelector('.country').innerHTML = school.country;
+          document.querySelector('.website').innerHTML = school.website;
+          document.querySelector('.information').innerHTML = school.information;
+          document.querySelector('.medias').innerHTML = school.medias;
+          document.querySelector('.top').innerHTML = school.top;
+          document.querySelector('.deadline_number').innerHTML = school.deadline_number;
+          document.querySelector('.deadline_date').innerHTML = school.deadline_date;
+          document.querySelector('.courses').innerHTML = school.courses;
+          document.querySelector('.tuiton_cost').innerHTML = school.tuiton_cost;
+          document.querySelector('.campus_cost').innerHTML = school.campus_cost;
+          document.querySelector('.accomodation_cost').innerHTML = school.accomodation_cost;
+    };
+
 </script>
 </body>
 </html>
