@@ -49,7 +49,7 @@ header .text_bg span{
 .progress__value {
     stroke-dasharray: 1539px;
     stroke-dashoffset: 1539px;
-    animation: progress 5s infinite alternate;
+    /*animation: progress 5s infinite alternate;*/
     stroke-linecap: round;
     -webkit-transition: 1s;
     -moz-transition: 1s;

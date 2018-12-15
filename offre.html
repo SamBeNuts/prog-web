@@ -97,17 +97,20 @@
 		let school_2 = "'/><div class='over'><div class='info'><p class='text_white'><img src='img/student_icon.png'> ";
 		let school_3 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
 		let school_4 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
-		let school_5 = " courses</p><p class='text_white'><img src='";
-		let school_6 = "'/> estimated</p></div><div class='visit'><a href='offre_utah/";
+		let school_5 = " courses</p><p class='text_white'><img src='img/budget_estimated_";
+		let school_6 = ".png'/> estimated</p></div><div class='visit'><a href='offre_utah/";
 		let school_7 = "'><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
 		let school_8 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
 		let school_9 = "</p></div></div>";
 
 		for(let i=0; i<schools_name.length; i++){
 		    let school = schools_name[i];
+		    let b = 2;
+		    if(schools[school].tuiton_cost + schools[school].campus_cost + schools[school].accomodation_cost < 750) b = 1;
+            else if(schools[school].tuiton_cost + schools[school].campus_cost + schools[school].accomodation_cost > 1500) b = 3;
             document.querySelector(container).innerHTML += school_1 + school.toLowerCase().replace(/ /g, '_') +
                 '_thumbnail.jpg' + school_2 + schools[school].courses[0][1] + school_3 + schools[school].top +school_4 +
-                schools[school].courses[0][2] + school_5 + school_6 + school + school_7 + school + school_8 +
+                schools[school].courses[0][2] + school_5 + b + school_6 + school + school_7 + school + school_8 +
                 schools[school].city + ", " + schools[school].country + school_9;
         }
 	}
