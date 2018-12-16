@@ -93,28 +93,28 @@
     };
 
 	function add_schools(schools, schools_name, container) {
-		let school_1 = "<div class='school'><img class='image' src='img/data/";
-		let school_2 = "'/><div class='over'><div class='info'><p class='text_white'><img src='img/student_icon.png'> ";
-		let school_3 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
-		let school_4 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
-		let school_5 = " courses</p><p class='text_white'><img src='";
-		let school_6 = "'/> estimated</p></div><div class='visit'><a href='offre_utah/";
-		let school_7 = "'><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
-		let school_8 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
-		let school_9 = "</p></div></div>";
+		let school_1 = "<a href='offre_utah/";
+		let school_2 = "'><div class='school'><img class='image' src='img/data/";
+		let school_3 = "'/><div class='over'><div class='info'><p class='text_white'><img src='img/student_icon.png'> ";
+		let school_4 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
+		let school_5 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
+		let school_6 = " courses</p><p class='text_white'><img src='";
+		let school_7 = "'/> estimated</p></div></div><p class='text_white name'>";
+		let school_8 = "</p><div class='city'><div class='line'></div> <p class='text_white'>";
+		let school_9 = "</p></div></div></a>";
 
 		for(let i=0; i<schools_name.length; i++){
 		    let school = schools_name[i];
-            document.querySelector(container).innerHTML += school_1 + school.toLowerCase().replace(/ /g, '_') +
-                '_thumbnail.jpg' + school_2 + schools[school].courses[0][1] + school_3 + schools[school].top +school_4 +
-                schools[school].courses[0][2] + school_5 + school_6 + school + school_7 + school + school_8 +
+            document.querySelector(container).innerHTML += school_1 + school_2 + school.toLowerCase().replace(/ /g, '_') +
+                '_thumbnail.jpg' + school_3 + schools[school].courses[0][1] + school_4 + schools[school].top + school_5 +
+                schools[school].courses[0][2] + school_6 + school_7 + school + school_8 +
                 schools[school].city + ", " + schools[school].country + school_9;
         }
 	}
 	
 	function search() {
-        let research = document.querySelector('.search .research').value;
-        let schools = document.querySelectorAll('.school .name');
+        let research = document.querySelector('.research').value;
+        let schools = document.querySelectorAll('.schools .school .name');
 		for (let i=0; i < schools.length; i++){
 			if (!schools[i].innerHTML.toLowerCase().includes(research.toLowerCase())){
 				schools[i].parentElement.style.display = 'none';
