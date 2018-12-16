@@ -49,8 +49,8 @@ header .bg {
 .research {
     position: relative;
     width: 50%;
-    left: 50%;
-    margin: 10px 0 30px -25%;
+    left: 25%;
+    margin: 30px 0;
     height: 20px;
     border: 3px solid #505050;
     border-radius: 60px;
@@ -86,16 +86,67 @@ header .bg {
     border-bottom: none;
 }
 
+.favori_btn{
+    position: absolute;
+    top: 280px;
+    right: 0;
+    background-color: #e6e6e6;
+    border-radius: 20px 0 0 20px;
+    width: fit-content;
+    height: 22px;
+    color: white;
+    padding: 11px 12px 13px 12px;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.favori_btn.active:hover{
+    background-color: #e6e6e6;
+}
+
+.favori_btn:hover, .favori_btn.active{
+    background-color: #d55555;
+}
+
+.favori_btn img{
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.favori_btn:hover img, .favori_btn.active img{
+    -webkit-filter: brightness(1) sepia(1) saturate(20) contrast(1);
+    filter: brightness(1) sepia(1) saturate(20) contrast(1);
+}
+
+.favori_btn.active:hover img{
+    -webkit-filter: none;
+    filter: none;
+}
+
 .schools, .favoris {
     text-align: center;
+    margin-bottom: 40px;
+    display: none;
+}
+
+.schools.active, .favoris.active{
+    display: block;
 }
 
 .title{
     margin-top: 20px;
-}
-
-.schools{
-    margin-bottom: 40px;
 }
 
 .school {

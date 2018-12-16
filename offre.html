@@ -17,29 +17,17 @@
     <header>
         <img src="img/header_bg_offers.jpg" class="bg">
 		<div class="filter">
-            <select class="filter_search year" onchange="filter_year()">
-				<option hidden>Année</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <select class="filter_search year" onchange="filter()">
+				<option value="">Année</option>
             </select>
-			<select class="filter_search department" onchange="filter_department()">
-				<option hidden>Département</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+			<select class="filter_search department" onchange="filter()">
+				<option value="">Orientation</option>
             </select>
-			<select class="filter_search language" onchange="filter_language()">
-				<option hidden>Langue du Cours</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+			<select class="filter_search language" onchange="filter()">
+				<option value="">Langue du Cours</option>
             </select>
-			<select class="filter_search country" onchange="filter_country()">
-				<option hidden>Pays</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+			<select class="filter_search country" onchange="filter()">
+				<option value="">Pays</option>
             </select>
         </div>
 		<a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
@@ -60,18 +48,19 @@
         </nav>
     </header>
 	<div class="content">
-        <p class="title">Favoris</p>
+        <input class="research" type="text" placeholder="Filtrer par nom" onkeyup="filter()">
+        <!--<div class="number">-->
+            <!--<div class="line"></div>-->
+            <!--<p class="nb_result"></p>-->
+        <!--</div>-->
         <div class="favoris">
         </div>
-        <p class="title">Toutes les écoles</p>
-        <input class="research" type="text" placeholder="Filtrer par nom" onkeyup="search()">
-		<div class="schools">
-		</div>
-		<div class="number">
-			<div class="line"></div>
-			<p class="nb_result"></p>
+		<div class="schools active">
 		</div>
 	</div>
+    <div class="favori_btn" onclick="favoriToggle()">
+        <img src="img/no-TinyPNG/favorite.png">
+    </div>
     <footer>
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a,
             <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan
@@ -85,12 +74,28 @@
         x.parentElement.classList.toggle("active");
     }
 
+    function favoriToggle() {
+        document.querySelector(".favori_btn").classList.toggle("active");
+        document.querySelector(".favoris").classList.toggle("active");
+        document.querySelector(".schools").classList.toggle("active");
+    }
+
 	request.onload = function () {
         let data = request.response;
-        add_schools(data.schools, getCookie('favoris'), '.favoris');
+        let cookies = getCookie('favoris');
+        add_filters(data.years, '.year');
+        add_filters(data.orientations, '.department');
+        add_filters(data.languages, '.language');
+        add_filters(data.countries, '.country');
+        if (cookies.length) add_schools(data.schools, cookies, '.favoris');
+        else document.querySelector(".favori_btn").style.display = 'none';
         add_schools(data.schools, Object.keys(data.schools), '.schools');
-		document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
+		//document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
     };
+
+    function add_filters(tab, container){
+        for (let i = 0; i<tab.length; i++) document.querySelector(container).innerHTML += "<option value=" + tab[i] + ">" + tab[i] + "</option>";
+    }
 
 	function add_schools(schools, schools_name, container) {
 		let school_1 = "<div class='school'><img class='image' src='img/data/";
@@ -114,65 +119,28 @@
                 schools[school].city + ", " + schools[school].country + school_9;
         }
 	}
-	
-	function search() {
-        let research = document.querySelector('.search .research').value;
-        let schools = document.querySelectorAll('.school .name');
-		for (let i=0; i < schools.length; i++){
-			if (!schools[i].innerHTML.toLowerCase().includes(research.toLowerCase())){
-				schools[i].parentElement.style.display = 'none';
-			}else{
-				schools[i].parentElement.style.display = 'inline-block';
-			}
-		}
-    }
-	
-	function filter_year() {
-        let research = document.querySelector('.filter .year').value;
-        let schools = document.querySelectorAll('.school .over');
-		for (let i=0; i < schools.length; i++){
-			if (!schools[i].children[0].innerHTML.toLowerCase().includes(research.toLowerCase())){
-				schools[i].parentElement.style.display = 'none';
-			}else{
-				schools[i].parentElement.style.display = 'inline-block';
-			}
-		}
-    }
-	
-	function filter_department() {
-        let research = document.querySelector('.filter .department').value;
-        let schools = document.querySelectorAll('.school .over');
-		for (let i=0; i < schools.length; i++){
-			if (!schools[i].children[1].innerHTML.toLowerCase().includes(research.toLowerCase())){
-				schools[i].parentElement.style.display = 'none';
-			}else{
-				schools[i].parentElement.style.display = 'inline-block';
-			}
-		}
-    }
-	
-	function filter_language() {
-        let research = document.querySelector('.filter .language').value;
-        let schools = document.querySelectorAll('.school .over');
-		for (let i=0; i < schools.length; i++){
-			if (!schools[i].children[2].innerHTML.toLowerCase().includes(research.toLowerCase())){
-				schools[i].parentElement.style.display = 'none';
-			}else{
-				schools[i].parentElement.style.display = 'inline-block';
-			}
-		}
-    }
-	
-	function filter_country() {
-        let research = document.querySelector('.filter .country').value;
-        let schools = document.querySelectorAll('.school .over');
-		for (let i=0; i < schools.length; i++){
-			if (!schools[i].children[3].innerHTML.toLowerCase().includes(research.toLowerCase())){
-				schools[i].parentElement.style.display = 'none';
-			}else{
-				schools[i].parentElement.style.display = 'inline-block';
-			}
-		}
+
+	function filter(){
+        let research = document.querySelector('.research').value;
+        let year = document.querySelector('.filter .year').value;
+        let department = document.querySelector('.filter .department').value;
+        let language = document.querySelector('.filter .language').value;
+        let country = document.querySelector('.filter .country').value;
+        let schools = document.querySelectorAll('.school');
+        let school_name = document.querySelectorAll('.school .name');
+        let school_city = document.querySelectorAll('.school .city');
+        let school_infos = document.querySelectorAll('.school .over .info');
+        for (let i=0; i < schools.length; i++){
+            if (!school_name[i].innerHTML.toLowerCase().includes(research.toLowerCase()) ||
+                !school_infos[i].children[0].innerHTML.toLowerCase().includes(year.toLowerCase()) ||
+                !school_infos[i].children[0].innerHTML.toLowerCase().includes(department.toLowerCase()) ||
+                !school_infos[i].children[2].innerHTML.toLowerCase().includes(language.toLowerCase()) ||
+                !school_city[i].innerHTML.toLowerCase().includes(country.toLowerCase())){
+                schools[i].style.display = 'none';
+            }else{
+                schools[i].style.display = 'inline-block';
+            }
+        }
     }
 </script>
 </body>
