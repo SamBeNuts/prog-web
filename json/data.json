@@ -216,7 +216,7 @@
       "deadline_number": 6,
       "deadline_date": "Avril 2019",
       "courses_year": [
-        "3a\/4a\/5aGB"
+        "3a\/4a\/5a  GB"
       ],
       "courses_languages": [
         "en",
@@ -227,7 +227,7 @@
         [
           "Probabilités",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en",
@@ -238,7 +238,7 @@
         [
           "Statistique",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en"
@@ -247,7 +247,7 @@
         [
           "Signaux aléatoires",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en",
@@ -257,7 +257,7 @@
         [
           "Programmation embarquée",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en"
@@ -266,7 +266,7 @@
         [
           "Programmation système",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en",
@@ -276,7 +276,7 @@
         [
           "Base de données",
           [
-            "3a\/4a\/5aGB"
+            "3a\/4a\/5a GB"
           ],
           [
             "en",
@@ -571,7 +571,7 @@
       "deadline_number": 17,
       "deadline_date": "Décembre 2018",
       "courses_year": [
-        "3a\/4a\/5aAE",
+        "3a\/4a\/5a AE",
         "4a GB"
       ],
       "courses_languages": [
@@ -584,7 +584,7 @@
         [
           "Analyse numérique",
           [
-            "3a\/4a\/5aAE",
+            "3a\/4a\/5a AE",
             "4a GB"
           ],
           [
@@ -595,7 +595,7 @@
         [
           "Programmation embarquée",
           [
-            "3a\/4a\/5aAE",
+            "3a\/4a\/5a AE",
             "4a GB"
           ],
           [
@@ -607,7 +607,7 @@
         [
           "Statistique",
           [
-            "3a\/4a\/5aAE",
+            "3a\/4a\/5a AE",
             "4a GB"
           ],
           [
@@ -619,7 +619,7 @@
         [
           "Langues étrangères",
           [
-            "3a\/4a\/5aAE",
+            "3a\/4a\/5a AE",
             "4a GB"
           ],
           [
@@ -798,7 +798,7 @@
       "deadline_number": 9,
       "deadline_date": "Avril 2019",
       "courses_year": [
-        "3a\/4a\/5aGC"
+        "3a\/4a\/5a GC"
       ],
       "courses_languages": [
         "cn",
@@ -809,7 +809,7 @@
         [
           "Analyse numérique",
           [
-            "3a\/4a\/5aGC"
+            "3a\/4a\/5a GC"
           ],
           [
             "en",
@@ -819,7 +819,7 @@
         [
           "Réseaux",
           [
-            "3a\/4a\/5aGC"
+            "3a\/4a\/5a GC"
           ],
           [
             "cn",
@@ -829,7 +829,7 @@
         [
           "Mathématiques",
           [
-            "3a\/4a\/5aGC"
+            "3a\/4a\/5a GC"
           ],
           [
             "en"
@@ -838,7 +838,7 @@
         [
           "Programmation embarquée",
           [
-            "3a\/4a\/5aGC"
+            "3a\/4a\/5a GC"
           ],
           [
             "en"
@@ -860,7 +860,7 @@
       "deadline_date": "Mars 2019",
       "courses_year": [
         "3a GM",
-        "3a\/4a\/5aGP"
+        "3a\/4a\/5a GP"
       ],
       "courses_languages": [
         "cn",
@@ -874,7 +874,7 @@
           "Programmation système",
           [
             "3a GM",
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
@@ -896,7 +896,7 @@
           "Programmation embarquée",
           [
             "3a GM",
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en"
@@ -906,7 +906,7 @@
           "POO",
           [
             "3a GM",
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en"
@@ -916,7 +916,7 @@
           "Probabilités",
           [
             "3a GM",
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
@@ -1264,7 +1264,7 @@
       "deadline_number": 15,
       "deadline_date": "Mai 2019",
       "courses_year": [
-        "3a\/4a\/5aGP"
+        "3a\/4a\/5a GP"
       ],
       "courses_languages": [
         "en",
@@ -1275,7 +1275,7 @@
         [
           "Statistique",
           [
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en"
@@ -1284,7 +1284,7 @@
         [
           "Programmation embarquée",
           [
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
@@ -1295,7 +1295,7 @@
         [
           "Probabilités",
           [
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
@@ -1305,7 +1305,7 @@
         [
           "Programmation système",
           [
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
@@ -1316,7 +1316,7 @@
         [
           "POO",
           [
-            "3a\/4a\/5aGP"
+            "3a\/4a\/5a GP"
           ],
           [
             "en",
