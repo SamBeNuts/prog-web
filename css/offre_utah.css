@@ -267,3 +267,209 @@ header .btn span {
     display: table;
     clear: both;
 }
+
+/* Version Tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content{
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+    header .text_bg {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        top: 210px;
+        margin-top: -60px;
+        margin-left: 10px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    header .bg {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: 100%;
+    }
+
+    header .text_bg_uni {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    header .txt_bg_city {
+        font-weight: 150;
+        font-size: 25px;
+        margin-left: 40px;
+    }
+
+    .school_infos_content {
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+
+    .courses .course .name {
+        font-size: 18px;
+    }
+
+    .costs{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    .cost_content{
+        font-size: 15px;
+        font-weight: bold;
+        padding-top:35px;
+        padding-left: 10px;
+    }
+    .border_icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 10px solid #e6e6e6;
+        position: relative;
+        padding-top: 5px;
+        flex: none;
+    }
+
+    .border_icon img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        width: 50px;
+        margin-left: -25px;
+        margin-left: -25px;
+    }
+
+    .chiffres .info {
+        text-align: right;
+        border-right: 2px solid darkred;
+        font-size: 25px;
+        padding-bottom: 10px;
+        font-weight: lighter;
+        padding-right: 8px;
+    }
+
+    .chiffres .info span{
+        font-weight: normal;
+        font-size: 35px;
+        color:darkred;
+    }
+}
+/* version Phone*/
+
+@media only screen and (max-width : 767px){
+  .content{
+      margin-top: 10px;
+      margin-bottom: 35px;
+  }
+
+  .left {
+      width: 100%;
+      float: left;
+      margin-top: 10px;
+  }
+  header .text_bg {
+      position: absolute;
+      text-align: left;
+      width: 100%;
+      top: 210px;
+      margin-top: -60px;
+      margin-left: 10px;
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  header .bg {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      width: 100%;
+  }
+
+  header .text_bg_uni {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+  }
+
+  header .txt_bg_city {
+      font-weight: 150;
+      font-size: 18px;
+      line-height: 25px;
+      margin-left: 30px;
+  }
+
+  .school_infos_content {
+      margin-top: 10px;
+      font-size: 17px;
+      font-weight: lighter;
+  }
+
+  .courses .course .name {
+      font-size: 18px;
+  }
+
+  .costs{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
+      margin-bottom: 50px;
+      margin-left: 0px;
+  }
+
+  .cost_content{
+      font-size: 15px;
+      font-weight: bold;
+      padding-top:35px;
+      padding-left: 10px;
+  }
+  .border_icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: 7px solid #e6e6e6;
+      position: relative;
+      padding-top: 5px;
+      flex: none;
+  }
+
+  .border_icon img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -25px;
+      width: 50px;
+      margin-left: -25px;
+  }
+
+  .courses{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 5px;
+  }
+
+  .course{
+      margin-left: 5px;
+  }
+
+  .cost{
+      flex-basis: 100%;
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-self: auto;
+      padding-bottom: 20px;
+  }
+
+}
