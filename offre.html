@@ -83,18 +83,18 @@
 	request.onload = function () {
         let data = request.response;
         let cookies = getCookie('favoris');
-        add_filters(data.years, '.year');
-        add_filters(data.orientations, '.department');
-        add_filters(data.languages, '.language');
-        add_filters(data.countries, '.country');
+        add_filters(data.years, data.years, '.year');
+        add_filters(data.orientations, data.orientations, '.department');
+        add_filters(data.languages_abbr, data.languages, '.language');
+        add_filters(data.countries, data.countries, '.country');
         add_schools(data.schools, Object.keys(data.schools), '.schools');
         if (cookies.toString() !== "") add_schools(data.schools, cookies, '.favoris');
         else document.querySelector(".favori_btn").style.display = 'none';
 		//document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
     };
 
-    function add_filters(tab, container){
-        for (let i = 0; i<tab.length; i++) document.querySelector(container).innerHTML += "<option value=" + tab[i] + ">" + tab[i] + "</option>";
+    function add_filters(tab_value, tab, container){
+        for (let i = 0; i<tab.length; i++) document.querySelector(container).innerHTML += "<option value=" + tab_value[i] + ">" + tab[i] + "</option>";
     }
 
 	function add_schools(schools, schools_name, container) {
@@ -134,7 +134,7 @@
             if (!school_name[i].innerHTML.toLowerCase().includes(research.toLowerCase()) ||
                 !school_infos[i].children[0].innerHTML.toLowerCase().includes(year.toLowerCase()) ||
                 !school_infos[i].children[0].innerHTML.toLowerCase().includes(department.toLowerCase()) ||
-                !school_infos[i].children[2].innerHTML.toLowerCase().includes(language.toLowerCase()) ||
+                !school_infos[i].children[2].innerHTML.toLowerCase().slice(0,-7).includes(language.toLowerCase()) ||
                 !school_city[i].innerHTML.toLowerCase().includes(country.toLowerCase())){
                 schools[i].style.display = 'none';
             }else{
