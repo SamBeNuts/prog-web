@@ -19,7 +19,7 @@ request.onload = function () {
 ```
 
 ### Créer une liste de toutes les écoles
-> Utile pour la page `offre.html` et `offre_utah.html`
+> Utile pour la page `offre.html` et `offre_details.html`
 
 Extrait de la page HTML :
 ```
@@ -40,7 +40,7 @@ for(let school in schools){ //schools est l'objet qui contient les données de d
 <br>[Utilisation des objets](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_objets)
 
 ### Obtenir une donnée qui se trouve dans l'url
-> Utile pour la page `offre_utah.html`
+> Utile pour la page `offre_details.html`
 * window.location.href = "https://<span></span>etud.insa-toulouse.fr/offre/Universty%20of%20Utah"
 * window.location.protocol = "https:"
 * window.location.host = "etud.insa-toulouse.fr"

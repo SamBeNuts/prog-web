@@ -19,7 +19,7 @@
         <img src="img/header_bg_homepage.jpg" class="bg">
         <img src="img/student_header_homepage.png" class="student_bg not_phone">
         <p class="text_bg text_white text_shadow_bt">Planning to <br><span class="text_red front">study</span> <span>abroad</span></p>
-        <a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
+        <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
@@ -27,10 +27,10 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
-                <li><a href="offre" class="text_white text_shadow">Écoles partenaires</a></li>
-                <li><a href="procedure" class="text_white text_shadow">Procédure</a></li>
-                <li><a href="simu" class="text_white text_shadow">Simulation budget</a></li>
-                <li><a href="FAQ" class="text_white text_shadow">FAQ</a></li>
+                <li><a href="offre.html" class="text_white text_shadow">Écoles partenaires</a></li>
+                <li><a href="procedure.html" class="text_white text_shadow">Procédure</a></li>
+                <li><a href="simu.html" class="text_white text_shadow">Simulation budget</a></li>
+                <li><a href="FAQ.html" class="text_white text_shadow">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
@@ -81,7 +81,7 @@
         <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
         <div class="pagination"></div>
         <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
-        <a href="offre">
+        <a href="offre.html">
             <div class="see_more">
                 <p class="text_white text_shadow"><img src="img/more_btn.png"> Voir toutes les offres</p>
             </div>
@@ -188,7 +188,7 @@
         <div class="separator_line"></div>
     </div>
     <div class="content links">
-        <a href="simu">
+        <a href="simu.html">
             <div class="square">
                 <img src="img/homepage_simu_budget.jpg" class="square_bg">
                 <div>
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </a>
-        <a href="FAQ">
+        <a href="FAQ.html">
             <div class="square">
                 <img src="img/homepage_faq.jpg" class="square_bg">
                 <div>
@@ -230,7 +230,7 @@
         </div>
     </div>
     <footer>
-        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan du site</a></p>
+        <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a, <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap.html" class="text_white">plan du site</a></p>
     </footer>
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
@@ -270,7 +270,7 @@
             let school = y[el]; //on récupère les données de l'école qui correspond à el
             //on rajoute une page à la pagination et les informations des écoles dynamiquement
             pagination.innerHTML += page_count_1 + i + page_count_2;
-            slides.innerHTML += slide_1 + 'offre/' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
+            slides.innerHTML += slide_1 + 'offre_details.html?school=' + el + slide_2 + 'img/data/' + el.toLowerCase().replace(/ /g, '_') + '_bg.jpg' + slide_3 + el + slide_4 + school.city + "," + slide_5 + school.country + slide_6;
         });
         //on fait apparaître la première diapo du diaporama
         pagination.firstElementChild.classList.add("active");
@@ -307,43 +307,7 @@
         }); //on cherche le témoignages actif de la page
         document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active"); //on rend inactif ce témoignage
         document.querySelector('.temoignages_content').children[1].children[x].classList.add("active"); //on rend actif le témoignage d'indice x (passé en paramètre)
-        shuffleTextEffect(temoignages[x]);
-    }
-
-    let specialChars = [
-        '!','§','$','%','&','/','(',')','=','?','_','<','>','^','°','*','#','-',':',';','~'
-    ];
-
-    let colors = [
-        '#f44336','#e91e63','#9c27b0','#673ab7','#3f51b5','#2196f3','#03a9f4','#00bcd4','#009688','#4caf50','#8bc34a',
-        '#cddc39','#ffeb3b','#ffc107','#ff9800','#ff5722','#795548','#9e9e9e','#607d8b'
-    ];
-
-    function shuffleTextEffect(str){
-        let i = 0;
-        let p = document.querySelector('.temoignages_content_txt.active');
-        let l = str.length;
-        let colorsLength = colors.length;
-        let specialCharsLength = specialChars.length;
-        p.innerHTML = "";
-        for (let j = 0; j < l; j++){
-            let newSpan = document.createElement('span');
-            p.appendChild(newSpan);
-        }
-        let s = document.querySelectorAll('.temoignages_content_txt.active span');
-        let effect = setInterval(function(){
-            s[i].style.color = '#505050';
-            s[i].innerHTML = str.substr(i,1);
-            for (let j = i+1; j < l; j++){
-                s[j].style.color = colors[Math.floor(Math.random()*colorsLength)];
-                s[j].innerHTML = specialChars[Math.floor(Math.random()*specialCharsLength)];
-            }
-            ++i;
-            if(i === l){
-                p.innerHTML = str;
-                clearInterval(effect);
-            }
-        }, 5);
+        document.querySelector('.temoignages_content_txt.active').innerHTML = str;
     }
 </script>
 </body>

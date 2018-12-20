@@ -11,7 +11,7 @@
     <title>INSA - Prog Web</title>
     <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/offre_utah.css">
+    <link rel="stylesheet" type="text/css" href="css/offre_details.css">
 </head>
 <body>
 <div id="wrapper">
@@ -19,12 +19,7 @@
         <div class="bg_img">
             <img src="img/data/universidad_popular_autónoma_del_estado_de_puebla_bg.jpg" class="bg">
         </div>
-        <p class="text_bg text_white text_shadow_bt"><span class="text_bg_uni name">University of Utah</span><br><span
-                class="txt_bg_city city">Salt Lake City,</span><br><span
-                class="txt_bg_city country">United States</span>
-            <button class="btn website" onclick="">Visit website</button>
-        </p>
-        <a href="index">
+        <a href="index.html">
             <img src="img/logo_insa_w.png" class="logo_insa">
         </a>
         <nav role="navigation">
@@ -34,19 +29,35 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
-                <li><a href="index" class="text_white text_shadow">Accueil</a></li>
-                <li><a href="offre" class="text_white text_shadow">Écoles partenaires</a></li>
-                <li><a href="procedure" class="text_white text_shadow">Procédure</a></li>
-                <li><a href="simu" class="text_white text_shadow">Simulation budget</a></li>
-                <li><a href="FAQ" class="text_white text_shadow">FAQ</a></li>
+                <li><a href="index.html" class="text_white text_shadow">Accueil</a></li>
+                <li><a href="offre.html" class="text_white text_shadow">Écoles partenaires</a></li>
+                <li><a href="procedure.html" class="text_white text_shadow">Procédure</a></li>
+                <li><a href="simu.html" class="text_white text_shadow">Simulation budget</a></li>
+                <li><a href="FAQ.html" class="text_white text_shadow">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
+        <div class="text_bg text_white">
+            <p class="text_bg_uni text_shadow_bt name">University of Utah</p>
+            <div class="line"></div>
+            <p class="txt_bg_city text_shadow city">Salt Lake City,</p>
+            <p class="txt_bg_city text_shadow country">United States</p>
+            <div class="btns">
+                <div class="btn favoris" onclick="favoriToggle()">
+                    <img src="img/favorite.png">
+                </div>
+                <a class="website" href="">
+                    <div class="btn">
+                        <img src="img/website.png">
+                    </div>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="content">
         <div class="left">
             <div class="school_infos">
-                <p class="title">School information</p>
+                <p class="title">Présentation de l'école</p>
                 <p class="school_infos_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus et
                     quam nec
                     bibendum. Ut et sem mauris. Vivamus eleifend nibh nisl, id hendrerit risus pharetra cursus. Aliquam
@@ -66,7 +77,7 @@
 
             </div>
             <div class="courses">
-                <p class="title">Courses available</p>
+                <p class="title">Cours disponibles</p>
             </div>
         </div>
         <div class="right not_phone">
@@ -74,45 +85,26 @@
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;
                 </span>
                 <img id="expandedImg" src="img/video.PNG" style="width:100%">
-
             </div>
-            <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
+            <img class="gallery_active" src="">
             <div class="gallery">
-                <div class="column">
-                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
-                </div>
-                <div class="column">
-                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
-                </div>
-                <div class="column">
-                    <img src="img/video.PNG" style="width:100%" onclick="mygallery(this);">
-                </div>
             </div>
             <div class="chiffres">
-                <div class="info"> The top<br><span class="top">20%</span><br> ranked</div>
+                <div class="info"> Le top<br><span class="top">20%</span><br> du classement</div>
                 <br>
-                <div class="info"> Deadline<br><span class="deadline_number">8</span><br><a class="deadline_date">November,2018</a>
+                <div class="info"> Date limite<br><span class="deadline_number">8</span><br><a class="deadline_date">November,2018</a>
                 </div>
             </div>
         </div>
         <div class="costs">
-            <p class="title">Estimated Cost</p>
+            <p class="title">Coût estimé</p>
             <div class="cost">
                 <div class="border_icon">
                     <img src="img/budget_1.png">
                 </div>
                 <div class="cost_content">
-                    <p>AVERAGE TUITION COST</p>
-                    <p class="costDetail"><a class="tuition_cost"></a>€ <span> PER SEMESTER</span></p>
-                </div>
-            </div>
-            <div class="cost">
-                <div class="border_icon">
-                    <img src="img/budget_3.png">
-                </div>
-                <div class="cost_content">
-                    <p class="costDetail">OVERALL LIVING COST</p>
-                    <p class="costDetail"><a class="campus_cost"></a>€ <span> PER SEMESTER</span></p>
+                    <p>FRAIS SCOLAIRES</p>
+                    <p class="costDetail"><a class="tuition_cost"></a>€ <span> PAR SEMESTRE</span></p>
                 </div>
             </div>
             <div class="cost">
@@ -120,47 +112,68 @@
                     <img src="img/budget_2.png">
                 </div>
                 <div class="cost_content">
-                    <p class="costDetail">CAMPUS ACCOMODATION</p>
-                    <p class="costDetail"><a class="accomodation_cost"></a>€ <span> PER SEMESTER</span></p>
+                    <p class="costDetail">PRIX DU CAMPUS</p>
+                    <p class="costDetail"><a class="accomodation_cost"></a>€ <span> PAR SEMESTRE</span></p>
+                </div>
+            </div>
+            <div class="cost">
+                <div class="border_icon">
+                    <img src="img/budget_3.png">
+                </div>
+                <div class="cost_content">
+                    <p class="costDetail">ESTIMATON DES DÉPENSES COURANTES</p>
+                    <p class="costDetail"><a class="campus_cost"></a>€ <span> PAR SEMESTRE</span></p>
                 </div>
             </div>
         </div>
     </div>
     <footer>
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a,
-            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan
+            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap.html" class="text_white">plan
                 du site</a></p>
     </footer>
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
+<script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript">
-    //setCookie('favoris','['+getCookie("favoris").toString()+',City University of Hong Kong]',60)
-    //setCookie('favoris','['+getCookie("favoris").toString().replace(',City University of Hong Kong','')+']',60)
+    let url = window.location.href;
+    let name_school = decodeURI(url.substring(url.lastIndexOf("=") + 1));
+
     function menuToggle(x) {
         x.parentElement.classList.toggle("active");
     }
 
+    function favoriToggle() {
+        let favori = document.querySelector('header .favoris');
+        let school = name_school;
+        let cookies = getCookie("favoris").toString();
+        if (favori.classList.contains('active')) {
+            if (cookies.indexOf(',' + school) !== -1) school = ',' + school;
+            else if (cookies.indexOf(school + ',') !== -1) school = school + ',';
+            setCookie('favoris', '[' + cookies.replace(school, '') + ']', 60);
+        } else {
+            if (cookies !== "") school = ',' + school;
+            setCookie('favoris', '[' + cookies + school + ']', 60);
+        }
+        document.querySelector('header .favoris').classList.toggle("active");
+    }
+
     function mygallery(imgs) {
-        var expanding = document.getElementById("expandedImg");
-        expandImg.src = imgs.src;
-        expandImg.parentElement.style.display = "block";
+        document.querySelector('.gallery_active').src = imgs.src;
+        document.querySelector('.gallery .column.active').classList.toggle('active');
+        imgs.parentElement.classList.toggle('active');
     }
 
     request.onload = function () {
         let data = request.response;
-        let url = window.location.href;
-        let name_school = decodeURI(url.substring(url.lastIndexOf("=") + 1));
-        console.log(name_school);
         let school = data.schools[name_school];
-        console.log(school);
         document.querySelector('.bg').src = 'img/data/' + name_school.toLowerCase().replace(/ /g, '_') +
             '_bg.jpg';
         document.querySelector('.name').innerHTML = name_school;
         document.querySelector('.city').innerHTML = school.city + ',';
         document.querySelector('.country').innerHTML = school.country;
-        //document.querySelector('.website').onclick = window.location.href=school.website;
+        document.querySelector('.website').href = school.website;
         document.querySelector('.school_infos_content').innerHTML = school.information;
-        //document.querySelector('.medias').innerHTML = school.medias;
         document.querySelector('.top').innerHTML = school.top + '%';
         document.querySelector('.deadline_number').innerHTML = school.deadline_number;
         document.querySelector('.deadline_date').innerHTML = school.deadline_date;
@@ -168,12 +181,26 @@
         let courses2 = "</p><p class=\"year\"> ";
         let courses3 = "</p><p class=\"languages\"><img src=\"img/language_icon_black.png\"> ";
         let courses4 = "</p></div>";
-        for(let i=0; i<school.courses.length; i++){
-            document.querySelector('.courses').innerHTML += courses1 + school.courses[i][0] + courses2 + school.courses[i][1] + courses3 + school.courses[i][2] + courses4;
+        for (let i = 0; i < school.courses.length; i++) {
+            document.querySelector('.courses').innerHTML += courses1 + school.courses[i][0] + courses2 + school.courses[i][1].join(', ') + courses3 + school.courses[i][2].join(', ') + courses4;
+        }
+        if (school.medias.length !== 0){
+            document.querySelector('.gallery_active').src = 'img/data/' + school.medias[0];
+            let medias1 = "<div class=\"column\"><img src=\"img/data/";
+            let medias2 = "\" onclick=\"mygallery(this)\"></div>";
+            for (let i = 0; i < school.medias.length; i++) {
+                document.querySelector('.gallery').innerHTML += medias1 + school.medias[i] + medias2;
+            }
+            document.querySelector('.gallery').firstElementChild.classList.toggle('active');
+        } else {
+            document.querySelector('.gallery_active').display = 'none';
+            document.querySelector('.gallery').display = 'none';
         }
         document.querySelector('.tuition_cost').innerHTML = school.tuiton_cost;
         document.querySelector('.campus_cost').innerHTML = school.campus_cost;
         document.querySelector('.accomodation_cost').innerHTML = school.accomodation_cost;
+        let cookies = getCookie("favoris").toString();
+        if (cookies.indexOf(name_school) !== -1) document.querySelector('header .favoris').classList.toggle("active");;
     };
 
 </script>

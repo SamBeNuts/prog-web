@@ -34,7 +34,7 @@ header .bg {
     background-size: 15px;
     background-color: #ffffff;
     font-variant: small-caps;
-    color: #9E9E9E;
+    color: #505050;
 
 }
 
@@ -62,28 +62,6 @@ header .bg {
     background: url('../img/search_icon.png') transparent right center no-repeat;
     background-size: 25px;
     background-origin: content-box;
-}
-
-.research_result {
-    position: relative;
-    width: 70%;
-    height: auto;
-    left: 15%;
-    background-color: #e6e6e6;
-    text-align: center;
-    cursor: pointer;
-}
-
-.research_result p {
-    font-size: 15px;
-    font-weight: lighter;
-    color: #505050;
-    padding: 10px;
-    border-bottom: 1px solid #505050;
-}
-
-.research_result p:last-child {
-    border-bottom: none;
 }
 
 .favori_btn{
@@ -171,6 +149,7 @@ header .bg {
     bottom: 30px;
     left: 10px;
     font-weight: bold;
+    width: 80%;
 }
 
 .school .city {
@@ -190,6 +169,7 @@ header .bg {
     background-color: #d55555;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 5px;
 }
 
 .school:hover .over {
@@ -244,18 +224,14 @@ header .bg {
 @media only screen and (max-width: 767px) {
     /* Header */
     header .bg {
-        position: absolute;
-        left: 50%;
-        margin-left: -500px;
-        min-width: 100%;
-        filter: blur(1px);
-        -webkit-filter: blur(1px);
+        height: 150px;
+        margin-left: -600px;
     }
 
     .filter {
         position: absolute;
         width: 500px;
-        top: 50px;
+        top: 70px;
         left: 50%;
         margin-left: -250px;
     }
@@ -275,144 +251,30 @@ header .bg {
         background-color: #ffffff;
         font-variant: small-caps;
         color: #9E9E9E;
+        margin: 0.5px;
 
-    }
-
-    .filter option {
-        color: #505050;
     }
 
     /* Content */
     .research {
         position: relative;
         width: 50%;
-        left: 40%;
-        margin-left: -20%;
-        top: 15px;
+        left: 43%;
+        margin: 20px 0 10px -25%;
         height: 10px;
-        border: 1px solid #505050;
-        border-radius: 30px;
-        padding: 5px 10px;
-        font-size: 10px;
-        line-height: 10px;
+        border: 2px solid #505050;
+        border-radius: 60px;
+        padding: 10px 20px;
+        font-size: 15px;
+        line-height: 20px;
         color: #505050;
         font-variant: small-caps;
         background: url('../img/search_icon.png') transparent right center no-repeat;
-        background-size: 12px;
+        background-size: 15px;
         background-origin: content-box;
     }
 
-    .research_result {
-        position: relative;
-        width: 70%;
-        height: auto;
-        left: 15%;
-        background-color: #e6e6e6;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .research_result p {
-        font-size: 7px;
-        font-weight: lighter;
-        color: #505050;
-        padding: 5px;
-        border-bottom: 1px solid #505050;
-    }
-
-    .research_result p:last-child {
-        border-bottom: none;
-    }
-
-    .school {
-        position: relative;
-        width: 115px;
-        height: 115px;
-        top: 30px;
-        left: 5%;
-        display: inline-block;
+    .school{
         margin: 3px;
-    }
-
-    .school .image {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .school .name {
-        position: absolute;
-        bottom: 15px;
-        left: 5px;
-        font-weight: bold;
-    }
-
-    .school .city {
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        display: inline-block;
-    }
-
-    .school .city p {
-        display: inline-block;
-    }
-
-    .city .line {
-        height: 1px;
-        width: 10px;
-        background-color: #d55555;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .school:hover .over {
-        opacity: 1;
-    }
-
-    .school .over {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -ms-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-        font-size: 7px;
-        background-size: 7px;
-        font-variant: small-caps;
-        color: #9E9E9E;
-        display: inline-block;
-    }
-
-    .school .over img {
-        height: 10px;
-    }
-
-    .school .info {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-    }
-
-    .school .info p {
-        margin: 3px;
-    }
-
-    .school .visit {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-    }
-
-    .school .visit img {
-        width: 15px;
-        height: 15px;
     }
 }

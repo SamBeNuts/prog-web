@@ -24,7 +24,7 @@
 }
 
 .content{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 header{
@@ -56,21 +56,22 @@ header .bg_wall_FAQ{
     position: absolute;
     top: 50%;
     left: 10%;
-    border: 2px white ;
-
-}
-
-.bar_de_recherche input{
-    background: transparent;
     border-radius: 25px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 80px;
+    padding: 10px 20px;
     border: 2px solid white;
     color: white;
-    top: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../img/search_icon_white.png') transparent right center no-repeat;
+    background-size: 20px;
+    background-origin: content-box;
 }
+
+.bar_de_recherche::placeholder{
+    color: white;
+}
+
 .btn_summit
 {
     background: transparent;
@@ -94,7 +95,7 @@ header .bg_wall_FAQ{
     }
 
     header {
-        height: 210px !important;
+        height: 200px !important;
     }
 
     header .bg_FAQ {
@@ -115,29 +116,22 @@ header .bg_wall_FAQ{
         width: 300px;
     }
 
-    .bar_de_recherche {
-        position: absolute;
+    .bar_de_recherche{
         top: 110px;
         left: 5%;
-        border: 1px white;
-        vertical-align: middle;
-
-    }
-
-    .bar_de_recherche input {
         border-radius: 25px;
-        padding-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 40px;
-        width: 80px;
-
+        width: 100px;
+        background-size: 15px;
     }
 
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        height: 300px !important;
+    }
+
     header .bg_wall_FAQ {
         height: 300px;
     }

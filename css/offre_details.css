@@ -5,7 +5,7 @@ header {
     height: 260px !important;
 }
 
-header .bg_img{
+header .bg_img {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,6 +19,7 @@ header .bg {
     left: 0;
     bottom: -300px;
     width: 100%;
+    min-height: 100%;
 }
 
 header .text_bg {
@@ -27,9 +28,8 @@ header .text_bg {
     width: 100%;
     /*font-size: 40px;
     line-height: 40px;*/
-    top: 200px;
-    margin-top: -60px;
-    margin-left: 10px;
+    bottom: 0;
+    padding: 15px;
 }
 
 header .text_bg_uni {
@@ -38,22 +38,67 @@ header .text_bg_uni {
     font-weight: bold;
 }
 
-header .txt_bg_city {
-    font-weight: 300;
-    font-size: 25px;
-    margin-left: 40px;
+header .line {
+    width: 30px;
+    height: 2px;
+    background-color: #d55555;
+    display: inline-block;
 }
 
-header .btn {
-    border: 1px solid #d55555;
-    color: #d55555;
-    padding: 5px 15px;
-    font-weight: lighter;
-    font-size: 15px;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    background-color: transparent;
-    float: right;
+header .city {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+header .country {
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+header .btns{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+
+header .btn{
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    background-color: #d55555;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+header .btn:hover{
+    background-color: #d53c3b;
+}
+
+header .btn img{
+    height: 30px;
+}
+
+header .favoris img{
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+header .favoris.active img{
+    -webkit-filter: brightness(1) sepia(1) saturate(20) contrast(1);
+    filter: brightness(1) sepia(1) saturate(20) contrast(1);
 }
 
 header .btn span {
@@ -65,13 +110,13 @@ header .btn span {
 /* Content */
 
 .left {
-    width: 50%;
+    width: 55%;
     float: left;
     margin-top: 10px;
 }
 
 .right {
-    width: 50%;
+    width: 40%;
     float: right;
     padding-top: 10px;
     margin-top: 30px;
@@ -81,25 +126,25 @@ header .btn span {
     text-align: left;
 }
 
-.school_infos, .courses{
+.school_infos, .courses {
     position: relative;
     margin-bottom: 20px;
 }
-
 
 .school_infos_content {
     margin-top: 10px;
     font-size: 22px;
     font-weight: lighter;
+    white-space: pre-line;
 }
 
-.courses{
+.courses {
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
 }
 
-.courses .course{
+.courses .course {
     flex-basis: 45%;
     border-left: 2px solid #e6e6e6;
     margin-top: 10px;
@@ -110,7 +155,7 @@ header .btn span {
     font-size: 22px;
 }
 
-.courses .course .year{
+.courses .course .year {
     margin: 5px 0;
 }
 
@@ -119,16 +164,16 @@ header .btn span {
     font-weight: lighter;
 }
 
-.courses .course .languages img{
+.courses .course .languages img {
     width: 20px;
     vertical-align: bottom;
 }
 
-.courses .title, .costs .title{
+.courses .title, .costs .title {
     flex-basis: 100%;
 }
 
-.costs{
+.costs {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -136,17 +181,17 @@ header .btn span {
     margin-bottom: 50px;
 }
 
-.cost{
+.cost {
     flex-basis: 45%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-self: auto;
     padding-bottom: 20px;
 }
 
-.cost .detail{
-    padding-top:10px;
+.cost .detail {
+    padding-top: 10px;
     padding-right: 30px;
 }
 
@@ -164,7 +209,7 @@ header .btn span {
     flex: none;
 }
 
-.border_icon img{
+.border_icon img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -174,61 +219,65 @@ header .btn span {
     margin-left: -30px;
 }
 
-.cost_content{
+.cost_content {
     font-size: 18px;
     font-weight: bold;
-    padding-top:35px;
+    padding-top: 35px;
     padding-left: 30px;
 }
 
-.cost_content span{
+.cost_content span {
     font-weight: normal;
 }
 
-
-.right img{
+.right img {
     padding-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.videos{
+
+.videos {
     display: flex;
     flex-basis: 33%;
 }
 
-.videos img{
+.videos img {
     width: 30%;
     height: 30%;
     padding-right: 5px;
 }
-.chiffres{
+
+.chiffres {
     padding-top: 5px;
 }
 
 .chiffres .info {
     text-align: right;
-    border-right: 2px solid darkred;
+    border-right: 2px solid #d55555;
     font-size: 30px;
     padding-bottom: 10px;
     font-weight: lighter;
     padding-right: 8px;
 }
 
-.chiffres .info span{
+.chiffres .info span {
     font-weight: normal;
     font-size: 40px;
-    color:darkred;
+    color: #d55555;
+}
+
+.gallery_active {
+    width: 100%;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    justify-content: center;
 }
 
-.gallery .column{
-    float: left;
+.gallery .column {
     width: 30%;
     padding: 1.5%;
 }
@@ -236,15 +285,16 @@ header .btn span {
 .gallery .column img {
     opacity: 0.8;
     cursor: pointer;
+    width: 100%;
 }
 
-.gallery .column img:hover {
+.gallery .column img:hover, .gallery .column.active img{
     opacity: 1;
 }
 
 .container {
     position: relative;
-    display : none;
+    display: none;
 }
 
 .closebtn {
@@ -256,7 +306,7 @@ header .btn span {
     cursor: pointer;
 }
 
-.container:after{
+.container:after {
     content: "";
     display: table;
     clear: both;
@@ -271,19 +321,9 @@ header .btn span {
 /* Version Tablet*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .content{
+    .content {
         margin-top: 10px;
         margin-bottom: 35px;
-    }
-    header .text_bg {
-        position: absolute;
-        text-align: left;
-        width: 100%;
-        top: 210px;
-        margin-top: -60px;
-        margin-left: 10px;
-        font-size: 30px;
-        line-height: 30px;
     }
 
     header .bg {
@@ -299,10 +339,15 @@ header .btn span {
         font-weight: bold;
     }
 
-    header .txt_bg_city {
-        font-weight: 150;
+    header .city {
+        font-weight: 200;
         font-size: 25px;
-        margin-left: 40px;
+    }
+
+    header .country {
+        font-weight: 200;
+        font-size: 18px;
+        margin-left: 35px;
     }
 
     .school_infos_content {
@@ -315,7 +360,7 @@ header .btn span {
         font-size: 18px;
     }
 
-    .costs{
+    .costs {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -324,12 +369,13 @@ header .btn span {
         margin-left: 20px;
     }
 
-    .cost_content{
+    .cost_content {
         font-size: 15px;
         font-weight: bold;
-        padding-top:35px;
+        padding-top: 35px;
         padding-left: 10px;
     }
+
     .border_icon {
         width: 80px;
         height: 80px;
@@ -340,7 +386,7 @@ header .btn span {
         flex: none;
     }
 
-    .border_icon img{
+    .border_icon img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -352,124 +398,129 @@ header .btn span {
 
     .chiffres .info {
         text-align: right;
-        border-right: 2px solid darkred;
+        border-right: 2px solid #d55555;
         font-size: 25px;
         padding-bottom: 10px;
         font-weight: lighter;
         padding-right: 8px;
     }
 
-    .chiffres .info span{
+    .chiffres .info span {
         font-weight: normal;
         font-size: 35px;
-        color:darkred;
+        color: #d55555;
     }
 }
+
 /* version Phone*/
 
-@media only screen and (max-width : 767px){
-  .content{
-      margin-top: 10px;
-      margin-bottom: 35px;
-  }
+@media only screen and (max-width: 767px) {
+    .content {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
 
-  .left {
-      width: 100%;
-      float: left;
-      margin-top: 10px;
-  }
-  header .text_bg {
-      position: absolute;
-      text-align: left;
-      width: 100%;
-      top: 210px;
-      margin-top: -60px;
-      margin-left: 10px;
-      font-size: 15px;
-      line-height: 20px;
-  }
+    .left {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+    }
 
-  header .bg {
-      position: absolute;
-      left: 0;
-      top: 0px;
-      width: 100%;
-  }
+    header .text_bg {
+        font-size: 15px;
+        line-height: 20px;
+    }
 
-  header .text_bg_uni {
-      font-size: 30px;
-      line-height: 40px;
-      font-weight: bold;
-  }
+    header .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
 
-  header .txt_bg_city {
-      font-weight: 150;
-      font-size: 18px;
-      line-height: 25px;
-      margin-left: 30px;
-  }
+    header .text_bg_uni {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bold;
+    }
 
-  .school_infos_content {
-      margin-top: 10px;
-      font-size: 17px;
-      font-weight: lighter;
-  }
+    header .line {
+        width: 20px;
+    }
 
-  .courses .course .name {
-      font-size: 18px;
-  }
+    header .city {
+        font-weight: 200;
+        font-size: 18px;
+    }
 
-  .costs{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      position: relative;
-      margin-bottom: 50px;
-      margin-left: 0px;
-  }
+    header .country {
+        font-weight: 200;
+        font-size: 18px;
+        margin-left: 25px;
+    }
 
-  .cost_content{
-      font-size: 15px;
-      font-weight: bold;
-      padding-top:35px;
-      padding-left: 10px;
-  }
-  .border_icon {
-      width: 80px;
-      height: 80px;
-      border-radius: 100%;
-      border: 7px solid #e6e6e6;
-      position: relative;
-      padding-top: 5px;
-      flex: none;
-  }
+    .school_infos_content {
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: lighter;
+    }
 
-  .border_icon img{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -25px;
-      width: 50px;
-      margin-left: -25px;
-  }
+    .courses .course .name {
+        font-size: 18px;
+    }
 
-  .courses{
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 5px;
-  }
+    .costs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
 
-  .course{
-      margin-left: 5px;
-  }
+    .cost_content {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 35px;
+        padding-left: 10px;
+    }
 
-  .cost{
-      flex-basis: 100%;
-      display:flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-self: auto;
-      padding-bottom: 20px;
-  }
+    .border_icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 7px solid #e6e6e6;
+        position: relative;
+        padding-top: 5px;
+        flex: none;
+    }
+
+    .border_icon img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        width: 50px;
+        margin-left: -25px;
+    }
+
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5px;
+    }
+
+    .course {
+        margin-left: 5px;
+    }
+
+    .cost {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: auto;
+        padding-bottom: 20px;
+    }
 
 }

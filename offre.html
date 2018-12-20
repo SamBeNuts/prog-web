@@ -16,21 +16,7 @@
 <div id="wrapper">
     <header>
         <img src="img/header_bg_offers.jpg" class="bg">
-		<div class="filter">
-            <select class="filter_search year" onchange="filter()">
-				<option value="">Année</option>
-            </select>
-			<select class="filter_search department" onchange="filter()">
-				<option value="">Orientation</option>
-            </select>
-			<select class="filter_search language" onchange="filter()">
-				<option value="">Langue du Cours</option>
-            </select>
-			<select class="filter_search country" onchange="filter()">
-				<option value="">Pays</option>
-            </select>
-        </div>
-		<a href="index"><img src="img/logo_insa_w.png" class="logo_insa"></a>
+		<a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
                 <div class="line1"></div>
@@ -38,14 +24,28 @@
                 <div class="line3"></div>
             </div>
             <ul class="menuItems">
-                <li><a href="index" class="text_white text_shadow">Accueil</a></li>
-                <li><a href="offre" class="text_white text_shadow">Écoles partenaires</a></li>
-                <li><a href="procedure" class="text_white text_shadow">Procédure</a></li>
-                <li><a href="simu" class="text_white text_shadow">Simulation budget</a></li>
-                <li><a href="FAQ" class="text_white text_shadow">FAQ</a></li>
+                <li><a href="index.html" class="text_white text_shadow">Accueil</a></li>
+                <li><a href="offre.html" class="text_white text_shadow">Écoles partenaires</a></li>
+                <li><a href="procedure.html" class="text_white text_shadow">Procédure</a></li>
+                <li><a href="simu.html" class="text_white text_shadow">Simulation budget</a></li>
+                <li><a href="FAQ.html" class="text_white text_shadow">FAQ</a></li>
                 <!--<li>FR/EN</li>-->
             </ul>
         </nav>
+        <div class="filter">
+            <select class="filter_search year" onchange="filter()">
+                <option value="">Année</option>
+            </select>
+            <select class="filter_search department" onchange="filter()">
+                <option value="">Orientation</option>
+            </select>
+            <select class="filter_search language" onchange="filter()">
+                <option value="">Langue du Cours</option>
+            </select>
+            <select class="filter_search country" onchange="filter()">
+                <option value="">Pays</option>
+            </select>
+        </div>
     </header>
 	<div class="content">
         <input class="research" type="text" placeholder="Filtrer par nom" onkeyup="filter()">
@@ -63,7 +63,7 @@
     </div>
     <footer>
         <p class="text_white">Thème, design et code réalisés par <span>E</span>mna, <span>H</span>a,
-            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap" class="text_white">plan
+            <span>J</span>in <span>Y</span>u et <span>S</span>amuel - <a href="sitemap.html" class="text_white">plan
                 du site</a></p>
     </footer>
 </div>
@@ -87,9 +87,9 @@
         add_filters(data.orientations, '.department');
         add_filters(data.languages, '.language');
         add_filters(data.countries, '.country');
-        if (cookies.length) add_schools(data.schools, cookies, '.favoris');
-        else document.querySelector(".favori_btn").style.display = 'none';
         add_schools(data.schools, Object.keys(data.schools), '.schools');
+        if (cookies.toString() !== "") add_schools(data.schools, cookies, '.favoris');
+        else document.querySelector(".favori_btn").style.display = 'none';
 		//document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
     };
 
@@ -98,25 +98,25 @@
     }
 
 	function add_schools(schools, schools_name, container) {
-		let school_1 = "<div class='school'><img class='image' src='img/data/";
+        let school_0 = "<a href='offre_details.html?school=";
+		let school_1 = "'><div class='school'><img class='image' src='img/data/";
 		let school_2 = "'/><div class='over'><div class='info'><p class='text_white'><img src='img/student_icon.png'> ";
 		let school_3 = "</p><p class='text_white'><img src='img/rank_icon.png'> the top ";
 		let school_4 = "%</p><p class='text_white'><img src='img/language_icon.png'> ";
 		let school_5 = " courses</p><p class='text_white'><img src='img/budget_estimated_";
-		let school_6 = ".png'/> estimated</p></div><div class='visit'><a href='offre_utah/";
-		let school_7 = "'><img src='img/visit_btn.png'></a></div></div><p class='text_white name'>";
-		let school_8 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
-		let school_9 = "</p></div></div>";
+		let school_6 = ".png'/> estimated</p></div><div class='visit'><img src='img/visit_btn.png'></div></div><p class='text_white name'>";
+		let school_7 = "</p><div class='city'><div class='line'></div><p class='text_white'>";
+		let school_8 = "</p></div></div></a>";
 
 		for(let i=0; i<schools_name.length; i++){
 		    let school = schools_name[i];
 		    let b = 2;
 		    if(schools[school].tuiton_cost + schools[school].campus_cost + schools[school].accomodation_cost < 750) b = 1;
             else if(schools[school].tuiton_cost + schools[school].campus_cost + schools[school].accomodation_cost > 1500) b = 3;
-            document.querySelector(container).innerHTML += school_1 + school.toLowerCase().replace(/ /g, '_') +
-                '_thumbnail.jpg' + school_2 + schools[school].courses[0][1] + school_3 + schools[school].top +school_4 +
-                schools[school].courses[0][2] + school_5 + b + school_6 + school + school_7 + school + school_8 +
-                schools[school].city + ", " + schools[school].country + school_9;
+            document.querySelector(container).innerHTML += school_0 + school + school_1 + school.toLowerCase().replace(/ /g, '_') +
+                '_thumbnail.jpg' + school_2 + schools[school].courses_year.join(', ') + school_3 + schools[school].top +school_4 +
+                schools[school].courses_languages.join(', ') + school_5 + b + school_6 + school + school_7 +
+                schools[school].city + ", " + schools[school].country + school_8;
         }
 	}
 
