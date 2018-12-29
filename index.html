@@ -77,9 +77,9 @@
         <p class="title">Nouvelles écoles partenaires</p>
     </div>
     <div class="slider">
-        <div class="slides"></div>
+        <div class="slides"></div> //div qui contiendra les différentes diapos du diaporama
         <img src="img/next_btn.png" class="navigation previous" onclick="changeSlide(-3)">
-        <div class="pagination"></div>
+        <div class="pagination"></div> //div qui contiendra la pagination du diaporama
         <img src="img/next_btn.png" class="navigation next" onclick="changeSlide(-1)">
         <a href="offre.html">
             <div class="see_more">
@@ -235,17 +235,17 @@
 </div>
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript">
-    let temoignages;
+    let temoignages; //pour stocker les différents témoignages
 
-    request.onload = function () { //
-        let data = request.response; //on stocke toutes les données de data.json
-        temoignages = data.temoignages;
+    request.onload = function () { //attend que les données de data.json soient récupérées
+        let data = request.response; //on récupère toutes les données de data.json
+        temoignages = data.temoignages; //on stocke celles en rapport avec les témoignages
         document.querySelector('.temoignages_content_txt.active').innerText = temoignages[0]; //on fait apparaître le premier témoignage
         createSlides(data.slider.slides, data.schools);
     };
 
     function menuToggle(x){
-        x.parentElement.classList.toggle("active");
+        x.parentElement.classList.toggle("active"); //rajoute/enlève la classe active du burger menu
     }
 
     let pagination = document.querySelector('.slider .pagination'); //barre de navigation du diaporama
@@ -307,7 +307,7 @@
         }); //on cherche le témoignages actif de la page
         document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active"); //on rend inactif ce témoignage
         document.querySelector('.temoignages_content').children[1].children[x].classList.add("active"); //on rend actif le témoignage d'indice x (passé en paramètre)
-        document.querySelector('.temoignages_content_txt.active').innerHTML = str;
+        document.querySelector('.temoignages_content_txt.active').innerHTML = temoignages[x]; //on change le texte du témoignage
     }
 </script>
 </body>

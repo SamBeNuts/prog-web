@@ -47,9 +47,8 @@ header .text_bg span{
 }
 
 .progress__value {
-    stroke-dasharray: 1539px;
-    stroke-dashoffset: 1539px;
-    /*animation: progress 5s infinite alternate;*/
+    stroke-dasharray: 1539px; /* diamètre du cercle */
+    stroke-dashoffset: 1539px; /* l'écart entre 2 tirets est égal au diamètre donc aucun tiret visible */
     stroke-linecap: round;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -58,32 +57,33 @@ header .text_bg span{
     transition: 1s;
 }
 
+/* on diminue l'écart entre 2 tirets afin d'avoir un tiret qui apparaît */
 .progress.step_1 .progress__value{
-    stroke-dashoffset: 1319px;
+    stroke-dashoffset: 1319px; /* 6/7 du diamètre du cercle */
 }
 
 .progress.step_2 .progress__value{
-    stroke-dashoffset: 1099px;
+    stroke-dashoffset: 1099px; /* 5/7 du diamètre du cercle */
 }
 
 .progress.step_3 .progress__value{
-    stroke-dashoffset: 879px;
+    stroke-dashoffset: 879px; /* 4/7 du diamètre du cercle */
 }
 
 .progress.step_4 .progress__value{
-    stroke-dashoffset: 660px;
+    stroke-dashoffset: 660px; /* 3/7 du diamètre du cercle */
 }
 
 .progress.step_5 .progress__value{
-    stroke-dashoffset: 440px;
+    stroke-dashoffset: 440px; /* 2/7 du diamètre du cercle */
 }
 
 .progress.step_6 .progress__value{
-    stroke-dashoffset: 220px;
+    stroke-dashoffset: 220px; /* 1/7 du diamètre du cercle */
 }
 
 .progress.step_7 .progress__value{
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0; /* 0/7 du diamètre du cercle */
 }
 
 .budget_icon{

@@ -85,7 +85,7 @@
                     <p>Quelle est votre école d'accueil ?</p>
                 </div>
                 <div class="answer">
-                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()">
+                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()"> //appelle search() à chaque caractère saisi
                     <div class="research_result"></div>
                 </div>
             </div>
@@ -201,15 +201,15 @@
     let accomodation_cost; //prix d'un loyer de studio en fonction de l'école sélectionnée
     let type_accomodation; //type de logement (1: résidence universitaire, 2: studio, 3: colocation
 
-    request.onload = function () { //
-        let data = request.response; //on stocke toutes les données de data.json
-        schools = data.schools;
-        plane_cost_list = data.plane_cost;
-        cost_of_living_list = data.cost_of_living;
+    request.onload = function () { ////attend que les données de data.json soient récupérées
+        let data = request.response; //on récupère toutes les données de data.json
+        schools = data.schools; //on stocke celles en rapport avec les écoles
+        plane_cost_list = data.plane_cost; //on stocke celles en rapport avec les prix de vol
+        cost_of_living_list = data.cost_of_living; //on stocke celles en rapport avec les prix des coûts de vie
     };
 
     function menuToggle(x){
-        x.parentElement.classList.toggle("active");
+        x.parentElement.classList.toggle("active"); //rajoute/enlève la classe active du burger menu
     }
 
     let pos_step = 1; //étape active de la simulation
@@ -240,7 +240,7 @@
         }
     }
 
-    function addPrices(d_country, d_tuiton_cost, d_campus_cost, d_accomodation_cost) {
+    function addPrices(d_country, d_tuiton_cost, d_campus_cost, d_accomodation_cost) { //à l'étape 1 quand l'utilisateur sélectionne son école on stocke les différents coûts en rapport avec l'école
         plane_cost = plane_cost_list[d_country];
         cost_of_living = cost_of_living_list[d_country];
         tuiton_cost = d_tuiton_cost;
@@ -249,23 +249,24 @@
         changeStep(0);
     }
 
-    function search() {
-        let research = document.querySelector('.answer .research').value;
-        let research_result = document.querySelector('.answer .research_result');
-        research_result.innerHTML = "";
-        if (research != ""){
+    function search() { //renvoie le nom des écoles qui correspondent à la recherche de l'utilisateur
+        let research = document.querySelector('.answer .research').value; //récupère la string saisie par l'utilisateur
+        let research_result = document.querySelector('.answer .research_result'); //la div qui contiendra les résultats
+        research_result.innerHTML = ""; //on initialise la div
+        if (research != ""){ //si la string saisie n'est pas vide on filtre
             let nb_result = 0;
             for (let school in schools){
-                if (school.toLowerCase().includes(research.toLowerCase())){
+                if (school.toLowerCase().includes(research.toLowerCase())){ //pour chaque école on regarde si le nom correspond à la string saisie par l'utilisateur
+                    //si oui on rajoute cette école aux résultats de la recherche
                     research_result.innerHTML += "<p onclick='addPrices(\"" + schools[school].country + "\"," + schools[school].tuiton_cost + "," + schools[school].campus_cost + "," + schools[school].accomodation_cost + ")'>" + school + "</p>";
                     nb_result++;
                 }
-                if (nb_result > 3) break;
+                if (nb_result > 3) break; //on affiche au maximum 3 écoles
             }
         }
     }
 
-    function checkNumberMonths() {
+    function checkNumberMonths() { //on vérifie si le nombre de mois saisi par l'utilisateur est valide
         let nb = document.querySelector('.answer .number_months').value;
         let next_number_months = document.querySelector('.next.next_number_months');
         if (nb > 0 && nb < 25){
@@ -275,32 +276,32 @@
         }
     }
 
-    function checkLogement(x) {
+    function checkLogement(x) { //à l'étape 4 on stocke le type de logement sélectionné par l'utilisateur
         type_accomodation = x;
         changeStep(0);
     }
 
-    function getPrice() {
-        let price = 0;
-        let month = parseInt(document.querySelector('.answer .month').value);
-        let nb_months = document.querySelector('.answer .number_months').value;
-        if (nb_months == "") nb_months=0;
-        else nb_months = parseInt(nb_months);
-        let cost_of_life = document.querySelector('.answer .cost_of_life').value;
-        if (cost_of_life == "") cost_of_life=0;
-        else cost_of_life = parseInt(cost_of_life);
-        let scholarship = document.querySelector('.answer .scholarship').value;
-        if (scholarship == "") scholarship=0;
-        else scholarship = parseInt(scholarship);
-        for (let i = month; i<month+nb_months-1; i++){
+    function getPrice() { //renvoie le coût du semestre à l'étranger
+        let price = 0; //on initialise le coût
+        let month = parseInt(document.querySelector('.answer .month').value); //on récupère le mois de départ
+        let nb_months = document.querySelector('.answer .number_months').value; //on récupère le nombre de mois
+        if (nb_months == "") nb_months=0; //si rien n'a été saisi, par défaut 0
+        else nb_months = parseInt(nb_months); //conversion en int
+        let cost_of_life = document.querySelector('.answer .cost_of_life').value; //on récupère le coût de vie
+        if (cost_of_life == "") cost_of_life=0; //si rien n'a été saisi, par défaut 0
+        else cost_of_life = parseInt(cost_of_life); //conversion en int
+        let scholarship = document.querySelector('.answer .scholarship').value; //on récupère le montant de la bourse
+        if (scholarship == "") scholarship=0; //si rien n'a été saisi, par défaut 0
+        else scholarship = parseInt(scholarship); //conversion en int
+        for (let i = month; i<month+nb_months-1; i++){ //calcule le nombre de frais de scolarité à payer en fonction du mois de départ et de la durée du voyage
             if (i%12 === 2 || i%12 === 9){
                 if (scholarship !==0) price += 600 + tuiton_cost;
                 else price += 200 + tuiton_cost;
             }
         }
-        price += plane_cost*2;
-        price += nb_months * (cost_of_life*cost_of_living - scholarship);
-        switch (type_accomodation){
+        price += plane_cost*2; //on rajoute le prix du vol aller-retour
+        price += nb_months * (cost_of_life*cost_of_living - scholarship); //on rajoute le coût de vie en fonction de la durée du voyage
+        switch (type_accomodation){ //on rajoute le coût du logement en fonction de la durée du voyage
             case 1:
                 price += nb_months * campus_cost;
                 break;
@@ -311,7 +312,7 @@
                 price += nb_months * accomodation_cost * 2 / 3;
                 break;
         }
-        document.querySelector('.result p').innerHTML = Math.round(price) + "€";
+        document.querySelector('.result p').innerHTML = Math.round(price) + "€"; //on affiche le prix à l'entier près
         changeStep(0);
     }
 </script>
