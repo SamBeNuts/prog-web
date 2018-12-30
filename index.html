@@ -302,11 +302,12 @@
 
     function changeTemoignages(x) {
         let i = 0;
-        document.querySelector('.temoignages_content').children[1].querySelectorAll('div').forEach(function(el, j){
+        let t = document.querySelector('.temoignages_content').children[1]; //les différents contenus des témoignages
+        t.querySelectorAll('div').forEach(function(el, j){
             if (el.classList.contains("active")) i = j;
         }); //on cherche le témoignages actif de la page
-        document.querySelector('.temoignages_content').children[1].children[i].classList.remove("active"); //on rend inactif ce témoignage
-        document.querySelector('.temoignages_content').children[1].children[x].classList.add("active"); //on rend actif le témoignage d'indice x (passé en paramètre)
+        t.children[i].classList.remove("active"); //on rend inactif ce témoignage
+        t.children[x].classList.add("active"); //on rend actif le témoignage d'indice x (passé en paramètre)
         document.querySelector('.temoignages_content_txt.active').innerHTML = temoignages[x]; //on change le texte du témoignage
     }
 </script>

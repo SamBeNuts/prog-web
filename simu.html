@@ -17,7 +17,7 @@
 <div id="wrapper">
     <header>
         <img src="img/header_bg_simu.jpg" class="bg">
-        <p class="text_bg text_white text_shadow_bt"><span>E</span>stimate<br><span>c</span>ost</p>
+        <p class="text_bg text_white text_shadow_bt"><span>S</span>imulation<br><span>B</span>udget</p>
         <a href="index.html"><img src="img/logo_insa_w.png" class="logo_insa"></a>
         <nav role="navigation">
             <div class="menuToggle" onclick="menuToggle(this)">
@@ -85,7 +85,7 @@
                     <p>Quelle est votre école d'accueil ?</p>
                 </div>
                 <div class="answer">
-                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()"> //appelle search() à chaque caractère saisi
+                    <input class="research" type="text" placeholder="Nom de l'école" onkeyup="search()"> <!-- appelle search() à chaque caractère saisi -->
                     <div class="research_result"></div>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                     research_result.innerHTML += "<p onclick='addPrices(\"" + schools[school].country + "\"," + schools[school].tuiton_cost + "," + schools[school].campus_cost + "," + schools[school].accomodation_cost + ")'>" + school + "</p>";
                     nb_result++;
                 }
-                if (nb_result > 3) break; //on affiche au maximum 3 écoles
+                if (nb_result > 3) break; //on affiche au maximum 4 écoles
             }
         }
     }
@@ -281,7 +281,7 @@
         changeStep(0);
     }
 
-    function getPrice() { //renvoie le coût du semestre à l'étranger
+    function getPrice() { //renvoie le coût du semestre à l'étranger (estimation fictive)
         let price = 0; //on initialise le coût
         let month = parseInt(document.querySelector('.answer .month').value); //on récupère le mois de départ
         let nb_months = document.querySelector('.answer .number_months').value; //on récupère le nombre de mois
