@@ -71,29 +71,29 @@
 <script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript">
     function menuToggle(x) {
-        x.parentElement.classList.toggle("active");
+        x.parentElement.classList.toggle("active"); //rajoute/enlève la classe active du burger menu
     }
 
     function favoriToggle() {
-        document.querySelector(".favori_btn").classList.toggle("active");
-        document.querySelector(".favoris").classList.toggle("active");
-        document.querySelector(".schools").classList.toggle("active");
+        document.querySelector(".favori_btn").classList.toggle("active"); //rajoute/enlève la classe active du bouton de favoris
+        document.querySelector(".favoris").classList.toggle("active"); //rajoute/enlève la classe active des écoles mises en favoris
+        document.querySelector(".schools").classList.toggle("active"); //rajoute/enlève la classe active de toutes les écoles
     }
 
-	request.onload = function () {
-        let data = request.response;
-        let cookies = getCookie('favoris');
-        add_filters(data.years, data.years, '.year');
-        add_filters(data.orientations, data.orientations, '.department');
-        add_filters(data.languages_abbr, data.languages, '.language');
-        add_filters(data.countries, data.countries, '.country');
+	request.onload = function () { //attend que les données de data.json soient récupérées
+        let data = request.response; //on récupère toutes les données de data.json
+        let cookies = getCookie('favoris'); //on récupère la valeur du cookie favoris (un tableau avec les écoles mises en favoris)
+        add_filters(data.years, data.years, '.year'); //on rajoute les options des filtres pour les années
+        add_filters(data.orientations, data.orientations, '.department'); //on rajoute les options des filtres pour les orientations
+        add_filters(data.languages_abbr, data.languages, '.language'); //on rajoute les options des filtres pour les langues
+        add_filters(data.countries, data.countries, '.country'); //on rajoute les options des filtres pour les pays
         add_schools(data.schools, Object.keys(data.schools), '.schools');
-        if (cookies.toString() !== "") add_schools(data.schools, cookies, '.favoris');
-        else document.querySelector(".favori_btn").style.display = 'none';
+        if (cookies.toString() !== "") add_schools(data.schools, cookies, '.favoris'); //si les cookies ne sont pas vides, on ajoute les écoles mises en favoris
+        else document.querySelector(".favori_btn").style.display = 'none'; //sinon on fait disparaître le bouton de favoris
 		//document.querySelector(".nb_result").innerHTML = Object.keys(data.schools).length + ' résultats';
     };
 
-    function add_filters(tab_value, tab, container){
+    function add_filters(tab_value, tab, container){ //rajoute les options des filtres, tab_value: la value de l'option, tab: le texte de l'option et container: le select qui recevra les options
         for (let i = 0; i<tab.length; i++) document.querySelector(container).innerHTML += "<option value=" + tab_value[i] + ">" + tab[i] + "</option>";
     }
 

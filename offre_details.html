@@ -136,26 +136,26 @@
 <script type="text/javascript" src="js/request_data.js"></script>
 <script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript">
-    let url = window.location.href;
-    let name_school = decodeURI(url.substring(url.lastIndexOf("=") + 1));
+    let url = window.location.href; //l'url de la page
+    let name_school = decodeURI(url.substring(url.lastIndexOf("=") + 1)); //on récupère le nom de l'école depuis l'url
 
     function menuToggle(x) {
-        x.parentElement.classList.toggle("active");
+        x.parentElement.classList.toggle("active"); //rajoute/enlève la classe active du burger menu
     }
 
     function favoriToggle() {
-        let favori = document.querySelector('header .favoris');
-        let school = name_school;
-        let cookies = getCookie("favoris").toString();
-        if (favori.classList.contains('active')) {
-            if (cookies.indexOf(',' + school) !== -1) school = ',' + school;
-            else if (cookies.indexOf(school + ',') !== -1) school = school + ',';
-            setCookie('favoris', '[' + cookies.replace(school, '') + ']', 60);
-        } else {
-            if (cookies !== "") school = ',' + school;
-            setCookie('favoris', '[' + cookies + school + ']', 60);
+        let favori = document.querySelector('header .favoris'); //le bouton de favoris
+        let school = name_school; //le nom de l'école
+        let cookies = getCookie("favoris").toString(); //on récupère le cookie des favoris
+        if (favori.classList.contains('active')) { //si l'école était en favori
+            if (cookies.indexOf(',' + school) !== -1) school = ',' + school; //si l'école n'est pas le seul élément des favoris et n'est pas en première position du tableau
+            else if (cookies.indexOf(school + ',') !== -1) school = school + ','; //si l'école n'est pas le seul élément des favoris et est en première position du tableau
+            setCookie('favoris', '[' + cookies.replace(school, '') + ']', 60); //on retire l'école des favoris
+        } else { //si l'école n'était pas en favori
+            if (cookies !== "") school = ',' + school; //si les favoris ne sont pas vides
+            setCookie('favoris', '[' + cookies + school + ']', 60); //on rajoute l'école aux favoris
         }
-        document.querySelector('header .favoris').classList.toggle("active");
+        document.querySelector('header .favoris').classList.toggle("active"); //rajoute/enlève la classe active du bouton de favoris
     }
 
     function mygallery(imgs) {
@@ -164,8 +164,8 @@
         imgs.parentElement.classList.toggle('active');
     }
 
-    request.onload = function () {
-        let data = request.response;
+    request.onload = function () { //attend que les données de data.json soient récupérées
+        let data = request.response; //on récupère toutes les données de data.json
         let school = data.schools[name_school];
         document.querySelector('.bg').src = 'img/data/' + name_school.toLowerCase().replace(/ /g, '_') +
             '_bg.jpg';
@@ -199,8 +199,8 @@
         document.querySelector('.tuition_cost').innerHTML = school.tuiton_cost;
         document.querySelector('.campus_cost').innerHTML = school.campus_cost;
         document.querySelector('.accomodation_cost').innerHTML = school.accomodation_cost;
-        let cookies = getCookie("favoris").toString();
-        if (cookies.indexOf(name_school) !== -1) document.querySelector('header .favoris').classList.toggle("active");;
+        let cookies = getCookie("favoris").toString(); //on récupère la valeur du cookie favoris (un tableau avec les écoles mises en favoris)
+        if (cookies.indexOf(name_school) !== -1) document.querySelector('header .favoris').classList.toggle("active"); //si l'école appartient au favoris on rend le bouton de favoris actif
     };
 
 </script>
