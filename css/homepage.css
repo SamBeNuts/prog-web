@@ -940,6 +940,18 @@ header .text_bg span{
         margin-right: 10px;
     }
 
+    .avantages_txt_num{
+        font-size: 60px;
+    }
+
+    .avantages_txt_title{
+        font-size: 20px;
+    }
+
+    .avantages_txt_content{
+        font-size: 15px;
+    }
+
     /*
      * Slider
      */

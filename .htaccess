@@ -2,4 +2,4 @@ Options +FollowSymlinks
 RewriteEngine on
 RewriteRule ^accueil$  /index.html [L]
 RewriteRule ^([A-Za-z_]+)$  /$1.html [L]
-RewriteRule ^offre_utah/(.+)$   /offre_utah.html?school=$1 [L]
+RewriteRule ^offre_details/(.+)$   /offre_details.html?school=$1 [L]

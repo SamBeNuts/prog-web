@@ -1,0 +1,525 @@
+/*
+ * Header
+ */
+header {
+    height: 260px !important;
+}
+
+header .bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 260px;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .bg {
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 100%;
+    min-height: 100%;
+}
+
+header .text_bg {
+    position: absolute;
+    text-align: left;
+    /*font-size: 40px;
+    line-height: 40px;*/
+    bottom: 0;
+    padding: 15px;
+}
+
+header .text_bg_uni {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+header .line {
+    width: 30px;
+    height: 2px;
+    background-color: #d55555;
+    display: inline-block;
+}
+
+header .city {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+header .country {
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+header .btns{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+header .btn{
+    display: inline-block;
+    padding: 10px 10px 5px 10px;
+    background-color: #d55555;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+header .btn:hover{
+    background-color: #d53c3b;
+}
+
+header .btn img{
+    height: 30px;
+}
+
+header .favoris img{
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+header .favoris.active img{
+    -webkit-filter: brightness(1) sepia(1) saturate(20) contrast(1);
+    filter: brightness(1) sepia(1) saturate(20) contrast(1);
+}
+
+header .btn span {
+    color: #d55555;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Content */
+
+.left {
+    width: 55%;
+    float: left;
+    margin-top: 10px;
+}
+
+.right {
+    width: 40%;
+    float: right;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.right p {
+    text-align: left;
+}
+
+.school_infos, .courses {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.school_infos_content {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: lighter;
+    white-space: pre-line;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.courses .course {
+    flex-basis: 45%;
+    border-left: 2px solid #e6e6e6;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+
+.courses .course .name {
+    font-size: 22px;
+}
+
+.courses .course .year {
+    margin: 5px 0;
+}
+
+.courses .course .year, .courses .course .languages {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.courses .course .languages img {
+    width: 20px;
+    vertical-align: bottom;
+}
+
+.courses .title, .costs .title {
+    flex-basis: 100%;
+}
+
+.costs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cost {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: auto;
+    padding-bottom: 20px;
+}
+
+.cost .detail {
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.costDetail {
+    display: inline-block;
+}
+
+.border_icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 10px solid #e6e6e6;
+    position: relative;
+    padding-top: 5px;
+    flex: none;
+}
+
+.border_icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    width: 60px;
+    margin-left: -30px;
+    margin-left: -30px;
+}
+
+.cost_content {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.cost_content span {
+    font-weight: normal;
+}
+
+.right img {
+    padding-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videos {
+    display: flex;
+    flex-basis: 33%;
+}
+
+.videos img {
+    width: 30%;
+    height: 30%;
+    padding-right: 5px;
+}
+
+.chiffres {
+    padding-top: 5px;
+}
+
+.chiffres .info {
+    text-align: right;
+    border-right: 2px solid #d55555;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    padding-right: 8px;
+}
+
+.chiffres .info span {
+    font-weight: normal;
+    font-size: 40px;
+    color: #d55555;
+}
+
+.gallery_active {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .column {
+    width: 30%;
+    padding: 1.5%;
+}
+
+.gallery .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+
+.gallery .column img:hover, .gallery .column.active img{
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    display: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Version Tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    header .bg {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: 100%;
+    }
+
+    header .text_bg_uni {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    header .city {
+        font-weight: 200;
+        font-size: 25px;
+    }
+
+    header .country {
+        font-weight: 200;
+        font-size: 18px;
+        margin-left: 35px;
+    }
+
+    .school_infos_content {
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+
+    .courses .course .name {
+        font-size: 18px;
+    }
+
+    .costs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    .cost_content {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 35px;
+        padding-left: 10px;
+    }
+
+    .border_icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 10px solid #e6e6e6;
+        position: relative;
+        padding-top: 5px;
+        flex: none;
+    }
+
+    .border_icon img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        width: 50px;
+        margin-left: -25px;
+        margin-left: -25px;
+    }
+
+    .chiffres .info {
+        text-align: right;
+        border-right: 2px solid #d55555;
+        font-size: 25px;
+        padding-bottom: 10px;
+        font-weight: lighter;
+        padding-right: 8px;
+    }
+
+    .chiffres .info span {
+        font-weight: normal;
+        font-size: 35px;
+        color: #d55555;
+    }
+}
+
+/* version Phone*/
+
+@media only screen and (max-width: 767px) {
+    .content {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    .left {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+    }
+
+    header .text_bg {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    header .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    header .text_bg_uni {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    header .line {
+        width: 20px;
+    }
+
+    header .city {
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    header .country {
+        font-weight: 200;
+        font-size: 18px;
+        margin-left: 25px;
+    }
+
+    .school_infos_content {
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+
+    .courses .course .name {
+        font-size: 18px;
+    }
+
+    .costs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .cost_content {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 35px;
+        padding-left: 10px;
+    }
+
+    .border_icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 7px solid #e6e6e6;
+        position: relative;
+        padding-top: 5px;
+        flex: none;
+    }
+
+    .border_icon img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        width: 50px;
+        margin-left: -25px;
+    }
+
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5px;
+    }
+
+    .course {
+        margin-left: 5px;
+    }
+
+    .cost {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: auto;
+        padding-bottom: 20px;
+    }
+
+}
