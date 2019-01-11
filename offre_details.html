@@ -159,46 +159,47 @@
     }
 
     function mygallery(imgs) {
-        document.querySelector('.gallery_active').src = imgs.src;
-        document.querySelector('.gallery .column.active').classList.toggle('active');
-        imgs.parentElement.classList.toggle('active');
+        document.querySelector('.gallery_active').src = imgs.src; //change l'image de la gallerie
+        document.querySelector('.gallery .column.active').classList.toggle('active'); //rend inactif l'ancienne image de la gallerie
+        imgs.parentElement.classList.toggle('active'); //rend actif la nouvelle image de la gallerie
     }
 
     request.onload = function () { //attend que les données de data.json soient récupérées
         let data = request.response; //on récupère toutes les données de data.json
-        let school = data.schools[name_school];
-        document.querySelector('.bg').src = 'img/data/' + name_school.toLowerCase().replace(/ /g, '_') +
-            '_bg.jpg';
-        document.querySelector('.name').innerHTML = name_school;
-        document.querySelector('.city').innerHTML = school.city + ',';
-        document.querySelector('.country').innerHTML = school.country;
-        document.querySelector('.website').href = school.website;
-        document.querySelector('.school_infos_content').innerHTML = school.information;
-        document.querySelector('.top').innerHTML = school.top + '%';
-        document.querySelector('.deadline_number').innerHTML = school.deadline_number;
-        document.querySelector('.deadline_date').innerHTML = school.deadline_date;
+        let school = data.schools[name_school]; //on stocke seulement les données relatives à l'école passées en paramètre (url)
+        //maintenant on injecte les données dans la page
+        document.querySelector('.bg').src = 'img/data/' + name_school.toLowerCase().replace(/ /g, '_') + '_bg.jpg'; //on met une image de l'école en background du header
+        document.querySelector('.name').innerHTML = name_school; //on met le nom de l'école dans le header
+        document.querySelector('.city').innerHTML = school.city + ','; //on précise la ville
+        document.querySelector('.country').innerHTML = school.country; //et le pays
+        document.querySelector('.website').href = school.website; //on change le lien hypertexte qui mène vers le site de l'école
+        document.querySelector('.school_infos_content').innerHTML = school.information; //on injecte les données de "informations générales"
+        document.querySelector('.top').innerHTML = school.top + '%'; //le niveau requis pour être accepté dans l'école
+        document.querySelector('.deadline_number').innerHTML = school.deadline_number; //le jour limite pour déposer son dossier
+        document.querySelector('.deadline_date').innerHTML = school.deadline_date; //le mois et l'année limite pour déposer son dossier
+        //les 4 prochaines lignes correspondent au code HTML des cours disponibles dans l'école décomposé en plusieurs strings afin d'y injecter les données relatives au cours
         let courses1 = "<div class=\"course\"><p class=\"name\">";
         let courses2 = "</p><p class=\"year\"> ";
         let courses3 = "</p><p class=\"languages\"><img src=\"img/language_icon_black.png\"> ";
         let courses4 = "</p></div>";
-        for (let i = 0; i < school.courses.length; i++) {
+        for (let i = 0; i < school.courses.length; i++) { //on injecte les données pour chaque cours
             document.querySelector('.courses').innerHTML += courses1 + school.courses[i][0] + courses2 + school.courses[i][1].join(', ') + courses3 + school.courses[i][2].join(', ') + courses4;
         }
-        if (school.medias.length !== 0){
-            document.querySelector('.gallery_active').src = 'img/data/' + school.medias[0];
+        if (school.medias.length !== 0){ //si il y a des images à mettre dans la gallerie
+            document.querySelector('.gallery_active').src = 'img/data/' + school.medias[0]; //on met une image par défaut dans la gallerie
             let medias1 = "<div class=\"column\"><img src=\"img/data/";
             let medias2 = "\" onclick=\"mygallery(this)\"></div>";
-            for (let i = 0; i < school.medias.length; i++) {
+            for (let i = 0; i < school.medias.length; i++) { //on met les différentes images dans la gallerie grâce aux 2 lignes d'au-dessus
                 document.querySelector('.gallery').innerHTML += medias1 + school.medias[i] + medias2;
             }
-            document.querySelector('.gallery').firstElementChild.classList.toggle('active');
-        } else {
+            document.querySelector('.gallery').firstElementChild.classList.toggle('active'); //on rend actif la première image
+        } else { //on retire la gallerie de la page
             document.querySelector('.gallery_active').display = 'none';
             document.querySelector('.gallery').display = 'none';
         }
-        document.querySelector('.tuition_cost').innerHTML = school.tuiton_cost;
-        document.querySelector('.campus_cost').innerHTML = school.campus_cost;
-        document.querySelector('.accomodation_cost').innerHTML = school.accomodation_cost;
+        document.querySelector('.tuition_cost').innerHTML = school.tuiton_cost; //prix du coût d'étude
+        document.querySelector('.campus_cost').innerHTML = school.campus_cost; //prix d'un loyer de résidence universitaire
+        document.querySelector('.accomodation_cost').innerHTML = school.accomodation_cost; //prix d'un loyer de studio
         let cookies = getCookie("favoris").toString(); //on récupère la valeur du cookie favoris (un tableau avec les écoles mises en favoris)
         if (cookies.indexOf(name_school) !== -1) document.querySelector('header .favoris').classList.toggle("active"); //si l'école appartient au favoris on rend le bouton de favoris actif
     };
